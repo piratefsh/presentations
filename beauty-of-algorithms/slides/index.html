@@ -64,6 +64,14 @@
 				border: 0px;
 				box-shadow: none;
 				max-width: 200px;
+				background: none;
+			}
+
+			.overview section.has-dark-background h2,
+			.overview section.has-dark-background h3,
+			.overview section.has-dark-background a,
+				.overview section.has-dark-background p{
+				color: black !important;
 			}
 		</style>
 
@@ -120,7 +128,7 @@
 						</h3>
 						<h3><small class="fragment">e.g. algorithms</small></h3>
 						</section>
-					<section><h2>like, screensaver art</h2></section>
+					<section><h2>screensaver art</h2></section>
 					<section data-background="img/3d_pipes.gif">
 						<div class="footnote">3D pipes from <a href="https://www.youtube.com/watch?v=XPZb8HoQgH8">Youtube</a>
 						</div>
@@ -130,15 +138,15 @@
 						</div>
 					</section>
 
-					<section data-background="img/orbitals.jpg">
-						<div class="footnote">
-							orbitals, by <a href="http://www.complexification.net/">j.tarbell</a>
-						</div>
-					</section>
-
 					<section data-background="img/sasj_geometric.jpg">
 						<div class="footnote">
 							geometric shapes, by <a href="http://www.sasj.nl/portfolio/geometric-shapes/">sasj</a>
+						</div>
+					</section>
+
+					<section data-background="img/orbitals.jpg">
+						<div class="footnote">
+							orbitals, by <a href="http://www.complexification.net/">j.tarbell</a>
 						</div>
 					</section>
 
@@ -152,23 +160,27 @@
 							shutter, by <a href="https://www.leanderherzog.ch/shutter/">leanderherzog</a>
 						</div>
 					</section>
+					<section><h2>how is generative art made?</h2></section>
+
 				</section>
 
+				
 				<!-- PROCESSING -->
 				<section data-background="#06A2D6">
+					<section><h2>what we'll use</h2></section>
 					<section>
 						<h2>Processing</h2>
 						<img src="img/processing_logo.png"/>
 					</section>
 					<section>
-						<h2>language</h2>
+						<h2>simple language</h2>
 					</section>
 					<section>
 						<h2>designed for visual arts</h2>
 					</section>
 
 					<section data-markdown>
-					## code
+					## here's some code
 					(warning: it looks like Java)
 					</section>
 
@@ -221,6 +233,29 @@
 							bounce, by <a href="https://github.com/piratefsh/generative-art">piratefsh</a>
 						</div>
 					</section>
+
+					<section><h2>but first, basics</h2></section>
+					<section><h2>animation</h2></section>
+					<section><h2>frames</h2></section>
+					<section data-background-position="center top" data-background-size="auto" data-background="img/frame-01.png">
+						<h3>frame 1</h3>
+
+						<code> x = 0;</code>
+					</section>
+
+					<section data-background-position="center top" data-background-size="auto" data-background="img/frame-03.png">
+						<h3>frame 2</h3>
+
+						<code> x = 10;</code>
+					</section>
+
+					<section data-background-position="center top" data-background-size="auto" data-background="img/frame-05.png">
+						<h3>frame 3</h3>
+
+						<code> x = 30;</code>
+					</section>
+
+					<section><h2>time for code!</h2></section>
 				</section>
 
 				<!-- RECURSION -->
