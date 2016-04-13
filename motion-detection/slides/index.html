@@ -180,12 +180,18 @@
 					<section><h1>motion detection</h1></section>
 					<section>
 						<h2><span>something moved.</span> 
-							<span class='fragment'><br/>i wanna know about it.</span></h2></section>
-					<section><h1>how is it done?</h1></section>
+							<span class='fragment'><br/>i wanna know about it.</span></h2>
+					</section>
 				</section>
 
 				
-				<!-- PROCESSING -->
+				<section data-background="black">
+					<section>
+						<h1>building a motion detector</h1>
+						<h3>(from scratch)</h3>
+					</section>
+				</section>
+
 				<section data-background="black">
 					<section><h2>step 1: gimme some image 📷</h2></section>
 					<section><h2><code>getUserMedia()</code></h2></section>
@@ -213,7 +219,7 @@
 				</section>
 
 				<section data-background="black">
-					<section><h2>step 2: diff it</h2></section>
+					<section><h2>step 2: look at image data</h2></section>
 					<section><h2>images are just arrays of pixels</h2></section>
 					<section><h2><code>getImageData()</code></h2></section>
 					<section data-markdown>
