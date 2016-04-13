@@ -63,8 +63,10 @@
 			.reveal section img{
 				border: 0px;
 				box-shadow: none;
-				max-width: 200px;
 				background: none;
+			}
+			.reveal section img.logo{
+				max-width: 200px;
 			}
 
 			.overview section.has-dark-background h2,
@@ -104,6 +106,35 @@
 
 			.reveal .margin-top{
 				margin-top: 48px;
+			}
+
+			.reveal .col-6{
+				width: 50%;
+				float: left;
+				display: inline-block;
+			}
+
+			.sample-frame{
+				border-collapse: collapse;
+			}
+			.sample-frame tr td{
+				width: 80px;
+				height: 80px;
+				background: white;
+				padding: 0px;
+				border: 1px #bbb solid;
+			}
+			.diff-frame tr td{
+				background: rgba(255, 255, 255, 0.0)
+			}
+			.sample-frame .dark{
+				background: rgba(100, 100, 100, 1);
+			}
+			.sample-frame .diff{
+				background: red;
+			}
+			.reveal table.sample-frame tr:last-child td{
+				border-bottom: 1px #bbb solid;
 			}
 		</style>
 
@@ -158,11 +189,131 @@
 				<section data-background="black">
 					<section><h2>step 1: gimme some image 📷</h2></section>
 					<section><h2><code>getUserMedia()</code></h2></section>
+					<section data-markdown>
+						```javascript
+						const onSuccess = (stream) => {
+							// do things with stream
+						}
+						
+						// get webcam stream
+						navigator.getUserMedia(options, onSuccess, onError);
+						```
+					</section>
+					<section>
+						<h2><code>canvas</code></h2>
+					</section>
+					<section data-markdown>
+						```javascript
+						// draw video frame to canvas
+
+						const context = canvasElem.getContext('2d');
+						context.drawImage(video, 0, 0, width, height);
+						```
+					</section>
 				</section>
 
 				<section data-background="black">
 					<section><h2>step 2: diff it</h2></section>
-					<section><h2>canvas and <code>getImageData()</code></h2></section>
+					<section><h2>images are just arrays of pixels</h2></section>
+					<section><h2><code>getImageData()</code></h2></section>
+					<section data-markdown>
+						```javascript
+						// get pixel data from canvas
+
+						context.getImageData(0, 0, width, height);
+						```
+					</section>
+					<section data-background="white">
+						<img src='img/imagedata.png'/>
+					</section>
+					<section>
+						<div class="col-6">
+							<div>
+								<table class='sample-frame'>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</table>
+							</div>
+
+							<pre>
+								<code class="hljs js">
+// frame1
+[255, 255, 255,
+ 255, 255, 255,
+ 255, 255, 255]
+								</code>
+							</pre>
+						</div>
+						<div  class="col-6">
+							<table class='sample-frame'>
+								<tr>
+									<td></td>
+									<td class='dark'></td>
+									<td class='dark'></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td class='dark'></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td class='dark'></td>
+								</tr>
+							</table>
+							<pre>
+								<code class="hljs js">
+// frame2
+[255, 100, 100,
+ 255, 255, 100,
+ 255, 255, 100]
+								</code>
+							</pre>
+						</div>
+					</section>
+					<section>
+						<div>
+							<table class='sample-frame diff-frame'>
+								<tr>
+									<td></td>
+									<td class='diff'></td>
+									<td class='diff'></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td class='diff'></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td class='diff'></td>
+								</tr>
+							</table>
+							<pre>
+								<code class="hljs js">
+// frame1 - frame2
+[0, 155, 155,
+ 0,   0, 155,
+ 0,   0, 155]
+								</code>
+							</pre>
+						</div>
+					</section>
 				</section>
 
 				<section data-background="black">
@@ -173,14 +324,16 @@
 
 				<section data-background="black">
 					<section><h2>step 4: make it fast</h2></section>
-					<section><h2>Arrays are slow</h2></section>
-					<section><h2>Typed arrays are the bomb</h2></section>
-					<section><h2>Web Workers</h2></section>
+					<section><h2>problem 1:</h2> <h2>Arrays and Objects are slow</h2></section>
+					<section><h2>Use typed arrays</h2></section>
+
+					<section><h2>problem 2:</h2> <h2>Image processing is slow</h2></section>
+					<section><h2>process it in a Web Worker thread</h2></section>
 				</section>
 
 				<section data-background="black">
 					<section><h2>step 5: library-fying it</h2></section>
-					<section><h2>webpack (???)</h2></section>
+					<section><h2>???</h2></section>
 				</section>
 
 				<section data-background="black">
