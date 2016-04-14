@@ -183,7 +183,7 @@
 					</section>
 					<section>
 						<h2>
-						<span>i have a visual input.</span> 
+						<span>i have a visual input.</span> <br/>
 						<span class='fragment'>something moved.</span> 
 						<span class='fragment'><br/>i wanna know about it.</span></h2>
 					</section>
@@ -198,12 +198,16 @@
 				</section>
 
 				<section data-background="black">
-					<section><h2>step 1: gimme some image 📷</h2></section>
+					<section><h2>step 1: gimme some video 📷</h2></section>
 					<section><h2><code>getUserMedia()</code></h2></section>
 					<section data-markdown>
 						```javascript
 						const onSuccess = (stream) => {
-							// do things with stream
+							// add stream to video 📷
+							videoElem.src = window.URL.createObjectURL(stream);
+							videoElem.addEventListener('play', () => {
+								// do things with video
+							}, false);
 						}
 						
 						// get webcam stream
@@ -218,13 +222,13 @@
 						// draw video frame to canvas
 
 						const context = canvasElem.getContext('2d');
-						context.drawImage(video, 0, 0, width, height);
+						context.drawImage(videoElem, 0, 0, width, height);
 						```
 					</section>
 				</section>
 
 				<section data-background="black">
-					<section><h2>step 2: look at image data</h2></section>
+					<section><h2>step 2: get frame data</h2></section>
 					<section><h2>images are just arrays of pixels</h2></section>
 					<section><h2><code>getImageData()</code></h2></section>
 					<section data-markdown>
@@ -236,6 +240,9 @@
 					</section>
 					<section data-background="white">
 						<img src='img/imagedata.png'/>
+					</section>
+					<section>
+						<h2>motion == difference in frames</h2>
 					</section>
 					<section>
 						<div class="col-6">
@@ -331,6 +338,7 @@
 					<section><h2>step 3: simplify yo' data</h2></section>
 					<section><h2>pixel data isn't really useful</h2></section>
 					<section><h2>how about a grid?</h2></section>
+					<section><h2>thresholding for intensity</h2></section>
 				</section>
 
 				<section data-background="black">
@@ -362,11 +370,6 @@ worker.postMessage({...}
 worker.onmessage = (e) => {...}
 ```
 					</section>
-				</section>
-
-				<section data-background="black">
-					<section><h2>step 5: library-fying it</h2></section>
-					<section><h2>???</h2></section>
 				</section>
 
 				<section data-background="black">
