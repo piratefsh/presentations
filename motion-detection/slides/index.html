@@ -179,8 +179,13 @@
 				<section data-background="black">
 					<section><h1>motion detection</h1></section>
 					<section>
-						<h2><span>something moved.</span> 
-							<span class='fragment'><br/>i wanna know about it.</span></h2>
+						<h2>inspired by <a href="https://motionemotion.herokuapp.com/">motionEmotion</a></h2>
+					</section>
+					<section>
+						<h2>
+						<span>i have a visual input.</span> 
+						<span class='fragment'>something moved.</span> 
+						<span class='fragment'><br/>i wanna know about it.</span></h2>
 					</section>
 				</section>
 
@@ -331,10 +336,32 @@
 				<section data-background="black">
 					<section><h2>step 4: make it fast</h2></section>
 					<section><h2>problem 1:</h2> <h2>Arrays and Objects are slow</h2></section>
-					<section><h2>Use typed arrays</h2></section>
+					<section data-markdown>
+
+## Use typed arrays
+
+```javascript
+const results = new Int32Array(this.size.x * this.size.y);
+```
+
+					</section>
 
 					<section><h2>problem 2:</h2> <h2>Image processing is slow</h2></section>
-					<section><h2>process it in a Web Worker thread</h2></section>
+					<section data-markdown>
+
+## Use Web Workers
+
+```javascript
+// runs in background. doesn't block UI!
+const worker = new GridDetectWorker();
+
+// create worker thread and pass data
+worker.postMessage({...}
+
+// called when worker is done
+worker.onmessage = (e) => {...}
+```
+					</section>
 				</section>
 
 				<section data-background="black">
@@ -351,7 +378,10 @@
 					<section><h2><a target="_blank" href="https://gamealchemist.wordpress.com/2013/05/01/lets-get-those-javascript-arrays-to-work-fast/">Let’s get those Javascript Arrays to work fast</a></h2></section>
 				</section>
 
-
+				<section data-background='black'>
+					<h2>demo</h2>
+					<h3><a href="https://git.io/vwvEx">https://git.io/vwvEx</a></h3>
+				</section>
 				<section data-background="black">
 					<h2><img src="img/twitter.png" width="50px"/> <span>tweet at me <br/>@piratefsh</span>  </h2>
 
