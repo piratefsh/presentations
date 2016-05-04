@@ -33,8 +33,8 @@
 			.reveal .logo{
 				border: none;
 				box-shadow: none;
-				max-width: 200px;
-				max-height: 100px;
+				max-width: 280px;
+				max-height: 150px;
 				display: inline-block;
 				margin: 0.5em 1em;
 				vertical-align: middle;
@@ -52,7 +52,7 @@
 			}
 
 			.reveal .has-dark-background  a{
-				color: white; 
+				color: #eee; 
 				text-decoration: underline;
 			}
 
@@ -73,6 +73,38 @@
 				.overview section.has-dark-background p{
 				color: black !important;
 			}
+
+			.text-shadow,
+			.text-shadow h1,
+			.text-shadow h2,
+			.text-shadow h3{
+				text-shadow: 0px 0px 5px black;
+			}
+
+			.reveal iframe.bg-iframe{
+				background-color: black;
+				position: fixed;
+				height: 100vh;
+				width: 100vw;
+				max-width: 100%;
+				max-height: 100%;
+				margin-left: 0%;
+				margin-right: 0%;
+				margin-top: 24%;
+				z-index: -1;
+				top: 0px;
+				bottom: 0px;
+				left: 0px;
+				right: 0px;
+			}
+
+			.reveal img{
+				vertical-align: middle;
+			}
+
+			.reveal .margin-top{
+				margin-top: 48px;
+			}
 		</style>
 
 		<!--[if lt IE 9]>
@@ -86,9 +118,10 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides" class="white">
-				<section data-background="slateblue">
-					<h2>exploring the beauty of algorithms</h2>
-					<h4>with generative art</h4>
+				<section data-background="black" class="text-shadow">
+					<iframe class="bg-iframe" src="http://piratefsh.github.io/generative-art/public/constellations/"></iframe>
+					<h4>exploring the <br/> beauty of algorithms with</h4>
+					<h1>generative art</h1>
 					<p class="pad-top">
 						<small>by <a href="http://piratefsh.github.io">Sher Minn Chong</a> / <a href="http://twitter.com/piratefsh">@piratefsh</a> at FOSSASIA 2016</small>
 					</p>
@@ -96,12 +129,18 @@
 
 				<section data-background="slateblue">
 					<section>
-						<h2>Sher Minn</h2>
+						<h1>Sher Minn</h1>
 					</section>
-					<section>
+					<section class="text-shadow" data-background="img/malaysia.jpg">
+						<h3>Malaysian</h3>
+						<img class="logo" src="img/malaysia_flag.svg" alt="Malaysian"/>
+					</section>
+					<section class="text-shadow">
 						<h3>front-end web engineer</h3>
 						<img class="logo" src="img/viki_logo.png" alt="viki.com"/>
-						<img class="logo" src="img/malaysia_flag.svg" alt="Malaysian"/>
+					</section>
+					<section class="text-shadow"  data-background="img/nyc.jpg">
+						<h3>Recurse Center alum</h3>
 						<img class="logo" src="img/rc_logo.png" alt="Recurse Center"/>
 					</section>
 					<section>
@@ -118,7 +157,7 @@
 
 				<!-- INTRODUCTION -->
 				<section data-background="#DB2F09">
-					<section><h2>generative art</h2></section>
+					<section><h1>generative art</h1></section>
 					<section><h3>art
 						<span class="fragment">that is generated</span>
 						<span class="fragment">by a non-human system</span>
@@ -156,7 +195,7 @@
 						</div>
 					</section>
 
-					<section data-background="img/constellations.gif">
+					<section data-background="img/constellations3d.gif">
 						<div class="footnote">
 							constellations, by <a href="https://github.com/piratefsh/generative-art">piratefsh</a>
 						</div>
@@ -173,7 +212,7 @@
 				
 				<!-- PROCESSING -->
 				<section data-background="#06A2D6">
-					<section><h2>what we'll use</h2></section>
+					<section><h1>what we'll use</h1></section>
 					<section>
 						<h2>Processing</h2>
 						<img src="img/processing_logo.png"/>
@@ -183,6 +222,9 @@
 					</section>
 					<section>
 						<h2>designed for visual arts</h2>
+					</section>
+					<section>
+						<h2>runs on Java</h2>
 					</section>
 
 					<section data-markdown>
@@ -212,15 +254,16 @@
 						<img src="img/processingjs_logo.jpg"/>
 					</section>
 					<section><h2>JavaScript port</h2></section>
+					<section><h2>runs in browser</h2></section>
 				</section>
 
 				<section data-background="#DB2F09">
-					<section><h2>some algorithms</h2></section>
+					<section><h1>algorithms</h1></section>
 				</section>
 				
 				<!-- PARTICLE SYSTEMS -->
 				<section data-background="#119E96">
-					<section><h2>particle systems</h2></section>
+					<section><h1>particle systems</h1></section>
 					<section><h3>a collection of independent objects <br/><span class="fragment">that move and change within a system</span></h3></section>
 					<section><h2>examples</h2></section>
 					<section data-background="img/particle_system.gif" data-background-color='white' data-background-size="100%, 100%">
@@ -231,6 +274,12 @@
 					<section data-background="img/constellations.gif">
 						<div class="footnote">
 							constellations, by <a href="https://github.com/piratefsh/generative-art">piratefsh</a>
+						</div>
+					</section>
+
+					<section data-background="img/shells.png">
+						<div class="footnote">
+							shells, by <a href="https://github.com/piratefsh/generative-art">piratefsh</a>
 						</div>
 					</section>
 					<section><h2>demo</h2></section>
@@ -246,19 +295,19 @@
 					<section data-background-position="center top" data-background-size="auto" data-background="img/frame-01.png">
 						<h3>frame 1</h3>
 
-						<code> x = 0;</code>
+						<code>x = 0;</code>
 					</section>
 
 					<section data-background-position="center top" data-background-size="auto" data-background="img/frame-03.png">
 						<h3>frame 2</h3>
 
-						<code> x = 10;</code>
+						<code>x = 10;</code>
 					</section>
 
 					<section data-background-position="center top" data-background-size="auto" data-background="img/frame-05.png">
 						<h3>frame 3</h3>
 
-						<code> x = 30;</code>
+						<code>x = 30;</code>
 					</section>
 
 					<section><h2>time for code!</h2></section>
@@ -266,41 +315,52 @@
 
 				<!-- RECURSION -->
 				<section data-background="rebeccapurple">
+					<section><h1>fractals</h1></section>
+					<section data-background="img/mandelbrot_set.jpg">
+						<div class="footnote">Mandelbrot set from <a href="https://en.wikipedia.org/wiki/Mandelbrot_set">Wikipedia</a></div>
+					</section>
+					<section data-background-color="white" data-background="img/sierpinskis_triangle.gif" data-background-size="auto 100%">
+						<div class="footnote">Sierpinski's triangle from <a href="https://en.wikipedia.org/wiki/Sierpinski_triangle">Wikipedia</a></div>
+					</section>
+
 					<section><h2>recursion</h2></section>
 					<section><h2>to first understand recursion, you must understand recursion</h2></section>
 					<section><h2>but really</h2></section>
 					<section><h2>repetition in a self similar way</h2></section>
-					<section><h2>fractals</h2></section>
-					<section><h2>examples</h2></section>
+
+					<section><h2>example</h2></section>
 					<section><h2>koch snowflake</h2></section>
 					<section data-background="img/koch-1.png" data-background-size="80%"></section>
 					<section data-background="img/koch-2.png" data-background-size="80%"></section>
 					<section data-background="img/koch-3.png" data-background-size="80%"></section>
 					<section data-background="img/koch-4.png" data-background-size="80%"></section>
 					<section data-background="img/koch-snowflake-4.png" data-background-size="auto"></section>
-					<section><h2>sierpinski's triangle</h2></section>
-					<section data-background-color="white" data-background="img/sierpinskis_triangle.gif" data-background-size="auto 100%">
-						<div class="footnote">image from <a href="https://en.wikipedia.org/wiki/Sierpinski_triangle">Wikipedia</a></div>
-					</section>
-					<section><h2>mandlebrot set</h2></section>
-					<section data-background="img/mandelbrot_set.jpg">
-						<div class="footnote">image from <a href="https://en.wikipedia.org/wiki/Mandelbrot_set">Wikipedia</a></div>
-					</section>
-					<section><h2>demo</h2></section>
+					<section><h2>recursion is beautiful</h2></section>
+					<section><h2>demo!</h2></section>
 					</section>
 				</section>
 
+				<section data-background="#DB2F09">
+					<section><h1>takeaway</h1></section>
+					<section><h3>simple algorithms <span class="fragment"> &rarr; beautiful art</span></h3></section>
+				</section>
+
 				<section data-background="#5E9400">
-					<section><h2>resources</h2></section>
+					<section><h1>resources</h1></section>
 					<section><h2><a target="_blank" href="http://processingjs.org/learning/">Processing.js learning</a></h2></section>
 					<section><h2><a target="_blank"  href="https://www.khanacademy.org/computing/computer-programming/programming">Khan Academy</a></h2></section>
 					<section><h2><a target="_blank"  href="http://p5art.tumblr.com/processingbooks">books</a></h2></section>
 					<section><h2><a target="_blank"  href="http://p5art.tumblr.com/tutorials">tutorials</a></h2></section>
 				</section>
 
+
 				<section data-background="#222244">
 					<h2>make art with code!</h2>
-					<p> tweet me at @piratefsh </p>
+					<p><img src="img/twitter.png" width="50px"/> <span>tweet me at @piratefsh</span>  </p>
+
+					<p class="margin-top">
+						<small> code: <a href="https://git.io/vaPxQ">https://git.io/vaPxQ</a>  |</small> <small> slides: <a href="https://git.io/vaPxA">https://git.io/vaPxA</a></small>
+					</p>
 				</section>
 			</div>
 		</div>

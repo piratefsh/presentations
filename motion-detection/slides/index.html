@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>motion detection in js | by Sher Minn Chong</title>
+
+		<meta name="description" content="exploring the beauty of algorithms with generative art | by Sher Minn Chong">
+		<meta name="author" content="Sher Minn Chong">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<style>
+			.reveal .logo{
+				border: none;
+				box-shadow: none;
+				max-width: 280px;
+				max-height: 150px;
+				display: inline-block;
+				margin: 0.5em 1em;
+				vertical-align: middle;
+			}
+			.reveal .footnote {
+				font-size: 0.5em;
+				position: fixed;
+				bottom: 0;
+				text-shadow: 0px 0px 5px black;
+			}
+
+			.reveal .footnote a {
+				color: white;
+				text-decoration: underline;
+			}
+
+			.reveal .has-dark-background  a{
+				color: #eee; 
+				text-decoration: underline;
+			}
+
+			.reveal .pad-top {
+				margin-top: 1.25em;
+			}
+
+			.reveal section img{
+				border: 0px;
+				box-shadow: none;
+				background: none;
+			}
+			.reveal section img.logo{
+				max-width: 200px;
+			}
+
+			.overview section.has-dark-background h2,
+			.overview section.has-dark-background h3,
+			.overview section.has-dark-background a,
+				.overview section.has-dark-background p{
+				color: black !important;
+			}
+
+			.text-shadow,
+			.text-shadow h1,
+			.text-shadow h2,
+			.text-shadow h3{
+				text-shadow: 0px 0px 5px black;
+			}
+
+			.reveal iframe.bg-iframe{
+				background-color: black;
+				position: fixed;
+				height: 100vh;
+				width: 100vw;
+				max-width: 100%;
+				max-height: 100%;
+				margin-left: 0%;
+				margin-right: 0%;
+				margin-top: 24%;
+				z-index: -1;
+				top: 0px;
+				bottom: 0px;
+				left: 0px;
+				right: 0px;
+			}
+
+			.reveal img{
+				vertical-align: middle;
+			}
+
+			.reveal .margin-top{
+				margin-top: 48px;
+			}
+
+			.reveal .col-6{
+				width: 50%;
+				float: left;
+				display: inline-block;
+			}
+
+			.sample-frame{
+				border-collapse: collapse;
+			}
+			.sample-frame tr td{
+				width: 80px;
+				height: 80px;
+				background: white;
+				padding: 0px;
+				border: 1px #bbb solid;
+			}
+			.diff-frame tr td{
+				background: rgba(255, 255, 255, 0.0)
+			}
+			.sample-frame .dark{
+				background: rgba(100, 100, 100, 1);
+			}
+			.sample-frame .diff{
+				background: red;
+			}
+			.reveal table.sample-frame tr:last-child td{
+				border-bottom: 1px #bbb solid;
+			}
+		</style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides" class="white" data-background='black'>
+				<section data-background="black" class="text-shadow">
+					<h1>motion detection</h1>
+					<h4>in yo' browser</h4>
+					<p class="pad-top">
+						<small>by <a href="http://piratefsh.github.io">Sher Minn Chong</a> / <a href="http://twitter.com/piratefsh">@piratefsh</a> at talk.js</small>
+					</p>
+				</section>
+
+				<section data-background="black">
+					<section>
+						<h1>Sher Minn</h1>
+					</section>
+					<section class="text-shadow" data-background="img/penang.jpg">
+						<h3>Malaysian</h3>
+						<img class="logo" src="img/malaysia_flag.svg" alt="Malaysian"/>
+					</section>
+					<section class="text-shadow" data-background="img/singapore.jpg">
+						<h3>front-end web engineer</h3>
+						<img class="logo" src="img/viki_logo.png" alt="viki.com"/>
+					</section>
+					<section class="text-shadow"  data-background="img/bridge.jpg">
+						<h3>Recurse Center alum</h3>
+						<img class="logo" src="img/rc_logo.png" alt="Recurse Center"/>
+					</section>
+				</section>
+
+				<!-- INTRODUCTION -->
+				<section data-background="black">
+					<section><h1>motion detection</h1></section>
+					<section>
+						<h2>inspired by <a href="https://motionemotion.herokuapp.com/">motionEmotion</a></h2>
+					</section>
+					<section>
+						<h2>
+						<span>i have a visual input.</span> <br/>
+						<span class='fragment'>something moved.</span> 
+						<span class='fragment'><br/>i wanna know about it.</span></h2>
+					</section>
+				</section>
+
+				
+				<section data-background="black">
+					<section>
+						<h1>building a motion detector</h1>
+						<h3>(from scratch)</h3>
+					</section>
+				</section>
+
+				<section data-background="black">
+					<section><h2>step 1: gimme some video 📷</h2></section>
+					<section><h2><code>getUserMedia()</code></h2></section>
+					<section>warning: ES6 / ES2015 ahead </section>
+					<section data-markdown>
+						```javascript
+						const onSuccess = (stream) => {
+							// add stream to video 📷
+							videoElem.src = window.URL.createObjectURL(stream);
+							videoElem.addEventListener('play', () => {
+								// do things with video
+							}, false);
+						}
+						
+						// get webcam stream
+						navigator.getUserMedia(options, onSuccess, onError);
+						```
+					</section>
+					<section>
+						<h2><code>canvas</code></h2>
+					</section>
+					<section data-markdown>
+						```javascript
+						// draw video frame to canvas
+
+						const context = canvasElem.getContext('2d');
+						context.drawImage(videoElem, 0, 0, width, height);
+						```
+					</section>
+				</section>
+
+				<section data-background="black">
+					<section><h2>step 2: get frame data</h2></section>
+					<section><h2>images are just arrays of pixels</h2></section>
+					<section><h2><code>getImageData()</code></h2></section>
+					<section data-markdown>
+						```javascript
+						// get pixel data from canvas
+
+						context.getImageData(0, 0, width, height);
+						```
+					</section>
+					<section data-background="white">
+						<img src='img/imagedata.png'/>
+					</section>
+					<section>
+						<h2>motion == difference in frames</h2>
+					</section>
+					<section>
+						<div class="col-6">
+							<div>
+								<table class='sample-frame'>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</table>
+							</div>
+
+							<pre>
+								<code class="hljs js">
+// frame1
+[255, 255, 255,
+ 255, 255, 255,
+ 255, 255, 255]
+								</code>
+							</pre>
+						</div>
+						<div  class="col-6">
+							<table class='sample-frame'>
+								<tr>
+									<td></td>
+									<td class='dark'></td>
+									<td class='dark'></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td class='dark'></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td class='dark'></td>
+								</tr>
+							</table>
+							<pre>
+								<code class="hljs js">
+// frame2
+[255, 100, 100,
+ 255, 255, 100,
+ 255, 255, 100]
+								</code>
+							</pre>
+						</div>
+					</section>
+					<section>
+						<div>
+							<table class='sample-frame diff-frame'>
+								<tr>
+									<td></td>
+									<td class='diff'></td>
+									<td class='diff'></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td class='diff'></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td class='diff'></td>
+								</tr>
+							</table>
+							<pre>
+								<code class="hljs js">
+// frame1 - frame2
+[0, 155, 155,
+ 0,   0, 155,
+ 0,   0, 155]
+								</code>
+							</pre>
+						</div>
+					</section>
+				</section>
+
+				<section data-background="black">
+					<section><h2>step 3: simplify yo' data</h2></section>
+					<section><h2>pixel data isn't really useful</h2></section>
+					<section><h2>how about a grid?</h2></section>
+					<section><h2>thresholding for intensity</h2></section>
+				</section>
+
+				<section data-background="black">
+					<section><h2>step 4: make it fast</h2></section>
+					<section><h2>problem 1:</h2> <h2>Arrays and Objects are slow</h2></section>
+					<section data-markdown>
+
+## Use typed arrays
+
+```javascript
+const results = new Int32Array(this.size.x * this.size.y);
+```
+
+					</section>
+
+					<section><h2>problem 2:</h2> <h2>Image processing is slow</h2></section>
+					<section data-markdown>
+
+## Use Web Workers
+
+```javascript
+// runs in background. doesn't block UI!
+const worker = new GridDetectWorker();
+
+// create worker thread and pass data
+worker.postMessage({...}
+
+// called when worker is done
+worker.onmessage = (e) => {...}
+```
+					</section>
+				</section>
+
+				<section data-background="black">
+					<section><h1>resources</h1></section>
+					<section><h2><a target="_blank" href="https://www.adobe.com/devnet/archive/html5/articles/javascript-motion-detection.html">JavaScript motion detection</a></h2></section>
+					<section><h2><a target="_blank" href="http://www.pyimagesearch.com/2015/05/25/basic-motion-detection-and-tracking-with-python-and-opencv/">Basic motion detection and tracking with Python and OpenCV</a></h2></section>
+					<section><h2><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia">getUserMedia()</a></h2></section>
+					<section><h2><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers">Web Workers</a></h2></section>
+					<section><h2><a target="_blank" href="https://gamealchemist.wordpress.com/2013/05/01/lets-get-those-javascript-arrays-to-work-fast/">Let’s get those Javascript Arrays to work fast</a></h2></section>
+				</section>
+
+				<section data-background='black'>
+					<h2>demo</h2>
+					<h3><a href="https://git.io/vwvEx">https://git.io/vwvEx</a></h3>
+				</section>
+				<section data-background="black">
+					<h2><img src="img/twitter.png" width="50px"/> <span>tweet at me <br/>@piratefsh</span>  </h2>
+
+					<p class="margin-top">
+						<small> code: <a href="https://git.io/vVjHX">https://git.io/vVjHX</a>  |</small> <small> slides: <a href="https://git.io/vVjHj">https://git.io/vVjHj</a></small>
+					</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'none', // none/fade/slide/convex/concave/zoom
+				backgroundTransition: 'none',
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
