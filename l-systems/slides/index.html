@@ -278,6 +278,7 @@
 
 					<section data-background="#285F55"><h2>example</h2></section>
 					<section data-background="#285F55"><h2>koch snowflake</h2></section>
+					<section data-background="img/koch-snowflake-4.png" data-background-size="60%"></section>
 					<section data-background="img/koch-1.png" data-background-size="80%"></section>
 					<section data-background="img/koch-2.png" data-background-size="80%"></section>
 					<section data-background="img/koch-3.png" data-background-size="80%"></section>
@@ -394,9 +395,21 @@
 				<!-- DESCRIBING PATTERNS -->
 				<section class='white' data-background="#222">
 					<section><h2>describing recursive patterns</h2></section>
+					
 					<section>
-						<h2>angles</h2>
+						<h2>string &rarr; drawing?</h2>
+					</section>
+
+					<section>
 						<table>
+							<tr>
+								<th>symbol</th>
+								<th>do thing</th>
+							</tr>
+							<tr>
+								<td><h2>F</h2></td>
+								<td><em>draw a line</em></td>
+							</tr>
 							<tr>
 								<td><h2>+</h2></td>
 								<td><em>rotate clockwise by angle</em></td>
@@ -412,24 +425,38 @@
 				</section>
 
 				<!-- DESCRIBING PLANTS -->
-				<section class='white' data-background="#285F55">
+				<section class='white' data-background="#222">
 					<section><h2>describing plants</h2></section>
 					<section data-background="img/l-system-weeds.png" data-background-size="80%"></section>
-					
 					<section>
-						<h2>states</h2>
 						<table>
 							<tr>
+								<th>symbol</th>
+								<th>do thing</th>
+							</tr>
+							<tr>
+								<td><h2>F</h2></td>
+								<td><em>draw a line</em></td>
+							</tr>
+							<tr>
+								<td><h2>+</h2></td>
+								<td><em>rotate clockwise by angle</em></td>
+							</tr>
+							<tr>
+								<td><h2>-</h2></td>
+								<td><em>rotate counterclockwise by angle</em></td>
+							</tr>
+							<tr class='fragment'>
 								<td><h2>[</h2></td>
 								<td><em>save current state</em></td>
 							</tr>
-							<tr>
+							<tr class='fragment'>
 								<td><h2>]</h2></td>
 								<td><em>restore saved state</em></td>
 							</tr>
+
 						</table>
 					</section>
-
 					<!-- <section>
 						<h2>binary tree</h2>
 						<table>
