@@ -175,7 +175,7 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides" class="white">
-				<section data-background="#000" data-background-iframe="http://piratefsh.github.io/generative-art/public/constellations/"" class="text-shadow white">
+				<section data-background="#000" data-nofront='true' data-background-iframe="http://localhost:9999/constellations/" class="text-shadow white">
 					<h1>make art with JavaScript!</h1>
 					<p class="pad-top">
 						<small>by <a href="http://piratefsh.github.io">Sher Minn Chong</a> / <a href="http://twitter.com/piratefsh">@piratefsh</a> at EmpireJs 2016</small>
@@ -309,68 +309,9 @@
 					</section>
 				</section>
 
-				<!-- PARTICLE SYSTEMS -->
-				<!--
-				<section data-background="#119E96">
-					<section><h1>particle systems</h1></section>
-					<section><h3>a collection of independent objects <br/><span class="fragment">that move and change within a system</span></h3></section>
-					<section><h2>examples</h2></section>
-					<section data-background="img/particle_system.gif" data-background-color='white' data-background-size="100%, 100%">
-						<div class="footnote">
-							from <a href="http://natureofcode.com/book/chapter-4-particle-systems/">Nature of Code, Ch 4</a>
-						</div>
-					</section>
-					<section data-background="img/constellations.gif">
-						<div class="footnote">
-							constellations, by <a href="https://github.com/piratefsh/generative-art">piratefsh</a>
-						</div>
-					</section>
-
-					<section data-background="img/shells.png">
-						<div class="footnote">
-							shells, by <a href="https://github.com/piratefsh/generative-art">piratefsh</a>
-						</div>
-					</section>
-					<section><h2>demo</h2></section>
-					<section data-background="img/balls.gif" data-background-size="100%, 100%" data-background-color="grey">
-						<div class="footnote">
-							bounce, by <a href="https://github.com/piratefsh/generative-art">piratefsh</a>
-						</div>
-					</section>
-
-					<section><h2>but first, basics</h2></section>
-					<section><h2>animation</h2></section>
-					<section><h2>frames</h2></section>
-					<section data-background-position="center top" data-background-size="auto" data-background="img/frame-01.png">
-						<h3>frame 1</h3>
-
-						<code>x = 0;</code>
-					</section>
-
-					<section data-background-position="center top" data-background-size="auto" data-background="img/frame-03.png">
-						<h3>frame 2</h3>
-
-						<code>x = 10;</code>
-					</section>
-
-					<section data-background-position="center top" data-background-size="auto" data-background="img/frame-05.png">
-						<h3>frame 3</h3>
-
-						<code>x = 30;</code>
-					</section>
-
-					<section><h2>time for code!</h2></section>
-				</section>
-
-				-->
-
 				<!-- RECURSION -->
 				<section data-background="rebeccapurple">
 					<section><h1>recursion</h1></section>
-					<section data-background="img/mandelbrot_set.jpg">
-						<div class="footnote">Mandelbrot set from <a href="https://en.wikipedia.org/wiki/Mandelbrot_set">Wikipedia</a></div>
-					</section>
-
 					<section><h2>to first understand recursion, you must understand recursion</h2></section>
 					<section><h2>but really</h2></section>
 					<section><h2>repetition in a self similar way</h2></section>
@@ -382,19 +323,28 @@
 					<section data-background="img/koch-3.png" data-background-size="80%"></section>
 					<section data-background="img/koch-4.png" data-background-size="80%"></section>
 					<section data-background="img/koch-snowflake-4.png" data-background-size="auto"></section>
-					<section><h2>recursion is beautiful</h2></section>
-					<section><h2>demo</h2></section>
-					</section>
+					<section><h2>recursion can be beautiful</h2></section>
+					<section data-background="img/koch_tessel_pink.png" 
+						data-background-size="auto"
+						data-background-color="rgb(20, 10, 20)"></section>
+					<section data-background="img/koch_tessel_green.png" 
+						data-background-size="auto" 
+						data-background-color="rgb(10, 20, 20)"></section>
 				</section>
 
 				<!-- BEYOND THE CANVAS -->
 				<section data-background="slateblue">
-					<section><h1>interactions beyond the canvas</h1></section>
+					<section><h1>beyond the canvas</h1></section>
 					<section><h2>audio</h2></section>
 					<section><h3>warning: flashing lights</h3></section>
 					<section 
-						data-background-iframe="https://piratefsh.github.io/p5js-art/public/voicewarp/index.html">
+						data-background-color='#000'
+						data-background-iframe="http://localhost:9999/voicewarp/index.html">
 					</section>
+					<section><h3>laughing child</h3></section>
+					<section data-background="img/child_laughing.png"></section>
+					<section><h3>crying child</h3></section>
+					<section data-background="img/child_crying4.png"></section>
 					<section><h2>video</h2></section>
 				</section>
 
@@ -475,7 +425,8 @@
 			});
 
 			Reveal.addEventListener('slidechanged', function(event) {
-			     if($(event.currentSlide).attr('data-background-iframe')) {
+			     if($(event.currentSlide).attr('data-background-iframe') && 
+			     	!$(event.currentSlide).data('nofront')) {
 			          $('.reveal > .backgrounds').css('z-index', 1);
 			          $('iframe').css('z-index', 2)
 			          $('iframe').css('position', 'fixed')
