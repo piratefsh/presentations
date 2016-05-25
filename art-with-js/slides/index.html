@@ -200,12 +200,6 @@
 
 					<section><h2>code + art = ?</h2></section>
 
-					<section class="text-shadow blur-bg" data-background-color='#222' data-background="img/manhattan.jpg">
-						<h3>Recurse Center</h3>
-						<p>NYC</p>
-						<img class="logo" src="img/rc_logo.png" alt="Recurse Center"/>
-					</section>
-
 				</section>
 				<!-- INTRODUCTION -->
 				<section data-background="#DB2F09">
@@ -426,18 +420,74 @@
 					<section data-background-color="#222" data-background="img/motion_detect.gif" data-background-size="auto"></section>
 				</section>
 
-				
-				<!-- JAVASCRIPT EFFICIENCY -->
-				<section data-background='#224'>
-					<section><h2>JavaScript optimization <br/> fun facts</h2></section>
-					<section><h2>arrays > objects</h2></section>
-					<section><h2>typed arrays</h2></section>
-				</section>
-
 				<!-- TAKEAWAY -->
 				<section data-background="#DB2F09">
 					<section><h2>the browser is your playground</h2></section>
 					<section><h2>code <span class='fragment'> + art</span> <span class="fragment"> = &lt;3</span></h2></section>
+				</section>
+
+				
+				<!-- JAVASCRIPT EFFICIENCY -->
+				<section data-background='#224'>
+					<section><h2>bonus: <br/>JavaScript optimization</h2></section>
+					<section data-markdown>
+						## arrays are faster than objects
+					</section>
+					<section>
+						instead of storing lots of data in objects..
+						<pre>
+							<code>
+	const points = [{
+		x: 1,
+		y: 4 
+	},{
+		x: 2,
+		y: 5
+	}, ..., {
+		x: 99999,
+		y: 99999
+	}]
+							</code>
+						</pre>
+					</section>
+					<section>
+							store it in arrays
+							<pre>
+								<code>
+	const x = [1, 2, ..., 99999];
+	const y = [4, 5, ..., 99999];
+								</code>
+							</pre>
+						</section>
+
+					<section data-markdown>
+						## preallocate large arrays
+					</section>
+					<section>
+					<p>instead of pushing into an array<br/> of undefined size...</p>
+
+						<pre><code>
+	const gridWidth = 1000000;
+
+	const slowGrid = [];
+
+	for(let i = 0; i < gridWidth; i++){
+		showGrid.push(random(0, 1));
+	}
+						</code></pre>
+					</section>
+					<section>
+						<p>...create large arrays with <code>new Array()</code><br/> and assign by index</p>
+
+						<pre><code>
+
+	const grid = new Array(gridWidth);
+
+	for(let i = 0; i < gridWidth; i++){
+		grid[i] = random(0, 1);
+	}
+						</code></pre>
+					</section>
 				</section>
 
 				<!-- RESOURCES -->
@@ -463,6 +513,14 @@
 					</section>
 				</section>
 
+				<!-- THANKS -->
+				<section data-background="#222" class='text-shadow'>
+					<section class='blur-bg' data-background="img/manhattan.jpg">
+						<h2>thank yous</h2>
+						<p>EmpireJS | Recurse Center | Harry T.</p>
+					</section>
+				</section>
+
 				<!-- END -->
 				<section data-background="#222">
 					<h2>make art with code!</h2>
@@ -472,6 +530,7 @@
 						<small> code: <a href="https://github.com/piratefsh/p5js-art">https://github.com/piratefsh/p5js-art</a>  |</small> <small> slides: <a href="https://git.io/vrrwU">https://git.io/vrrwU</a></small>
 					</p>
 				</section>
+
 			</div>
 		</div>
 
