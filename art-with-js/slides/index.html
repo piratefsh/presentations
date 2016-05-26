@@ -195,8 +195,15 @@
 					</section>
 					
 					<section>
-						<h2>i like code. <span class='fragment'>i also really like art.</span></h2>
+						<h2>i like code.</span></h2>
 					</section>
+					
+					</section>
+					<section>
+						<h2>i also like making art.</span></h2>
+					</section>
+
+					<section data-background-size='contain' data-background="img/myart.png">
 
 					<section><h2>code + art = ?</h2></section>
 
@@ -241,11 +248,6 @@
 						</div>
 					</section>
 
-					<section data-background="img/constellations3d.gif">
-						<div class="footnote">
-							constellations, by <a href="https://github.com/piratefsh/generative-art">piratefsh</a>
-						</div>
-					</section>
 					<section data-background="img/shutter.gif">
 						<div class="footnote">
 							shutter, by <a href="https://www.leanderherzog.ch/shutter/">leanderherzog</a>
@@ -369,8 +371,23 @@
 				<!-- RECURSION -->
 				<section data-background="rebeccapurple">
 					<section><h1>recursion</h1></section>
-					<section><h2>to first understand recursion, <span class='fragment'> you must understand recursion</span></h2></section>
-					<section><h2>but really</h2></section>
+					<section data-markdown>
+						```javascript
+						// recursive fibonacci function
+						function fib(n){
+							if(n == 0){
+								return 0;
+							}
+							if(n == 1){
+								return 1;
+							}
+							return fib(n-2) + fib(n-1);
+						}
+
+						// call it
+						fib(4)
+						```
+					</section>
 					<section><h2>repetition in a self similar way</h2></section>
 					<section data-background="img/mandelbrot_set.jpg">
 						<div class="footnote">Mandelbrot set from <a href="https://en.wikipedia.org/wiki/Mandelbrot_set">Wikipedia</a></div>
@@ -398,16 +415,6 @@
 						data-background-size="auto" 
 						data-background-color="rgb(10, 20, 20)"></section>
 
-					<section>
-						<h2>recursive plants</h2>
-						<p> with L-Systems</p>
-					</section>
-					<section data-background="img/l-system-weeds.png" 
-						data-background-size="100%">
-					</section>				
-
-
-					<section><h2>❄ 🌲</h2></section>
 				</section>
 
 				<!-- BEYOND THE CANVAS -->
@@ -465,6 +472,19 @@
 								</code>
 							</pre>
 						</section>
+					<section data-markdown>
+					six times faster
+					```
+					Starting testcase: "Save as objects"
+					Testcase finished: <Test #1> x 6.53 ops/sec ±17.67% (21 runs sampled)
+
+					-----------------------------------
+					
+					Starting testcase: "Save as arrays"
+					Testcase finished: <Test #2> x 35.68 ops/sec ±1.67% (43 runs sampled)
+					```
+
+					</section>
 
 					<section data-markdown>
 						## preallocate large arrays
@@ -494,6 +514,20 @@
 	}
 						</code></pre>
 					</section>
+					
+				<section data-markdown>
+					twice as fast
+					```
+					Starting testcase: "Push into array"
+					Testcase finished: push x 30.71 ops/sec ±3.72% (42 runs sampled)
+					
+					-----------------------------------
+
+					Starting testcase: "Assign into preallocated array"
+					Testcase finished: assign x 72.57 ops/sec ±2.55% (50 runs sampled)
+					```
+
+				</section>
 				</section>
 
 				<!-- RESOURCES -->
