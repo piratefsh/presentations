@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>debugging JS (without console.log) | by Sher Minn Chong</title>
+
+		<meta name="description" content="debugging JS (without console.log) | by Sher Minn Chong">
+		<meta name="author" content="Sher Minn Chong">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<style>
+			.reveal .logo{
+				border: none;
+				box-shadow: none;
+				max-width: 280px;
+				max-height: 150px;
+				display: inline-block;
+				margin: 0.5em 1em;
+				vertical-align: middle;
+			}
+			.reveal .footnote {
+				font-size: 0.5em;
+				position: fixed;
+				bottom: 0;
+				text-shadow: 0px 0px 5px black;
+			}
+
+			.reveal .white a{
+				color: #eee;
+			}
+
+			.reveal .footnote a {
+				color: white;
+				text-decoration: underline;
+			}
+
+			.reveal .has-dark-background  a{
+				color: #eee; 
+				text-decoration: underline;
+			}
+
+			.reveal .pad-top {
+				margin-top: 1.25em;
+			}
+
+			.reveal section img{
+				border: 0px;
+				box-shadow: none;
+				background: none;
+			}
+			.reveal section img.logo{
+				max-width: 200px;
+			}
+
+			.overview section.has-dark-background h2,
+			.overview section.has-dark-background h3,
+			.overview section.has-dark-background a,
+				.overview section.has-dark-background p{
+				color: black !important;
+			}
+
+			.text-shadow,
+			.text-shadow h1,
+			.text-shadow h2,
+			.text-shadow h3{
+				text-shadow: 0px 0px 5px black;
+			}
+			.text-shadow-lite,
+			.text-shadow-lite h1,
+			.text-shadow-lite h2,
+			.text-shadow-lite h3{
+				text-shadow: 0px 0px 5px #EDF3E8;
+			}
+
+			.reveal iframe.bg-iframe{
+				background-color: black;
+				position: fixed;
+				height: 100vh;
+				width: 100vw;
+				max-width: 100%;
+				max-height: 100%;
+				margin-left: 0%;
+				margin-right: 0%;
+				margin-top: 24%;
+				z-index: -1;
+				top: 0px;
+				bottom: 0px;
+				left: 0px;
+				right: 0px;
+			}
+
+			.reveal img{
+				vertical-align: middle;
+			}
+
+			.reveal .margin-top{
+				margin-top: 48px;
+			}
+
+			.reveal .col-6{
+				width: 50%;
+				float: left;
+				display: inline-block;
+			}
+
+			.sample-frame{
+				border-collapse: collapse;
+			}
+			.sample-frame tr td{
+				width: 80px;
+				height: 80px;
+				background: white;
+				padding: 0px;
+				border: 1px #bbb solid;
+			}
+			.diff-frame tr td{
+				background: rgba(255, 255, 255, 0.0)
+			}
+			.sample-frame .dark{
+				background: rgba(100, 100, 100, 1);
+			}
+			.sample-frame .diff{
+				background: red;
+			}
+			.reveal table.sample-frame tr:last-child td{
+				border-bottom: 1px #bbb solid;
+			}
+
+			.reveal .plant a{
+				color: #587F48;
+			}
+
+			.reveal .white h1,
+			.reveal .white h2,
+			.reveal .white h3,
+			.reveal .white ul li,
+			.reveal .white ol li,
+			.reveal .white
+			{
+				color: white !important;
+			}
+			.reveal .plant.slide-background{
+				opacity: 0.8 !important;
+			}
+			.reveal .plant h1,
+			.reveal .plant h2,
+			.reveal .plant h3,
+			.reveal .plant h4,
+			.reveal .plant ul li,
+			.reveal .plant ol li,
+			.reveal .plant
+			{
+				color: #444 !important;
+				/*font-family: monospace;*/
+			}
+
+			.reveal .blur-bg .slide-background{
+				-webkit-filter: blur(3px);
+			  -moz-filter: blur(3px);
+			  -o-filter: blur(3px);
+			  -ms-filter: blur(3px);
+			  filter: blur(3px);
+			}
+
+			.reveal em + h3{
+				margin-top: 20px;
+			}
+
+			.reveal tr,
+			.reveal table td{
+				border-bottom: 0px !important;
+				color: rgba(255,255,255, 0.8);
+			}
+
+			.slide-background.present:after{
+				content: '@piratefsh';
+				position: fixed;
+				bottom: 0px;
+				display: inline-block;
+				padding: 16px;
+				left: 0px;
+				font-size: 14px;
+				text-shadow: none !important;
+				box-shadow: none;
+			}
+
+			twitterwidget{
+				margin: 0 auto !important;
+			}
+
+		</style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="#3C9CD7" class='white'>
+					<h1>debugging Javascript</h1>
+					<p>without <code>console.log</code> (!!!)</p>
+					<p class="pad-top">
+						<small>by <a href="http://piratefsh.github.io">Sher Minn Chong</a> / <a href="http://twitter.com/piratefsh">@piratefsh</a> at talk.js</small>
+					</p>
+				</section>
+
+				<section data-background="#222" class='white blur-bg'>
+					<section>
+						<h1>Sher Minn</h1>
+					</section>
+					<section class="text-shadow" data-background="img/kl.jpg">
+						<h3>Malaysian</h3>
+						<img class="logo" src="img/malaysia_flag.svg" alt="Malaysian"/>
+					</section>
+					<section class="text-shadow" data-background="img/singapore.jpg">
+						<h3>front-end web engineer</h3>
+						<img class="logo" src="img/viki_logo.png" alt="viki.com"/>
+					</section>
+					<section class="text-shadow"  data-background="img/manhattan.jpg">
+						<h3>Recurse Center alum</h3>
+						<img class="logo" src="img/rc_logo.png" alt="Recurse Center"/>
+					</section>
+				</section>
+
+				<section data-background='#3C9CD7' class='white'>
+					<section>
+						<h2>quick survey</h2>
+					</section>
+
+					<section>
+						<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Do you use the Chrome devtools debugger when debugging gnarly JavaScript?</p>&mdash; Sher Minn C. (@piratefsh) <a href="https://twitter.com/piratefsh/status/771666021107118080">September 2, 2016</a></blockquote>
+	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</section>
+
+					<section>
+						<h2>who this is for</h2>
+					</section>
+				</section>
+
+				<section data-background='#222'>
+					<section>
+						<h2>everyday debugging</h2>
+					</section>
+
+					<section>
+						<ul>
+							<li>back and forth from editor to browser</li>
+							<li class='fragment'>leaves <code>console.log</code> everywhere</li>
+							<li class='fragment'>have to format output</li>
+						</ul>
+					</section>
+
+				<section data-background='#222'>
+					<section>
+						<h2>debugger debugging</h2>
+					</section>
+
+					<section>
+						<table>
+							<tr><td><img src='img/resume.png'/></td> <td>resume</td></tr>
+							<tr><td><img src='img/step-over.png'/></td> <td>step over function call</td></tr>
+							<tr class="fragment"><td><img src='img/step-into.png'/></td> <td>step into function call</td></tr>
+							<tr class="fragment"><td><img src='img/step-out.png'/></td> <td>step out of current function</td></tr>
+							<tr class="fragment"><td><img src='img/disable.png'/></td> <td>disable breakpoints</td></tr>
+							<tr class="fragment"><td><img src='img/pause.png'/></td> <td>pause on exceptions</td></tr>
+						</table>
+					</section>
+				</section>
+
+				<section data-background='#222'>
+					<section>
+						<h2><code>console.log()</code> tips</h2>
+					</section>
+
+					<section>
+						<pre><code>
+const numCoconuts = 123;
+const numOnions = 45;
+
+console.log('coconuts: ' + numCoconuts + ' onions: ' + numOnions);
+//=> coconuts: 123 onions: 45
+
+						</code></pre>
+					</section>
+
+					<section>
+						<pre><code>
+const numCoconuts = 123;
+
+console.log('coconuts:', numCoconuts, 'onions:', numOnions);
+//=> coconuts: 123 onions: 45
+						</code></pre>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="js/jquery-2.2.3.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'none', // none/fade/slide/convex/concave/zoom
+				backgroundTransition: 'none',
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+			Reveal.addEventListener('slidechanged', function(event) {
+			     if($(event.currentSlide).attr('data-background-iframe')) {
+			          $('.reveal > .backgrounds').css('z-index', 1);
+			          $('iframe').css('z-index', 2)
+			          $('iframe').css('position', 'fixed')
+			     } else {
+			          $('.reveal > .backgrounds').css('z-index', 0);
+			          $('iframe').css('z-index', 0)
+			          $('iframe').css('position', 'static')
+			     }                  
+			});
+
+		</script>
+
+	</body>
+</html>
