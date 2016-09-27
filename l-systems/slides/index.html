@@ -156,6 +156,20 @@
 			{
 				color: white !important;
 			}
+			.reveal .plant.slide-background{
+				opacity: 0.8 !important;
+			}
+			.reveal .plant h1,
+			.reveal .plant h2,
+			.reveal .plant h3,
+			.reveal .plant h4,
+			.reveal .plant ul li,
+			.reveal .plant ol li,
+			.reveal .plant
+			{
+				color: #444 !important;
+				/*font-family: monospace;*/
+			}
 
 			.reveal .blur-bg .slide-background{
 				-webkit-filter: blur(3px);
@@ -168,6 +182,13 @@
 			.reveal em + h3{
 				margin-top: 20px;
 			}
+
+			.reveal tr,
+			.reveal table td{
+				border-bottom: 0px !important;
+				color: rgba(255,255,255, 0.8);
+			}
+
 
 
 		</style>
@@ -185,7 +206,7 @@
 			<div class="slides">
 				<section data-background="img/tuberose.jpg" class='plant'>
 					<h1>plants are recursive!</h1>
-					<h4>on using L-systems to generate plants</h4>
+					<p>using L-Systems to generate<br/> realistic plants</p>
 					<p class="pad-top">
 						<small>by <a href="http://piratefsh.github.io">Sher Minn Chong</a> / <a href="http://twitter.com/piratefsh">@piratefsh</a> at !!Con</small>
 					</p>
@@ -210,97 +231,351 @@
 				</section>
 
 				<section data-background='#222' class='white'>
-					<section data-background="#75A14D">
+					<section data-background="#285F55">
 						<h2>
 							<span>plants</span>
-							<span class='fragment'>&</span>
-							<span class='fragment'>recursion</span>
+							<span>&</span>
+							<span>recursion</span>
 						</h2>
 					</section>
 
+					<section data-background="#285F55">
+						<h2>plants</h2>
+					</section>
+
+					<section data-background="img/tongues.jpg"></section>
+					<section data-background="img/puff.jpg"></section>
+
 					<!-- recursion -->
-					<section data-background="#75A14D">
+					<section data-background="#285F55">
 						<h2>recursion</h2>
 					</section>
 
-					<section data-background="#75A14D">
+
+					<section data-markdown data-background="#285F55">
+						```javascript
+						// recursive fibonacci function
+						function fib(n){
+							if(n == 0){
+								return 0;
+							}
+							if(n == 1){
+								return 1;
+							}
+							return fib(n-2) + fib(n-1);
+						}
+
+						// call it
+						fib(4)
+						```
+					</section>
+
+					<section data-background="#285F55">
 						<h2>
 							<span>repetition</span>
 							<span class="fragment">in a self-similar way</span>
 						</h2>
 					</section>
+
+					<section data-background="#285F55"><h2>example</h2></section>
+					<section data-background="#285F55"><h2>koch snowflake</h2></section>
+					<section data-background="img/koch-snowflake-4.png" data-background-size="60%"></section>
+					<section data-background="img/koch-1.png" data-background-size="80%"></section>
+					<section data-background="img/koch-2.png" data-background-size="80%"></section>
+					<section data-background="img/koch-3.png" data-background-size="80%"></section>
+					<section data-background="img/koch-4.png" data-background-size="80%"></section>
+					<section data-background="img/koch-snowflake-4.png" data-background-size="60%"></section>
+				</section>
+
+				<section data-background="#222">
+					<section data-background="#C57B00">
+						<h2>recursion in nature</h2>
+					</section>
+
+					<section data-background="img/fern2.jpg">
+						<footer class='footnote'><a href="http://fractalfoundation.org/OFC/fernborg.jpg">Fern image from http://fractalfoundation.org</a></footer>
+					</section>
+
+					<!-- <section data-background="img/fern3.jpg">
+						<footer class='footnote'><a href="https://snowbio.wikispaces.com/Fern+(pteridophyte)">Fern image from https://snowbio.wikispaces.com</a></footer>
+					</section> -->
+
+					<section data-background="img/brocolli.jpg">
+						<footer class='footnote'><a href="https://upload.wikimedia.org/wikipedia/commons/4/4f/Fractal_Broccoli.jpg">Romanesco brocolli image from WikiMedia</a></footer>
+					</section>
 					
+					<section>
+						<h3>Aristid Lindenmayer</h3>
+						<img src='img/lindenmayer.jpg'/>
+					</section>
+					<section><h3>algae cell growth</h3></section>
 				</section>
 
-				<section class='white' data-background="#75A14D">
-					<section><h2>L-Systems</h2></section>
+				
+				<section data-background="#222">
+					<section data-background='#668700'><h2>L-Systems</h2></section>
+					<section data-background='#668700'><h3>a string rewriting system</h3></section>
+					
 					<section>
-						<h3>Astrid Lindenmeyer
-							<span class='fragment'>, biologist</span>
-						</h3>
+					<table>
+						<tr>
+							<td>
+								<em>axiom</em>
+							</td>
+							<td>
+								<h3>A</h3>
+							</td>
+						</tr>
+
+						<tr class='fragment'>
+							<td>
+								<em>rules</em>
+							</td>
+							<td>
+								<h3>A &rarr; AB</h3>
+								<h3>B &rarr; A</h3>
+							</td>
+						</tr>
+					</table>
 					</section>
 
+					<section>
+						<table>
+						<tr>
+							<td>
+								<table>
+									<tr>
+										<td>
+											<em>axiom</em>
+										</td>
+										<td>
+											<h3>A</h3>
+										</td>
+									</tr>
 
-					<section><h3>example</h3></section>
+									<tr>
+										<td>
+											<em>rules</em>
+										</td>
+										<td>
+											<h3>A &rarr; AB</h3>
+											<h3>B &rarr; A</h3>
+										</td>
+									</tr>
+								</table>
+							</td>
 
-					<section>
-						<em>variables</em>
-						<h3 class='fragment'>A B</h3>
+							<td style='border-left: 2px solid #eee'>
+								<table>
+									<tr>
+										<th>n</th>
+										<th>string</th>
+									</tr>
+									<tr class='fragment'>
+										<td>0</td><td>A</td>
+									</tr>
+									<tr class='fragment'>
+										<td>1</td><td><span class="red">AB</span></td>
+									</tr>
+									<tr class='fragment'>
+										<td>2</td><td><span class="red">AB</span><span class="yellow">A</span></td>
+									</tr>
+									<tr class='fragment'>
+										<td>3</td><td><span class="red">AB</span><span class="yellow">A</span><span class="red">AB</span></td>
+									</tr>
+									<tr class='fragment'>
+										<td>4</td>
+										<td><span class="red">AB</span><span class="yellow">A</span><span class="red">AB</span><span class="red">AB</span><span class="yellow">A</span></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						</table>
 					</section>
-
-					<section>
-						<em>rules</em>
-						<h3 class='fragment'>A &rarr; AB</h3>
-						<h3 class='fragment'>B &rarr; A</h3>
-					</section>
-
-					<section>
-						<em>axiom</em>
-						<h3 class='fragment'>A</h3>
-					</section>
-					<section>
-						<em>replace 1 time</em>
-						<h3>AB</h3>
-					</section>
-					<section>
-						<em>replace 2 times</em>
-						<h3>ABA</h3>
-					</section>
-					<section>
-						<em>replace 3 times</em>
-						<h3>ABAAB</h3>
-					</section>
-					<section>
-						<em>replace 4 times</em>
-						<h3>ABAABABA</h3>
-					</section>
-
 				</section>
 
+				<!-- DESCRIBING PATTERNS -->
 				<section class='white' data-background="#222">
-					<!-- koch example -->
-					<section><h2>koch snowflake</h2></section>
-					<section data-background="img/koch-1.png" data-background-size="80%"></section>
-					<section data-background="img/koch-2.png" data-background-size="80%"></section>
-					<section data-background="img/koch-3.png" data-background-size="80%"></section>
-					<section data-background="img/koch-4.png" data-background-size="80%"></section>
-					<section data-background="img/koch-snowflake-4.png" data-background-size="auto"></section>
+					<section><h2>describing recursive patterns</h2></section>
+					
+					<section>
+						<h2>string &rarr; drawing?</h2>
+					</section>
+
+					<section>
+						<table>
+							<tr>
+								<th>symbol</th>
+								<th>do thing</th>
+							</tr>
+							<tr>
+								<td><h2>F</h2></td>
+								<td><em>draw a line</em></td>
+							</tr>
+							<tr>
+								<td><h2>+</h2></td>
+								<td><em>rotate clockwise by angle</em></td>
+							</tr>
+							<tr>
+								<td><h2>-</h2></td>
+								<td><em>rotate counterclockwise by angle</em></td>
+							</tr>
+						</table>
+					</section>
+					<section data-background-iframe="http://piratefsh.github.io/p5js-art/public/lsystems/?d=koch-edge"></section>
+
 				</section>
 
+				<!-- DESCRIBING PLANTS -->
 				<section class='white' data-background="#222">
-					<!-- koch example -->
-					<section><h2>weeds</h2></section>
-					<section data-background="img/koch-1.png" data-background-size="80%"></section>
-					<section data-background="img/koch-2.png" data-background-size="80%"></section>
-					<section data-background="img/koch-3.png" data-background-size="80%"></section>
-					<section data-background="img/koch-4.png" data-background-size="80%"></section>
-					<section data-background="img/koch-snowflake-4.png" data-background-size="auto"></section>
+					<section><h2>describing plants</h2></section>
+					<section data-background="img/l-system-weeds.png" data-background-size="80%"></section>
+					<section>
+						<table>
+							<tr>
+								<th>symbol</th>
+								<th>do thing</th>
+							</tr>
+							<tr>
+								<td><h2>F</h2></td>
+								<td><em>draw a line</em></td>
+							</tr>
+							<tr>
+								<td><h2>+</h2></td>
+								<td><em>rotate clockwise by angle</em></td>
+							</tr>
+							<tr>
+								<td><h2>-</h2></td>
+								<td><em>rotate counterclockwise by angle</em></td>
+							</tr>
+							<tr class='fragment'>
+								<td><h2>[</h2></td>
+								<td><em>save current state</em></td>
+							</tr>
+							<tr class='fragment'>
+								<td><h2>]</h2></td>
+								<td><em>restore saved state</em></td>
+							</tr>
+
+						</table>
+					</section>
+					<!-- <section>
+						<h2>binary tree</h2>
+						<table>
+							<tr class='fragment'>
+								<td><em>angle</em></td>
+								<td><h3>30deg</h3></td>
+							</tr>
+
+							<tr class='fragment'>
+								<td>
+									<em>axiom</em>
+								</td>
+								<td>
+									<h3>X</h3>
+								</td>
+							</tr>
+
+							<tr class='fragment'>
+								<td>
+									<em>rules</em>
+								</td>
+								<td>
+									<h3>X &rarr; F [+X] [-X]</h3>
+								</td>
+							</tr>
+						</table>
+					</section> -->
+
+					<section data-background-iframe="http://piratefsh.github.io/p5js-art/public/lsystems/?d=binary-tree"></section>
+				</section>
+
+				<!-- RANDOMNESS -->
+				<section class='white' data-background="#668700">
+					<section>
+						<h2>introducing randomness</h2>
+					</section>
+					<section data-background-color='#222' data-background="img/generic-weed.png" data-background-size="80%"></section>
+					<section  data-background-color='#222'  data-background="img/stochastic-generic-weed.png" data-background-size="80%"></section>
+					<section data-background-color='#222'  data-background="img/stochastic-generic-weed-2.png" data-background-size="80%"></section>
+					<section data-background-iframe="http://piratefsh.github.io/p5js-art/public/lsystems/?d=stochastic-fuzzy-weed"></section>
+				</section>
+
+				<!-- EXAMPLES OF 3D -->
+				<section class='white' data-background='#C57B00'>
+					<section>
+						<h2>taking L-Systems further</h2>
+					</section>
+					<section data-background-size="60%" data-background-color='white' data-background='img/shady-trees.png'>
+						<footer class="footnote">
+							image from The Algorithmic Beauty of Plants book
+						</footer>
+					</section>
+					<section data-background-size="70%" data-background-color='white' data-background='img/3dtree.png'>
+						<footer class="footnote">
+							image from <a href="http://www.allenpike.com/modeling-plants-with-l-systems/">www.allenpike.com</a>
+						</footer>
+					</section>
+					<section data-background='img/flowers.png'>
+						<footer class="footnote">
+							image from The Algorithmic Beauty of Plants book
+						</footer>
+					</section>
+				</section>
+
+				<!-- END -->
+				<section data-background='#222'>
+					<table>
+						<tr>
+							<td><code>Y = -FX-Y<br/>X = X+YF+</code></td>
+							<td>&rarr; </td>
+							<td class='fragment'><img width="300px" src='img/dragon-curve.png'/></td>
+						</tr>
+						<tr class='fragment'>
+							<td>simple rules </td>
+							<td>&rarr; </td>
+							<td class='fragment'>beautiful paterns</td>
+						</tr>
+					</table>
+				</section>
+				<!-- RESOURCES -->
+				<section data-background='#668700'>
+					<section><h2>resources</h2></section>
+					<section>
+						<a href="http://algorithmicbotany.org/papers/abop/abop.pdf"><h3>Algorithmic Beauty of Plants</h3></a>
+						<img height="500px" src='img/abop.png'/>
+					</section>
+					
+					<section>
+						<a href="http://www.allenpike.com/modeling-plants-with-l-systems/"><h3>Modelling Plants with L-Systems</h3></a>
+						<img src='img/allenpike.png'/>
+					</section>
+					
+					<section>
+						<a href="http://www.kevs3d.co.uk/dev/lsystems/"><h3>L-Systems Turtle Graphics Renderer</h3></a>
+						<img src='img/kev.png'/>
+					</section>
+
+					<section>
+						<a href="https://github.com/piratefsh/p5js-art/tree/l-systems"><h3>demo code</h3></a>
+						<img src='img/myapp.png'/>
+					</section>
+				</section>
+
+				<section data-background='#222'><h2>end!</h2></section>
+				<section data-background="#222">
+					<h2><img src="img/twitter.png" width="50px"/> <span>tweet at me <br/>@piratefsh</span>  </h2>
+
+					<p class="margin-top">
+						<small> demo: <a href="https://git.io/vwhe1">https://git.io/vwhe1</a>  |</small> <small> slides: <a href="https://git.io/vwhvN">https://git.io/vwhvN</a></small>
+					</p>
 				</section>
 			</div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
+		<script src="js/jquery-2.2.3.min.js"></script>
 
 		<script>
 
@@ -324,6 +599,18 @@
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
+			});
+
+			Reveal.addEventListener('slidechanged', function(event) {
+			     if($(event.currentSlide).attr('data-background-iframe')) {
+			          $('.reveal > .backgrounds').css('z-index', 1);
+			          $('iframe').css('z-index', 2)
+			          $('iframe').css('position', 'fixed')
+			     } else {
+			          $('.reveal > .backgrounds').css('z-index', 0);
+			          $('iframe').css('z-index', 0)
+			          $('iframe').css('position', 'static')
+			     }                  
 			});
 
 		</script>

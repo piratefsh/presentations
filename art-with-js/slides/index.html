@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>make art with JavaScript! | by Sher Minn Chong</title>
+
+		<meta name="description" content="exploring the beauty of algorithms with generative art | by Sher Minn Chong">
+		<meta name="author" content="Sher Minn Chong">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<style>
+			.reveal .logo{
+				border: none;
+				box-shadow: none;
+				max-width: 280px;
+				max-height: 150px;
+				display: inline-block;
+				margin: 0.5em 1em;
+				vertical-align: middle;
+			}
+			.reveal .footnote {
+				font-size: 0.5em;
+				position: fixed;
+				bottom: 0;
+				text-shadow: 0px 0px 5px black;
+			}
+
+			.reveal .footnote a {
+				color: white;
+				text-decoration: underline;
+			}
+
+			.reveal .has-dark-background  a{
+				color: #eee; 
+				text-decoration: underline;
+			}
+
+			.reveal .pad-top {
+				margin-top: 1.25em;
+			}
+
+			.reveal section img{
+				border: 0px;
+				box-shadow: none;
+				background: none;
+			}
+			.reveal section img.logo{
+				max-width: 200px;
+			}
+
+			.overview section.has-dark-background h2,
+			.overview section.has-dark-background h3,
+			.overview section.has-dark-background a,
+				.overview section.has-dark-background p{
+				color: black !important;
+			}
+
+			.text-shadow,
+			.text-shadow h1,
+			.text-shadow h2,
+			.text-shadow h3{
+				text-shadow: 0px 0px 5px black;
+			}
+			.text-shadow-lite,
+			.text-shadow-lite h1,
+			.text-shadow-lite h2,
+			.text-shadow-lite h3{
+				text-shadow: 0px 0px 5px #EDF3E8;
+			}
+
+			.reveal iframe.bg-iframe{
+				background-color: black;
+				position: fixed;
+				height: 100vh;
+				width: 100vw;
+				max-width: 100%;
+				max-height: 100%;
+				margin-left: 0%;
+				margin-right: 0%;
+				margin-top: 24%;
+				z-index: -1;
+				top: 0px;
+				bottom: 0px;
+				left: 0px;
+				right: 0px;
+			}
+
+			.reveal img{
+				vertical-align: middle;
+			}
+
+			.reveal .margin-top{
+				margin-top: 48px;
+			}
+
+			.reveal .col-6{
+				width: 50%;
+				float: left;
+				display: inline-block;
+			}
+
+			.sample-frame{
+				border-collapse: collapse;
+			}
+			.sample-frame tr td{
+				width: 80px;
+				height: 80px;
+				background: white;
+				padding: 0px;
+				border: 1px #bbb solid;
+			}
+			.diff-frame tr td{
+				background: rgba(255, 255, 255, 0.0)
+			}
+			.sample-frame .dark{
+				background: rgba(100, 100, 100, 1);
+			}
+			.sample-frame .diff{
+				background: red;
+			}
+			.reveal table.sample-frame tr:last-child td{
+				border-bottom: 1px #bbb solid;
+			}
+
+			.reveal .blur-bg.slide-background{
+				-webkit-filter: blur(3px);
+			  -moz-filter: blur(3px);
+			  -o-filter: blur(3px);
+			  -ms-filter: blur(3px);
+			  filter: blur(2px);
+			}
+
+			.reveal em + h3{
+				margin-top: 20px;
+			}
+
+			.reveal tr,
+			.reveal table td{
+				border-bottom: 0px !important;
+				color: rgba(255,255,255, 0.8);
+			}
+
+
+		</style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides" class="white">
+				<section data-background="#000" data-nofront='true' data-background-iframe="https://piratefsh.github.io/presentations/art-with-js/slides/demo/constellations/" class="text-shadow white">
+					<h1>make art with JavaScript!</h1>
+					<p class="pad-top">
+						<small>by <a href="http://piratefsh.github.io">Sher Minn Chong</a> / <a href="http://twitter.com/piratefsh">@piratefsh</a> at EmpireJs 2016</small>
+					</p>
+				</section>
+
+				<section data-background="#222">
+					<section class='blur-bg text-shadow' data-background="img/me.jpg">
+						<h1>Sher Minn</h1>
+						<p>Malaysia</p>
+					</section>
+					
+					<section class="text-shadow blur-bg" data-background="img/singapore.jpg">
+						<h3>front-end web engineer</h3>
+						<p>Singapore</p>
+						<img class="logo" src="img/viki_logo.png" alt="viki.com"/>
+					</section>
+					
+					<section>
+						<h2>i like code.</span></h2>
+					</section>
+					
+					<section>
+						<h2>i also like making art.</span></h2>
+					</section>
+
+					<section data-background-size='contain' data-background="img/myart.png">
+					</section>
+
+					<section><h2>code + art = ?</h2></section>
+
+				</section>
+				<!-- INTRODUCTION -->
+				<section data-background="#DB2F09">
+					<section><h1>generative art</h1></section>
+					<section><h3>art
+						<span class="fragment">that is generated</span>
+						<span class="fragment">by a non-human system</span>
+						<span class="fragment">that can indepedently decide</span>
+						<span class="fragment">features</span>
+						<span class="fragment">of the artwork</span>
+						</h3>
+						<h3><small class="fragment">e.g. algorithms</small></h3>
+						</section>
+					<section><h2>screensaver art</h2></section>
+					<section data-background="img/3d_pipes.gif">
+						<div class="footnote">3D pipes from <a href="https://www.youtube.com/watch?v=XPZb8HoQgH8">Youtube</a>
+						</div>
+					</section>
+					<section data-background="img/mystify.gif">
+						<div class="footnote">Windows Mystify from <a href="https://www.youtube.com/watch?v=0GmC0Iromrw">Youtube</a>
+						</div>
+					</section>
+
+					<section data-background="img/sasj_geometric.jpg">
+						<div class="footnote">
+							geometric shapes, by <a href="http://www.sasj.nl/portfolio/geometric-shapes/">sasj</a>
+						</div>
+					</section>
+
+					<section data-background="img/noize.png">
+						<div class="footnote">
+							noize, by <a href="http://noize.surge.sh/">jerome herr</a>
+						</div>
+					</section>
+
+
+					<section data-background="img/melting.jpg">
+						<div class="footnote">
+							melting, by <a href="https://www.flickr.com/photos/infinitygene/albums/72157624590087824">infinitygene</a>
+						</div>
+					</section>
+
+					<section data-background="img/constellations3d.gif">
+                           <div class="footnote">
+                                   constellations, by <a href="https://github.com/piratefsh/generative-art">piratefsh</a>
+                           </div>
+                  	</section>
+
+					<section data-background="img/shutter.gif">
+						<div class="footnote">
+							shutter, by <a href="https://www.leanderherzog.ch/shutter/">leanderherzog</a>
+						</div>
+					</section>
+					<section><h2>how is generative art made?</h2></section>
+
+				</section>
+
+				
+				<!-- INTRO TO P5.JS -->
+				<section data-background="#222">
+					<section><h1>what we'll use</h1></section>
+					<section>
+						<img src="img/p5js_logo.svg"/>
+					</section>
+
+
+					<section>
+						<h2>JavaScript library</h2>
+					</section>
+
+					<section>
+						<h2>designed for <br/> creating visual art</h2>
+					</section>
+
+
+					<section>
+						<h2>inspired by Processing</h2>
+						<img width='15%' src="img/processing_logo.png"/>
+					</section>
+					
+					<section>
+						<h2>&lt;canvas&gt;</h2>
+					</section>
+
+					<section data-markdown>
+						## here's some code
+					</section>
+
+					<section data-markdown>
+					## p5.js
+					```javascript
+					//Hello mouse in p5.js.
+					                        
+					function setup() {
+					    createCanvas(400, 400);
+					    stroke(255);
+					    background(192, 64, 0);
+					}
+
+					function draw() {
+					    const x = 150;
+					    const y = 25;
+					    line(x, y, mouseX, mouseY);
+					}
+
+					```
+					</section>
+
+					<section data-markdown>
+					## vanilla canvas API
+					```javascript
+					const canvas = document.createElement('canvas');
+					canvas.width = 400;
+					canvas.height = 400;
+
+					const ctx = canvas.getContext('2d');
+					ctx.fillStyle = 'rgb(192, 64, 0)';
+					ctx.strokeStyle = 'rgb(255, 255, 255)';
+					ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+					canvas.addEventListener('mousemove', (e) => {
+					    ctx.lineTo(150, 25);
+					    ctx.lineTo(e.clientX, e.clientY);
+					    ctx.stroke();
+					});
+
+					document.body.appendChild(canvas);
+
+
+					```
+					</section>
+					
+				</section>
+
+				<!-- ALGORITHMS -->
+				<section data-background="#DB2F09">
+					<section><h1>algorithms</h1></section>
+				</section>
+				
+				<!-- GEOMETRY -->
+				<section data-background="teal">
+					<section><h1>geometry</h1></section>
+					<section><h3>shapes, <span class='fragment'>points,</span> <span class='fragment'>lines</span></h3></section>
+					
+					<section data-background-size='contain' data-background='img/lines.png'></section>
+					<section  data-background-size='contain' data-background='img/curves.png'></section>
+					<section data-background-size='contain'  data-background='img/ellipses.png'></section>
+					<section  data-background-size='contain' data-background='img/squares.png'></section>
+
+					<section data-background-iframe="https://sasj.tumblr.com/">
+					</section>
+
+					<section data-background-iframe="demo/constellations">
+						<div class='footnote'>constellations, by <a href="https://github.com/piratefsh/generative-art">piratefsh</a></div>
+					</section>
+
+					<section data-background-iframe="https://piratefsh.github.io/presentations/art-with-js/slides/demo/mystify/" data-nofront='true'>
+						<div class='footnote'>shells, by <a href="https://github.com/piratefsh/generative-art">piratefsh</a></div>
+					</section>
+					
+
+					<section><h2>demo</h2></section>
+
+					<section data-background="img/maze2.png"></section>
+					<section data-background="img/maze2-grid.png"></section>
+					<section><h2>| ~ ■ ●</h2></section>
+				</section>
+
+				<!-- RECURSION -->
+				<section data-background="rebeccapurple">
+					<section><h1>recursion</h1></section>
+					<section data-markdown>
+						```javascript
+						// recursive fibonacci function
+						function fib(n){
+							if(n == 0){
+								return 0;
+							}
+							if(n == 1){
+								return 1;
+							}
+							return fib(n-2) + fib(n-1);
+						}
+
+						// call it
+						fib(4)
+						```
+					</section>
+					<section><h2>repetition in a self similar way</h2></section>
+					<section data-background="img/mandelbrot_set.jpg">
+						<div class="footnote">Mandelbrot set from <a href="https://en.wikipedia.org/wiki/Mandelbrot_set">Wikipedia</a></div>
+					</section>
+					<section data-background-color="white" data-background="img/sierpinskis_triangle.gif" data-background-size="auto 100%">
+						<div class="footnote">Sierpinski's triangle from <a href="https://en.wikipedia.org/wiki/Sierpinski_triangle">Wikipedia</a></div>
+					</section>
+
+					<section><h2>koch snowflake</h2></section>
+					<section data-background="img/koch-1.png" data-background-size="80%"></section>
+					<section data-background="img/koch-2.png" data-background-size="80%"></section>
+					<section data-background="img/koch-3.png" data-background-size="80%"></section>
+					<section data-background="img/koch-4.png" data-background-size="80%"></section>
+					<section data-background="img/koch-snowflake-4.png" data-background-size="auto"></section>
+					<section data-background="img/koch_tessel_1.png" 
+						data-background-size="auto"
+						data-background-color="rgb(20, 10, 20)"></section>
+					<section data-background="img/koch_tessel_2.png" 
+						data-background-size="auto"
+						data-background-color="rgb(20, 10, 20)"></section>
+					<section data-background="img/koch_tessel_pink.png" 
+						data-background-size="auto"
+						data-background-color="rgb(20, 10, 20)"></section>
+					<section data-background="img/koch_tessel_green.png" 
+						data-background-size="auto" 
+						data-background-color="rgb(10, 20, 20)"></section>
+
+				</section>
+
+				<!-- BEYOND THE CANVAS -->
+				<section data-background="slateblue">
+					<section><h1>beyond the canvas</h1></section>
+					<section><h2>audio input</h2></section>
+					<section><h3>warning: flashing lights</h3></section>
+					<section 
+						data-background-color='#000'
+						data-background-iframe="demo/voicewarp/index.html">
+					</section>
+					<section data-background="img/child_laughing.png"></section>
+					<section data-background="img/child_crying5.png"></section>
+					<!-- <section data-background="img/boarding_announcement.png"></section> -->
+					<section><h2>video input</h2></section>
+					<section data-background-color="#222" data-background="img/motion_detect.gif" data-background-size="auto"></section>
+				</section>
+
+				<!-- TAKEAWAY -->
+				<section data-background="#DB2F09">
+					<section><h2>the browser is your playground</h2></section>
+					<section><h2>code <span class='fragment'> + art</span> <span class="fragment"> = ♥</span></h2></section>
+				</section>
+
+				
+				<!-- JAVASCRIPT EFFICIENCY -->
+				<!-- <section data-background='#224'>
+					<section><h2>bonus: <br/>JavaScript optimization</h2></section>
+					<section data-markdown>
+						## arrays are faster than objects
+					</section>
+					<section>
+						instead of storing lots of data in objects..
+						<pre>
+							<code>
+	const points = [{
+		x: 1,
+		y: 4 
+	},{
+		x: 2,
+		y: 5
+	}, ..., {
+		x: 99999,
+		y: 99999
+	}]
+							</code>
+						</pre>
+					</section>
+					<section>
+							store it in arrays
+							<pre>
+								<code>
+	const x = [1, 2, ..., 99999];
+	const y = [4, 5, ..., 99999];
+								</code>
+							</pre>
+						</section>
+					<section data-markdown>
+					six times faster
+					```
+					Starting testcase: "Save as objects"
+					Testcase finished: <Test #1> x 6.53 ops/sec ±17.67% (21 runs sampled)
+
+					-----------------------------------
+					
+					Starting testcase: "Save as arrays"
+					Testcase finished: <Test #2> x 35.68 ops/sec ±1.67% (43 runs sampled)
+					```
+
+					</section>
+
+					<section data-markdown>
+						## preallocate large arrays
+					</section>
+					<section>
+					<p>instead of pushing into an array<br/> of undefined size...</p>
+
+						<pre><code>
+	const gridWidth = 1000000;
+
+	const slowGrid = [];
+
+	for(let i = 0; i < gridWidth; i++){
+		showGrid.push(random(0, 1));
+	}
+						</code></pre>
+					</section>
+					<section>
+						<p>...create large arrays with <code>new Array()</code><br/> and assign by index</p>
+
+						<pre><code>
+
+	const grid = new Array(gridWidth);
+
+	for(let i = 0; i < gridWidth; i++){
+		grid[i] = random(0, 1);
+	}
+						</code></pre>
+					</section>
+					
+				<section data-markdown>
+					twice as fast
+					```
+					Starting testcase: "Push into array"
+					Testcase finished: push x 30.71 ops/sec ±3.72% (42 runs sampled)
+					
+					-----------------------------------
+
+					Starting testcase: "Assign into preallocated array"
+					Testcase finished: assign x 72.57 ops/sec ±2.55% (50 runs sampled)
+					```
+
+				</section>
+				</section> -->
+
+				<!-- RESOURCES -->
+				<section data-background="#222">
+					<section><h1>resources</h1></section>
+					<section>
+						<img src='img/p5js_site.png' height="500px" />
+						<h2><a target="_blank" href="https://p5js.org/tutorials/">p5.js tutorials</a></h2></section>
+					
+					<section>
+						<img src='img/p5art_tumblr.png' height="500px" />
+						<h2>
+							<a target="_blank" href="http://p5art.tumblr.com">p5art inspiration</a>
+						</h2>
+					</section>
+					
+					<section>
+						<img src='img/natureofcode.png' height="500px" />
+						<h2>
+							<a target="_blank" href="http://natureofcode.com/">Nature of Code book</a>
+						</h2>
+						by Daniel Shiffman
+					</section>
+				</section>
+
+				<!-- THANKS -->
+				<section data-background="#222" class='text-shadow'>
+					<section class='blur-bg' data-background="img/manhattan.jpg">
+						<h2>thank yous</h2>
+						<p>EmpireJS | Recurse Center</p>
+					</section>
+				</section>
+
+				<!-- END -->
+				<section data-background="#222">
+					<h2>make art with code!</h2>
+					<p><img src="img/twitter.png" width="50px"/> <span>tweet me at @piratefsh</span>  </p>
+
+					<p class="margin-top">
+						<small> code: <a href="https://github.com/piratefsh/p5js-art">https://github.com/piratefsh/p5js-art</a>  |</small> <small> slides: <a href="https://git.io/vrrwU">https://git.io/vrrwU</a></small>
+					</p>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="js/jquery-2.2.3.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'none', // none/fade/slide/convex/concave/zoom
+				backgroundTransition: 'none',
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+			Reveal.addEventListener('slidechanged', function(event) {
+			     if($(event.currentSlide).attr('data-background-iframe') && 
+			     	!$(event.currentSlide).data('nofront')) {
+			          $('.reveal > .backgrounds').css('z-index', 1);
+			          $('iframe').css('z-index', 2)
+			          $('iframe').css('position', 'fixed')
+			     } else {
+			          $('.reveal > .backgrounds').css('z-index', 0);
+			          $('iframe').css('z-index', 0)
+			          $('iframe').css('position', 'static')
+			     }                  
+			});
+
+		</script>
+
+	</body>
+</html>
