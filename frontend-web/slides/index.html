@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>frontend web secrets | by Sher Minn Chong</title>
+
+	<meta name="description" content="frontend web secrets | by Sher Minn Chong">
+	<meta name="author" content="Sher Minn Chong">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+
+	<style>
+		.reveal .logo{
+			border: none;
+			box-shadow: none;
+			max-width: 280px;
+			max-height: 150px;
+			display: inline-block;
+			margin: 0.5em 1em;
+			vertical-align: middle;
+		}
+		.reveal .footnote {
+			font-size: 0.5em;
+			position: fixed;
+			bottom: 0;
+			text-shadow: 0px 0px 5px black;
+		}
+
+		.reveal .white a{
+			color: #eee;
+		}
+
+		.reveal .footnote a {
+			color: white;
+			text-decoration: underline;
+		}
+
+		.reveal .has-dark-background  a{
+			color: #eee; 
+			text-decoration: underline;
+		}
+
+		.reveal .pad-top {
+			margin-top: 1.25em;
+		}
+
+		.reveal section img{
+			border: 0px;
+			box-shadow: none;
+			background: none;
+		}
+		.reveal section img.logo{
+			max-width: 200px;
+		}
+
+		.overview section.has-dark-background h2,
+		.overview section.has-dark-background h3,
+		.overview section.has-dark-background a,
+		.overview section.has-dark-background p{
+			color: black !important;
+		}
+
+		.text-shadow,
+		.text-shadow h1,
+		.text-shadow h2,
+		.text-shadow h3{
+			text-shadow: 0px 0px 5px black;
+		}
+		.text-shadow-lite,
+		.text-shadow-lite h1,
+		.text-shadow-lite h2,
+		.text-shadow-lite h3{
+			text-shadow: 0px 0px 5px #EDF3E8;
+		}
+
+		.reveal iframe.bg-iframe{
+			background-color: black;
+			position: fixed;
+			height: 100vh;
+			width: 100vw;
+			max-width: 100%;
+			max-height: 100%;
+			margin-left: 0%;
+			margin-right: 0%;
+			margin-top: 24%;
+			z-index: -1;
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+		}
+
+		.reveal img{
+			vertical-align: middle;
+		}
+
+		.reveal .margin-top{
+			margin-top: 48px;
+		}
+
+		.reveal .col-6{
+			width: 50%;
+			float: left;
+			display: inline-block;
+		}
+
+		.sample-frame{
+			border-collapse: collapse;
+		}
+		.sample-frame tr td{
+			width: 80px;
+			height: 80px;
+			background: white;
+			padding: 0px;
+			border: 1px #bbb solid;
+		}
+		.diff-frame tr td{
+			background: rgba(255, 255, 255, 0.0)
+		}
+		.sample-frame .dark{
+			background: rgba(100, 100, 100, 1);
+		}
+		.sample-frame .diff{
+			background: red;
+		}
+		.reveal table.sample-frame tr:last-child td{
+			border-bottom: 1px #bbb solid;
+		}
+
+		.reveal .plant a{
+			color: #587F48;
+		}
+
+		.reveal .white h1,
+		.reveal .white h2,
+		.reveal .white h3,
+		.reveal .white ul li,
+		.reveal .white ol li,
+		.reveal .white
+		{
+			color: white !important;
+		}
+		.reveal .plant.slide-background{
+			opacity: 0.8 !important;
+		}
+		.reveal .plant h1,
+		.reveal .plant h2,
+		.reveal .plant h3,
+		.reveal .plant h4,
+		.reveal .plant ul li,
+		.reveal .plant ol li,
+		.reveal .plant
+		{
+			color: #444 !important;
+			/*font-family: monospace;*/
+		}
+
+		.reveal .blur-bg .slide-background{
+			-webkit-filter: blur(3px);
+			-moz-filter: blur(3px);
+			-o-filter: blur(3px);
+			-ms-filter: blur(3px);
+			filter: blur(3px);
+		}
+		.reveal .blur-bg .slide-background:after{
+			-webkit-filter: none;
+			-moz-filter: none;
+			-o-filter: none;
+			-ms-filter: none;
+			filter: none;
+		}
+
+		.reveal em + h3{
+			margin-top: 20px;
+		}
+
+		.reveal tr,
+		.reveal table td {
+			border-bottom: 0px !important;
+			/*color: rgba(255,255,255, 0.8);*/
+		}
+
+		.reveal table img {
+			display: inline-block;
+			margin: 0;
+		}
+
+		.slide-background.present:after{
+			content: '@piratefsh | debugging JavaScript';
+			position: fixed;
+			bottom: 0px;
+			display: inline-block;
+			padding: 16px;
+			left: 0px;
+			font-size: 18px;
+			text-shadow: none !important;
+			box-shadow: none;
+			color: white;
+		}
+
+		twitterwidget{
+			margin: 0 auto !important;
+		}
+
+		.reveal blockquote{
+			font-style: normal;
+			position: relative;
+			padding: 1em 1.5em;
+			background: none;
+			box-shadow: none;
+		}
+
+		.reveal blockquote:before,
+		.reveal blockquote:after{
+			font-size: 3em;
+			opacity: 0.8;
+			line-height: 1em;
+		}
+
+		.reveal blockquote:before{
+			content: '“';
+			position: absolute;
+			top: 0;
+			left: 0.2em;
+		}
+
+		.reveal blockquote:after{
+			content: '”';
+			position: absolute;
+			right: 0.2em;
+			bottom: -0.5em;
+		}
+
+	</style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="#3C9CD7" class='white'>
+					<h1>frontend web secrets</h1>
+					<p class="pad-top">
+						<small>by <a href="http://piratefsh.github.io">Sher Minn Chong</a> / <a href="http://twitter.com/piratefsh">@piratefsh</a> at Viki x WWC Singapore</small>
+					</p>
+				</section>
+
+				<section data-background="#333" class='white'>
+					<section data-background="#3C9CD7">
+						<h2>what does a frontend web engineer do?</h2>
+					</section>
+					<section>
+						<h2><span class='fragment' data-fragment-index="2">frontend</span> <span class='fragment' data-fragment-index="1">web engineer</span></h2>
+					</section>
+					<section>
+						<h2><span class="fragment">design</span> <span class="fragment">&</span> <span class="fragment">technology</span></h2>
+					</section>
+				</section>
+				<section data-background="#333" class='white'>
+					<section data-background="#D24663">
+						<h2>design</h2>
+					</section>
+
+					<section>
+						<h3>image -> code</h3>
+					</section>
+
+					<section>
+						<h3>demo</h3>
+					</section>
+
+					<section data-background="#3C9CD7">
+						<h3>add interaction</h3>
+					</section>
+
+					<section>
+						<h3>demo</h3>
+					</section>
+
+					<section data-background="#3C9CD7">
+						<h3>work for multiple screens</h3>
+					</section>
+					
+					<section>
+						<h3><a href="https://www.viki.com/community#qc">demo</a></h3>
+					</section>
+
+					<section>
+						<img src='img/screenshots/table-desktop.png'/>
+					</section>
+
+					<section>
+						<img style="max-height: 100%" src='img/screenshots/table-mobile.png'/>
+					</section>
+				</section>
+
+				<section data-background="#333" class='white'>
+					<section data-background="#D24663">
+						<h2>technology</h2>
+					</section>
+
+					<section data-background="#3C9CD7">
+						<h3>dealing with browsers</h3>
+					</section>
+
+					<section>
+						<h3>how they work?</h3>
+					</section>
+
+					<section>
+						<h3>good parts</h3>
+					</section>
+
+					<section>
+						<h3>bad parts</h3>
+					</section>
+
+
+
+					<section data-background="#3C9CD7">
+						<h3>dealing with JavaScript</h3>
+					</section>
+
+					<section>
+						<h3>the weird parts</h3>
+					</section>
+
+					<section data-background-iframe="https://repl.it/Gd88/2?lite=true">
+					</section>
+
+					<section data-background-iframe="https://repl.it/Ec4N/2?lite=true">
+					</section>
+
+					<section>
+						<h3>the good parts</h3>
+					</section>
+
+					<section>
+						<h3>games</h3>
+					</section>
+
+					<section>
+						<h3>3D</h3>
+					</section>
+
+					<section>
+						<h3>motion detection</h3>
+					</section>
+				</section>
+
+				<section data-background="#333" class='white'>
+					<section data-background="#D24663">
+						<h2>why frontend web </h2>
+					</section>
+
+					<section data-background="#3C9CD7">
+						<blockquote>The practice of front end development is similar to playing the bass: it's easy to learn but difficult to master. </blockquote>
+						<small><a href="https://css-tricks.com/front-end-development-is-development/">- Geoff Graham, CSS-Tricks</a></small>
+					</section>
+				</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+	<script src="js/jquery-2.2.3.min.js"></script>
+
+	<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'none', // none/fade/slide/convex/concave/zoom
+				backgroundTransition: 'none',
+
+				// Optional reveal.js plugins
+				dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+			Reveal.addEventListener('slidechanged', function(event) {
+				if($(event.currentSlide).attr('data-background-iframe')) {
+					$('.reveal > .backgrounds').css('z-index', 1);
+					$('iframe').css('width', '100%')
+					$('iframe').css('z-index', 2)
+					$('iframe').css('position', 'fixed')
+				} else {
+					$('.reveal > .backgrounds').css('z-index', 0);
+					$('iframe').css('z-index', 0)
+					$('iframe').css('position', 'static')
+				}                  
+			});
+
+		</script>
+
+	</body>
+	</html>
