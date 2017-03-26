@@ -207,7 +207,7 @@
 		}
 
 		.slide-background.present:after{
-			content: '@piratefsh | debugging JavaScript';
+			content: '@piratefsh | frontend web';
 			position: fixed;
 			bottom: 0px;
 			display: inline-block;
@@ -266,24 +266,53 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section data-background="#D24663" class='white'>
-					<h1>frontend web secrets</h1>
+					<h1>what frontend web engineers don't tell you</h1>
 					<p class="pad-top">
 						<small>by <a href="http://piratefsh.github.io">Sher Minn Chong</a> / <a href="http://twitter.com/piratefsh">@piratefsh</a> at Viki x WWC Singapore</small>
 					</p>
 				</section>
 
-				<section data-background="#333" class='white'>
+				<!-- INTRO -->
+				<section data-background="#222" class='white'>
 					<section data-background="#D24663">
 						<h2>what is a frontend web engineer?</h2>
 					</section>
+					
+					<section>
+						<h3>some terms you may have seen</h3>
+						<ul>
+							<li class='fragment'>web developer</li>
+							<li class='fragment'>web designer</li>
+							<li class='fragment'>backend web engineer</li>
+							<li class='fragment'>fullstack web engineer</li>
+						</ul>
+					</section>
+					
 					<section>
 						<h2><span class='fragment' data-fragment-index="2">frontend</span> <span>web</span> <span class='fragment' data-fragment-index="1"> engineer</span></h2>
 					</section>
+
 					<section>
-						<h2><span>design</span> <span class="fragment">+</span> <span class="fragment">technology</span><span class="fragment"> = 💖</span></h2>
+						<h3>we build websites 🖥️ 😅</h3>
 					</section>
+
+					<section>
+						<img src='img/screenshots/viki.png'/>
+					</section>
+					
+					<section>
+						<h3>bridging the gap between users and information they need</h3>
+					</section>
+
+					<section>
+							<h2><span>design</span> <span class="fragment">+</span> <span class="fragment">technology</span><span class="fragment"> = 💖</span></h2>
+					</section>
+
 				</section>
-				<section data-background="#333" class='white'>
+				<!-- END INTRO -->
+
+				<!-- DESIGN -->
+				<section data-background="#222" class='white'>
 					<section data-background="#D24663">
 						<h2>design</h2>
 					</section>
@@ -296,51 +325,10 @@
 						<img src="img/screenshots/form-design.png"/>
 					</section>
 
-					<section data-background="#3C9CD7">
-						<h3>add interaction</h3>
+					<section data-background-iframe="http://codepen.io/piratefsh/full/dvjyGz/">
 					</section>
 
-					<section data-background="#ededed">
-						<img src="img/screenshots/form-error-anim.gif"/>
-					</section>
-
-					<section data-background="#3C9CD7">
-						<h3>make it work for small screens</h3>
-					</section>
- 
-					<section>
-						<img src='img/screenshots/viki-community.png'/>
-						<a href="https://viki.com/community">example</a>
-					</section>
-
-				</section>
-
-				<section data-background="#333" class='white'>
-					<section data-background="#D24663">
-						<h2>technology</h2>
-					</section>
-
-
-					<section data-background="#3C9CD7">
-						<h2>browsers</h2>
-					</section>
-
-					<section>
-						<h3>how they work?</h3>
-					</section>
-
-					<section>
-						<h3>good parts</h3>
-					</section>
-
-					<section>
-						<h3>bad parts</h3>
-					</section>
-
-					<section data-background="#3C9CD7">
-						<h2>languages</h2>
-					</section>
-
+					<!-- html, css, js -->
 					<section>
 						<table style="text-align: center">
 							<tr>
@@ -357,60 +345,111 @@
 							</tr>
 							<tr>
 								<td data-fragment-index="1" >
-									<small>organize content</small>
+									<small>structure content</small>
 								</td>
 								<td data-fragment-index="2" class="fragment" >
 									<small>style content</small>
 								</td>
 								<td data-fragment-index="3" class="fragment">
-									<small>control behavior <br/>and interactions</small>
+									<small>add behavior <br/>and interactions</small>
 								</td>
 							</tr>
 						</table>
 
 					</section>
 
-					<section data-background="#3C9CD7">
-						<h2>JavaScript</h2>
+					<section data-background="#ffffff">
+						<h3>structure content</h3>
+						<img src="img/screenshots/html.png"/>
 					</section>
 
-					<section>
-						<h3>the weird parts</h3>
+					<section data-background="#ededed">
+						<h3>style content</h3>
+						<img src="img/screenshots/form-design.png"/>
 					</section>
 
-					<section data-background-iframe="https://repl.it/Gd88/2?lite=true">
-					</section>
-
-					<section data-background-iframe="https://repl.it/Ec4N/2?lite=true">
-					</section>
-
-					<section>
-						<h3>the good parts</h3>
-					</section>
-
-					<section>
-						<h3>games</h3>
-					</section>
-
-					<section>
-						<h3>3D</h3>
-					</section>
-
-					<section>
-						<h3>motion detection</h3>
+					<section data-background="#ededed">
+						<h3>add interaction</h3>
+						<img src="img/screenshots/form-error-anim.gif"/>
 					</section>
 				</section>
+				<!-- END DESIGN -->
 
-				<section data-background="#333" class='white'>
+				<!-- TECH -->
+				<section data-background="#222" class='white'>
 					<section data-background="#D24663">
-						<h2>why frontend web </h2>
+						<h2>technology</h2>
 					</section>
 
 					<section data-background="#3C9CD7">
+						<h3>supporting different browsers</h3>
+					</section>
+
+					<section data-background="#3C9CD7">
+						<h3>supporting different screen sizes</h3>
+					</section>
+
+					<section>
+						<img src='img/screenshots/viki-community.png'/>
+						<a href="https://viki.com/community">table example</a>
+					</section>
+
+					<section>
+						<h3>JavaScript is weird</h3>
+					</section>
+
+					<section>
+						<iframe width="100%" height="600" src="https://repl.it/Gd88/2?lite=true"></iframe>
+					</section>
+
+					<section>
+						<iframe width="100%" height="600" src="https://repl.it/Ec4N/2?lite=true"></iframe>
+					</section>
+				</section>
+				<!-- END TECH -->
+
+				<!-- WHY FE -->
+				<section data-background="#222" class='white'>
+					<!-- staggering beauty -->
+					<!-- <section data-background-iframe="https://www.staggeringbeauty.com/">
+					</section> -->
+
+					<!-- 3D lion -->
+					<!-- <section data-background-iframe="http://codepen.io/Yakudoo/full/YXxmYR/">
+					</section> -->
+
+					<section data-background="#D24663">
+						<h2>why do frontend web engineering?</h2>
+					</section>
+
+					<section>
+						<h3>the web is accessible</h3>
+					</section>
+
+					<section>
+						<h3>creative + technical</h3>
+					</section>
+
+					<section>
+						<h3>low barrier to entry</h3>
+						<h4 class="fragment">...but also challenging!</h4>
+					</section>
+
+					<section>
 						<blockquote>The practice of front end development is similar to playing the bass: <br/>it's easy to learn but difficult to master. </blockquote>
 						<small><a href="https://css-tricks.com/front-end-development-is-development/">- Geoff Graham, CSS-Tricks</a></small>
 					</section>
+			</section>
+			<!-- END WHY FE -->
+			
+			<!-- CLOSING -->
+			<section data-background="#222">
+				<section data-background="#3C9CD7"><h2>end!</h2></section>
+				<section>
+					<h2><img src="img/twitter.png" width="50px"/> <span>tweet at me <br/>@piratefsh</span>  </h2>
 				</section>
+			</section>
+			<!-- END CLOSING -->
 		</div>
 	</div>
 
