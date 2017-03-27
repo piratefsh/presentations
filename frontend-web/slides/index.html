@@ -4,9 +4,9 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>frontend web secrets | by Sher Minn Chong</title>
+	<title>frontend web | by Sher Minn Chong</title>
 
-	<meta name="description" content="frontend web secrets | by Sher Minn Chong">
+	<meta name="description" content="frontend web | by Sher Minn Chong">
 	<meta name="author" content="Sher Minn Chong">
 
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -34,7 +34,7 @@
 			border: none;
 			box-shadow: none;
 			max-width: 280px;
-			max-height: 150px;
+			max-height: 280px;
 			display: inline-block;
 			margin: 0.5em 1em;
 			vertical-align: middle;
@@ -175,12 +175,13 @@
 			/*font-family: monospace;*/
 		}
 
-		.reveal .blur-bg .slide-background{
-			-webkit-filter: blur(3px);
-			-moz-filter: blur(3px);
-			-o-filter: blur(3px);
-			-ms-filter: blur(3px);
-			filter: blur(3px);
+		.reveal .blur-bg .slide-background,
+		.reveal .blur-bg.slide-background{
+			-webkit-filter: blur(2px) grayscale(100%);
+			-moz-filter: blur(2px) grayscale(100%);
+			-o-filter: blur(2px) grayscale(100%);
+			-ms-filter: blur(2px) grayscale(100%);
+			filter: blur(2px) grayscale(100%);
 		}
 		.reveal .blur-bg .slide-background:after{
 			-webkit-filter: none;
@@ -272,6 +273,20 @@
 					</p>
 				</section>
 
+				<section data-background="#3C9CD7" class='white'>
+					<section>
+						<h1>Sher Minn</h1>
+					</section>
+					<section class="text-shadow blur-bg" data-background="img/malaysia.jpg">
+						<h3>Malaysian</h3>
+						<img class="logo" src="img/malaysia_flag.svg" alt="Malaysian"/>
+					</section>
+					<section class="text-shadow blur-bg" data-background="img/singapore.jpg">
+						<h3>front-end web engineer</h3>
+						<img class="logo" src="img/viki_logo.png" alt="viki.com"/>
+					</section>
+				</section>
+
 				<!-- INTRO -->
 				<section data-background="#222" class='white'>
 					<section data-background="#D24663">
@@ -293,7 +308,7 @@
 					</section>
 
 					<section>
-						<h3>we build websites 🖥️ 😅</h3>
+						<h3>we build websites 💻 😅</h3>
 					</section>
 
 					<section>
@@ -301,7 +316,7 @@
 					</section>
 					
 					<section>
-						<h3>bridging the gap between users and information they need</h3>
+						<h3>we bridge the gap between <br/>users and content</h3>
 					</section>
 
 					<section>
@@ -312,12 +327,12 @@
 				<!-- END INTRO -->
 
 				<!-- DESIGN -->
-				<section data-background="#222">
+				<section  data-background="#fff">
 					<section data-background="#D24663" class='white'>
 						<h2>design</h2>
 					</section>
 
-					<section class='white'>
+					<section class='blur-bg' data-background="img/screenshots/invision.png">
 						<h3>visual design -> code</h3>
 					</section>
 
@@ -325,11 +340,11 @@
 						<img src="img/screenshots/form-design.png"/>
 					</section>
 
-					<section data-background-iframe="http://codepen.io/piratefsh/full/dvjyGz/">
+					<section  data-background="#222" data-background-iframe="http://codepen.io/piratefsh/full/dvjyGz/">
 					</section>
 
 					<!-- html, css, js -->
-					<section  class='white'>
+					<section  data-background="#222" class='white'>
 						<table style="text-align: center">
 							<tr>
 								<td data-fragment-index="1" >
@@ -357,7 +372,7 @@
 						</table>
  					</section>
 
- 					<section>
+ 					<section data-background="#222">
  						<h3><a href="http://codepen.io/piratefsh/pen/dvjyGz?editors=0010">let's go</a></h3>
  					</section>
 
@@ -375,6 +390,18 @@
 						<h3>add interaction</h3>
 						<img src="img/screenshots/form-error-anim.gif"/>
 					</section>
+
+
+					<section data-background="#222">
+						<h4>from design mock:</h4>
+						<img src="img/screenshots/viki-sign-in-mock.png"/>
+					</section>
+					<section data-background="#222">
+						<h4>to actual website:</h4>
+						<a target="_blank" href="https://viki.com/sign_in">
+							<img src="img/screenshots/viki-sign-in-actual.png"/>
+						</a>
+					</section>
 				</section>
 				<!-- END DESIGN -->
 
@@ -386,18 +413,22 @@
 
 					<section data-background="#3C9CD7">
 						<h3>supporting different browsers</h3>
+						<img width="600px" src="img/screenshots/browser-logos.png"/>
 					</section>
 
 					<section data-background="#3C9CD7">
 						<h3>supporting different screen sizes</h3>
+						<h2>💻 📱</h2>
 					</section>
 
 					<section>
-						<img src='img/screenshots/viki-community.png'/>
-						<a href="https://viki.com/community">table example</a>
+						<h3>example</h3>
+						<a href="https://viki.com/community" target="_blank">
+							<img src='img/screenshots/viki-community.png'/>
+						</a>
 					</section>
 
-					<section>
+					<section data-background="#3C9CD7">
 						<h3>JavaScript is weird</h3>
 					</section>
 
@@ -422,7 +453,7 @@
 					</section> -->
 
 					<section data-background="#D24663">
-						<h2>why do frontend web engineering?</h2>
+						<h2>why would you do<br/> frontend web?</h2>
 					</section>
 
 					<section>
@@ -430,12 +461,12 @@
 					</section>
 
 					<section>
-						<h3>creative <span class="fragment">+ technical</span> <span class='fragment'>= endless possibilities</span></h3>
+						<h4>creative <span class="fragment">+ technical</span> <span class='fragment'>= ✨endless possibilities🌈 </span></h4>
 					</section>
 
 					<section>
 						<h3>low barrier to entry</h3>
-						<h4 class="fragment">...but it ain't easy</h4>
+						<h5 class="fragment">...with lots of room to grow</h5>
 					</section>
 
 					<section>
