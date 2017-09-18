@@ -273,7 +273,7 @@
 			<!-- TITLE SLIDE -->
 			<section data-background="#222" class='white'>
 				<h1>generative art</h1>
-				<span>(with simple rules)</span>
+				<h2> with simple rules</h2>
 				<p class="pad-top">
 					<small>by <a href="http://piratefsh.github.io">Sher Minn Chong</a> / <a href="http://twitter.com/piratefsh">@piratefsh</a> / Hack && Tell 19th Sept 2017 </small>
 				</p>
@@ -294,26 +294,28 @@
 				</section>
 			</section>
 
+
+			<!-- REALLY COOL GENERATIVE ART -->
+			<section data-background="#222" class='white'>
+				<section>
+					<h2>i saw some really cool art</h2>
+				</section>
+				<section data-background-iframe="http://img.inconvergent.net/generative/"></section>
+				<section data-background-iframe="http://sasj.tumblr.com/"></section>
+				<section data-background-iframe="http://atticusbones.tumblr.com/"></section>
+			</section>
+
 			<!-- WHAT IS GENERATIVE ART -->
 			<section data-background="#222" class='white'>
 				<section>
 					<h2>generative art</h2>
 				</section>
 				<section>
-					<p>art created with a non-human, autonomous system</p>
+					<p>art created with the assistance of a non-human, autonomous system</p>
 				</section>
 				<section>
-					<p>algorithmic art</p>
+					<p>e.g. art with algorithms</p>
 				</section>
-			</section>
-
-			<!-- REALLY COOL GENERATIVE ART -->
-			<section data-background="#222" class='white'>
-				<section>
-					<h2>really cool art</h2>
-				</section>
-				<section data-background-iframe="http://atticusbones.tumblr.com/"></section>
-				<section data-background-iframe="http://img.inconvergent.net/generative/"></section>
 			</section>
 
 			<!-- SIMPLE RULES CREATE COMPLEX PATTERNS -->
@@ -351,6 +353,7 @@
 				<section data-background-iframe="https://codepen.io/smcviki/pen/LzGGwx?editors=0010">
 				</section>
 
+
 				<!-- shells -->
 				<section data-markdown>
 					### gauze
@@ -358,12 +361,20 @@
 					set stroke color to a translucent grey
 
 					draw a bezier curve with points
-						start, control1, control2, end
-					move each start, control1, control2, end point
+						p0, p1, p2, p3
+					move each point p0, p1, p2, p3
 						ever so slightly in a random direction
-					repeat until done
+					repeat until terminated
 
 					```
+				</section>
+
+				<section >
+					<h3> bezier curve</h3>
+					<img src="img/bezier.jpg" alt="bezier curve illustration"/>
+
+
+					<p><small>source: <a href="http://www.e-cartouche.ch/content_reg/cartouche/graphics/en/html/Curves_learningObject2.htm">http://www.e-cartouche.ch</a></small></p>
 				</section>
 
 				<section data-background-iframe="http://piratefsh.github.io/generative-art/public/shells">
@@ -398,6 +409,25 @@
 				<section data-background-iframe='http://piratefsh.github.io/generative-art/public/constellations/'>
 				</section>
 
+				<section data-markdown>
+					```ruby
+					create a grid of hexagon tilings
+
+					4.times do
+						for each hexagon do
+						 	replace with a smaller hexagon
+						 		in the middle
+						 	border each side of the hexagon
+						 		with 3 small triangles
+						end
+					end
+
+					fill each hexagon with a random teal shades
+					fill each triangle with a random translucent pink shade
+					```
+				</section>
+
+				<section data-background-iframe="http://piratefsh.github.io/p5js-art/public/frosted-hex/"></section>
 
 				<!-- color typewriter -->
 				<section data-markdown>
@@ -421,6 +451,22 @@
 				</section>
 			</section>
 			<!-- END CLOSING -->
+			<!-- BONUS -->
+
+			<section data-background="#222">
+				<section><h2>not just for computers</h2></section>
+				<section>
+					<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Sloppy penwork but i kinda like this. Triggering my trypophobia though. Eee.. <a href="https://t.co/xnt541TG2I">pic.twitter.com/xnt541TG2I</a></p>&mdash; Sher Minn C. (@piratefsh) <a href="https://twitter.com/piratefsh/status/907635077156237312">September 12, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</section>
+
+		<section>
+			<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/generative?src=hash">#generative</a> drawing to rules based on Morse code, encoding my goodbye to <a href="https://twitter.com/hashtag/Cassini?src=hash">#Cassini</a>, &amp; bye-for-now to Saturn &amp; moons <a href="https://twitter.com/hashtag/CassiniInspires?src=hash">#CassiniInspires</a> <a href="https://twitter.com/hashtag/sciart?src=hash">#sciart</a> <a href="https://t.co/5w6qVbP2Lr">pic.twitter.com/5w6qVbP2Lr</a></p>&mdash; Immy Smith🖌️🔬✏️🐞 (@DrImmySmith) <a href="https://twitter.com/DrImmySmith/status/908595731048656896">September 15, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</section>
+			</section>
+
+			<section data-background-iframe="http://piratefsh.github.io/p5js-art/public/bubbles/index.html"></section>
 		</div>
 	</div>
 
