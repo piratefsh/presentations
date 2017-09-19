@@ -306,23 +306,17 @@
 					<p>e.g. art with algorithms</p>
 				</section>
 
-				<section>
-					<p>simple instructions -> tweak parameters -> draw</p>
-				</section>
 			</section>
 
 			<!-- SIMPLE RULES CREATE COMPLEX PATTERNS -->
 			<section data-background="#222" class='white'>
-				<section><h2>example: koch snowflake</h2></section>
+				<section><h2>koch snowflake</h2></section>
 					<section data-background="img/koch-snowflake-4.png" data-background-size="60%"></section>
 					<section data-background="img/koch-1.png" data-background-size="80%"></section>
 					<section data-background="img/koch-2.png" data-background-size="80%"></section>
 					<section data-background="img/koch-3.png" data-background-size="80%"></section>
 					<section data-background="img/koch-4.png" data-background-size="80%"></section>
 					<section data-background="img/koch-snowflake-4.png" data-background-size="60%"></section>
-					<section><h3>koch tessellation</h3><p>one level deeper</p></section>
-					<section data-background-color="rgb(20, 10, 20)" data-background="img/koch-l3-t2-w2.png" data-background-size="80%"></section>
-					<section data-background-color="rgb(20, 10, 20)"  data-background="img/koch-l2-t5-w1.png" data-background-size="80%"></section>
 			</section>
 
 			<!-- ALGORITHM EXERCISE -->
@@ -346,6 +340,28 @@
 				</section>
 
 
+				<section data-markdown>
+					### recursive hexagon
+					```ruby
+					create a grid of hexagon tilings
+
+					4.times do
+						for each hexagon do
+						 	replace with a smaller hexagon
+						 		in the middle
+						 	border each vertex of the hexagon
+						 		with 4 small triangles
+						end
+					end
+
+					fill each hexagon with a random teal shades
+					fill each triangle with a random translucent pink shade
+					```
+				</section>
+
+				<section data-background-iframe="http://piratefsh.github.io/p5js-art/public/frosted-hex/"></section>
+
+				
 				<!-- shells -->
 				<section data-markdown>
 					### gauze
@@ -362,7 +378,6 @@
 
 					```
 				</section>
-
 				<section >
 					<h3> bezier curve</h3>
 					<img src="img/bezier.jpg" alt="bezier curve illustration"/>
@@ -403,26 +418,6 @@
 				<section data-background-iframe='http://piratefsh.github.io/generative-art/public/constellations/'>
 				</section>
 
-				<section data-markdown>
-					### recursive hexagon
-					```ruby
-					create a grid of hexagon tilings
-
-					4.times do
-						for each hexagon do
-						 	replace with a smaller hexagon
-						 		in the middle
-						 	border each vertex of the hexagon
-						 		with 4 small triangles
-						end
-					end
-
-					fill each hexagon with a random teal shades
-					fill each triangle with a random translucent pink shade
-					```
-				</section>
-
-				<section data-background-iframe="http://piratefsh.github.io/p5js-art/public/frosted-hex/"></section>
 
 				<!-- color typewriter -->
 				<section data-markdown>
@@ -465,6 +460,12 @@
 			</section>
 
 			<section data-background="#222">
+				<section><h3>koch tessellation</h3><p>one level deeper</p></section>
+					<section data-background-color="rgb(20, 10, 20)" data-background="img/koch-l3-t2-w2.png" data-background-size="80%"></section>
+					<section data-background-color="rgb(20, 10, 20)"  data-background="img/koch-l2-t5-w1.png" data-background-size="80%"></section>
+				</section>
+
+			<section data-background="#222">
 				<section><h2>not just for computers</h2></section>
 				<section>
 					<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Sloppy penwork but i kinda like this. Triggering my trypophobia though. Eee.. <a href="https://t.co/xnt541TG2I">pic.twitter.com/xnt541TG2I</a></p>&mdash; Sher Minn C. (@piratefsh) <a href="https://twitter.com/piratefsh/status/907635077156237312">September 12, 2017</a></blockquote>
@@ -476,6 +477,8 @@
 					<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 				</section>
 			</section>
+
+
 
 			<!-- REALLY COOL GENERATIVE ART -->
 			<section data-background="#222" class='white'>
