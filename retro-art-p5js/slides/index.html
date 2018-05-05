@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>recreating retro computer art | by Sher Minn Chong</title>
+
+	<meta name="description" content="recreating retro computer art | by Sher Minn Chong">
+	<meta name="author" content="Sher Minn Chong">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="stylesheet" href="css/custom.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<div class="slides">
+			<!-- TITLE SLIDE -->
+			<section data-background="#222" data-background-iframe="http://piratefsh.github.io/generative-art/public/constellations/" class='white'>
+				<h1>recreating retro computer art</h1>
+				<h2>with p5.js</h2>
+				<p class="pad-top">
+					<small>by <a href="http://piratefsh.github.io">Sher Minn Chong</a> / <a href="http://twitter.com/piratefsh">@piratefsh</a> / RC NGW 2018 </small>
+				</p>
+			</section>
+
+			<!-- INTRO -->
+			<section data-background="#222" class='white'>
+				<section>
+					<h2>Sher Minn</h2>
+				</section>
+				<section class="text-shadow blur-bg" data-background="img/malaysia.jpg">
+					<h3>Malaysian</h3>
+					<img class="logo" src="img/malaysia_flag.svg" alt="Malaysian"/>
+				</section>
+				<section class="text-shadow blur-bg" data-background="img/viewfromtpt.jpg">
+					<h3>web platform engineer</h3>
+					<img class="logo" src="img/tpt-logo.svg" height="80" alt="teacherspayteachers.com"/>
+				</section>
+			</section>
+
+			<!-- WHAT IS COMPUTER ART -->
+			<section data-background="#222" class='white'>
+				<section>
+					<h2>computer art</h2>
+				</section>
+				<section>
+					<p>any art in which computers play a role in production or display of the artwork</p>
+				</section>
+				<section>
+					<h3>what counts as a computer?</h3>
+				</section>
+				<section>
+					<p>related terms</p>
+					<ul>
+						<li>algorithmic art</li>
+						<li>generative art</li>
+						<li>digital art</li>
+						<li>computer graphics</li>
+					</ul>
+				</section>
+			</section>
+
+			<!-- EARLY WORK 1950s -->
+			<section data-background="#222" class='white'>
+				<section><h2>oscilloscope art</h2></section>
+				<section><h2>Ben F. Laposky art, 1950s</h2></section>
+				<section data-background="img/ben-laposky/rec-math.jpg" data-background-size="contain">
+				</section>
+				<!-- <section data-background="img/ben-laposky/oscillons-1.png" data-background-size="60%"></section> -->
+				<section data-background="img/ben-laposky/oscillons-2.png" data-background-size="60%"></section>
+				<section data-background="img/ben-laposky/oscillons-3.jpg" data-background-size="auto"></section>
+				<section>
+					<blockquote><p>Objections are sometimes made that this and other kinds of computer art are 'machine art'—cold, impersonal, even inhuman. 
+					</p><p>
+					In some cases this may appear to be so, but it is obvious that the machines or instruments that form them are the products of imagination and planning, and at some previous initial point, the work of human hands.</p></blockquote>
+				</section>
+				<section>
+					<blockquote>
+						<p>The output is conceived and controlled by human intelligence, and the results evaluated by personal aesthetic standards. </p>
+
+						<p>If the computer is to produce art, it seems to me that the ability for it to do so must be programmed into it
+						</p></blockquote>
+						- Ben Laposky, August 1975 [<a href="https://www.atariarchives.org/artist/sec6.php">source]</a>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>text-based art</h2>
+					</section>
+					<section><h2>Frederic Hammersley in the 1960s</h2></section>
+					<section data-background="img/frederick-hammersley/equal-tea-talk.jpg" data-background-size="60%">
+						<p class="footnote">Equal Tea Talk, created on an IBM mainframe in 1969 <a href="http://hammersleyfoundation.org/index.php/artwork/computer-drawings">[source]</a></p>
+					</section>
+					<section data-background="img/frederick-hammersley/tiddlywinks.jpg" data-background-size="60%">
+						<p class="footnote">Tiddlywinks, created on an IBM mainframe in 1969</p>
+					</section>
+					<section data-background="img/frederick-hammersley/undernourished.jpg" data-background-size="60%">
+						<p class="footnote">Undernourished, created on an IBM mainframe in 1969</p>
+					</section>
+				</section>
+				<section>
+				</section>
+				<section>
+					<h2>plotter art</h2>
+				</section>
+			</section>
+
+			<!-- Intro to p5.js -->
+			<!-- Drawing lines, shapes -->
+			<!-- Grid: ascii art -->
+			<!-- Math: parametric equations -->
+			<section data-background="#222" class='white'>
+				<section>
+					<p>simple instructions repeated -> interesting visuals</p>
+				</section>
+				<!-- maze-like -->
+				<section data-markdown>
+					### maze
+					```python
+					for row in grid:
+					for cell in row:
+					if random() > 0.5:
+					draw line from bottom right to top left of cell
+					else
+					draw line from bottom left to top right of cell
+					```
+				</section>
+				<section data-background-iframe="https://codepen.io/smcviki/pen/LzGGwx?editors=0010">
+				</section>
+
+
+				<section data-markdown>
+					### recursive hexagon
+					```ruby
+					create a grid of hexagon tilings
+
+					4.times do
+					for each hexagon do
+					replace with a smaller hexagon
+					in the middle
+					border each vertex of the hexagon
+					with 4 small triangles
+					end
+					end
+
+					fill each hexagon with a random teal shades
+					fill each triangle with a random translucent pink shade
+					```
+				</section>
+
+				<section data-background-iframe="http://piratefsh.github.io/p5js-art/public/frosted-hex/"></section>
+
+				<!-- shells -->
+				<section data-markdown>
+					### gauze
+					```txt
+					set stroke color to a translucent grey
+
+					pick random points p0, p1, p2, p3
+
+					while true
+					draw a bezier curve with points
+					p0, p1, p2, p3
+					move each point p0, p1, p2, p3
+					ever so slightly in a random direction
+
+					```
+				</section>
+				<section >
+					<h3> bezier curve</h3>
+					<img src="img/bezier.jpg" alt="bezier curve illustration"/>
+
+
+					<p><small>source: <a href="http://www.e-cartouche.ch/content_reg/cartouche/graphics/en/html/Curves_learningObject2.htm">http://www.e-cartouche.ch</a></small></p>
+				</section>
+
+				<section data-background-iframe="http://piratefsh.github.io/generative-art/public/shells">
+				</section>
+
+				<!-- constellations -->
+				<section data-markdown>
+					### constellations
+					```ruby
+					# create 20 random circles
+					20.times do
+					x = random()
+					y = random()
+
+					circles.push({
+					center: Point.new(x, y),
+					radius: random()
+				})
+				end
+
+				# for all intersecting circles
+				# draw line between their centers
+				for c1 in circles do
+				for c2 in circles do
+				if c1 and c2 intersect
+				line(c1.center, c2.center)
+				end
+				end
+				end
+				```
+			</section>
+			<section data-background-iframe='http://piratefsh.github.io/generative-art/public/constellations/'>
+			</section>
+
+
+			<!-- color typewriter -->
+			<section data-markdown>
+				### synesthesia
+				```txt
+				assign a colored square to each alphabet.
+
+				now, spell your name.
+				```
+			</section>
+
+			<section data-background-iframe="https://codepen.io/smcviki/live/boExpR">
+			</section>
+		</section>
+
+		<!-- CLOSING -->
+		<section data-background-iframe='https://piratefsh.github.io/p5js-art/public/chrysanthemums/index.html' class="white">
+			<section><h2>end</h2></section>
+			<section>
+				<h2><img src="img/twitter.png" width="50px"/> <span>tweet at me <br/>@piratefsh</span>  </h2>
+			</section>
+		</section>
+		<!-- END CLOSING -->
+
+		<!-- BONUS -->
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="js/jquery-2.2.3.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'none', // none/fade/slide/convex/concave/zoom
+				backgroundTransition: 'none',
+
+				// Optional reveal.js plugins
+				dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+			Reveal.addEventListener('slidechanged', function(event) {
+				if($(event.currentSlide).attr('data-background-iframe')) {
+					$('.reveal > .backgrounds').css('z-index', 1);
+					$('iframe').css('width', '100%')
+					$('iframe').css('z-index', 2)
+					$('iframe').css('position', 'fixed')
+				} else {
+					$('.reveal > .backgrounds').css('z-index', 0);
+					$('iframe').css('z-index', 0)
+					$('iframe').css('position', 'static')
+				}
+			});
+
+		</script>
+
+	</body>
+	</html>
