@@ -86,13 +86,12 @@
 				</section>
 			</section>
 
-			<!-- EARLY WORK 1950s -->
+			<!-- OSCILLOSCOPE ART -->
 			<section data-background="#222" class='white'>
 				<section><h2>oscilloscope art</h2></section>
-				<section><h2>Ben F. Laposky art, 1950s</h2></section>
+				<section><h2>Ben F. Laposky, 1950s</h2></section>
 				<section data-background="img/ben-laposky/rec-math.jpg" data-background-size="contain">
 				</section>
-				<!-- <section data-background="img/ben-laposky/oscillons-1.png" data-background-size="60%"></section> -->
 				<section data-background="img/ben-laposky/oscillons-2.png" data-background-size="60%"></section>
 				<section data-background="img/ben-laposky/oscillons-3.jpg" data-background-size="auto"></section>
 				<section>
@@ -109,11 +108,13 @@
 						- Ben Laposky, August 1975 [<a href="https://www.atariarchives.org/artist/sec6.php">source]</a>
 					</section>
 				</section>
-				<section>
+
+				<!-- TEXT BASED ART -->
+				<section data-background="#222" class='white'>
 					<section>
 						<h2>text-based art</h2>
 					</section>
-					<section><h2>Frederic Hammersley in the 1960s</h2></section>
+					<section><h2>Frederic Hammersley, 1960s</h2></section>
 					<section data-background="img/frederick-hammersley/equal-tea-talk.jpg" data-background-size="60%">
 						<p class="footnote">Equal Tea Talk, created on an IBM mainframe in 1969 <a href="http://hammersleyfoundation.org/index.php/artwork/computer-drawings">[source]</a></p>
 					</section>
@@ -124,127 +125,42 @@
 						<p class="footnote">Undernourished, created on an IBM mainframe in 1969</p>
 					</section>
 				</section>
-				<section>
-				</section>
-				<section>
-					<h2>plotter art</h2>
+
+				<!-- PLOTTER ART -->
+				<section data-background="#222" class='white'>
+					<section>
+						<h2>plotter art</h2>
+					</section>
+					<section>
+						<h2>Vera Molnar, 1960-1980s</h2>
+					</section>
+					<section data-background="img/vera-molnar/molnar-1.png" data-background-size="60%"></section>
+					<section data-background="img/vera-molnar/molnar-trapeziums.jpg" data-background-size="60%"></section>
+					<section data-background="img/vera-molnar/molnar-paul-klee-1.jpg" data-background-size="60%"></section>
+					<section data-background="img/vera-molnar/molnar-paul-klee-2.jpg" data-background-size="60%"></section>
 				</section>
 			</section>
 
 			<!-- Intro to p5.js -->
-			<!-- Drawing lines, shapes -->
-			<!-- Grid: ascii art -->
-			<!-- Math: parametric equations -->
 			<section data-background="#222" class='white'>
 				<section>
-					<p>simple instructions repeated -> interesting visuals</p>
+					<h2>Intro to p5.js</h2>
 				</section>
-				<!-- maze-like -->
-				<section data-markdown>
-					### maze
-					```python
-					for row in grid:
-					for cell in row:
-					if random() > 0.5:
-					draw line from bottom right to top left of cell
-					else
-					draw line from bottom left to top right of cell
-					```
-				</section>
-				<section data-background-iframe="https://codepen.io/smcviki/pen/LzGGwx?editors=0010">
-				</section>
-
-
-				<section data-markdown>
-					### recursive hexagon
-					```ruby
-					create a grid of hexagon tilings
-
-					4.times do
-					for each hexagon do
-					replace with a smaller hexagon
-					in the middle
-					border each vertex of the hexagon
-					with 4 small triangles
-					end
-					end
-
-					fill each hexagon with a random teal shades
-					fill each triangle with a random translucent pink shade
-					```
-				</section>
-
-				<section data-background-iframe="http://piratefsh.github.io/p5js-art/public/frosted-hex/"></section>
-
-				<!-- shells -->
-				<section data-markdown>
-					### gauze
-					```txt
-					set stroke color to a translucent grey
-
-					pick random points p0, p1, p2, p3
-
-					while true
-					draw a bezier curve with points
-					p0, p1, p2, p3
-					move each point p0, p1, p2, p3
-					ever so slightly in a random direction
-
-					```
-				</section>
-				<section >
-					<h3> bezier curve</h3>
-					<img src="img/bezier.jpg" alt="bezier curve illustration"/>
-
-
-					<p><small>source: <a href="http://www.e-cartouche.ch/content_reg/cartouche/graphics/en/html/Curves_learningObject2.htm">http://www.e-cartouche.ch</a></small></p>
-				</section>
-
-				<section data-background-iframe="http://piratefsh.github.io/generative-art/public/shells">
-				</section>
-
-				<!-- constellations -->
-				<section data-markdown>
-					### constellations
-					```ruby
-					# create 20 random circles
-					20.times do
-					x = random()
-					y = random()
-
-					circles.push({
-					center: Point.new(x, y),
-					radius: random()
-				})
-				end
-
-				# for all intersecting circles
-				# draw line between their centers
-				for c1 in circles do
-				for c2 in circles do
-				if c1 and c2 intersect
-				line(c1.center, c2.center)
-				end
-				end
-				end
-				```
 			</section>
-			<section data-background-iframe='http://piratefsh.github.io/generative-art/public/constellations/'>
+			<!-- Drawing lines, shapes -->
+			<section data-background="#222" class='white'>
+				<section><h3>lines</h3></section>
+				<section><h3>shapes</h3></section>
+			</section>
+			<!-- Grid -->
+			<section>
+				<section><h3>grid</h3></section>
+			</section>
+			<!-- Trigo math -->
+			<section>
+				<section><h3>parametric equations</h3></section>
 			</section>
 
-
-			<!-- color typewriter -->
-			<section data-markdown>
-				### synesthesia
-				```txt
-				assign a colored square to each alphabet.
-
-				now, spell your name.
-				```
-			</section>
-
-			<section data-background-iframe="https://codepen.io/smcviki/live/boExpR">
-			</section>
 		</section>
 
 		<!-- CLOSING -->
