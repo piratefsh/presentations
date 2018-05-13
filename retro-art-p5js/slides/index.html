@@ -169,6 +169,10 @@
             <h2>Frederic Hammersley, 1960s</h2>
           </section>
           <section>
+            <img src="img/frederick-hammersley/ibms360.jpg" />
+            <p><small>IBM System 360 <a href="https://www.wikiwand.com/en/IBM_System/360">[source]</a></small></p>
+          </section>
+          <section>
             <img src="img/frederick-hammersley/equal-tea-talk.jpg"/>
             <p><small>Equal Tea Talk, 1969 <a href="http://hammersleyfoundation.org/index.php/artwork/computer-drawings">[source]</a></small></p>
           </section>
@@ -187,6 +191,10 @@
             <p><small>Jelly Centers Detail, 1969 <a href=http://lacmaonfire.blogspot.com/2017/08/frederick-hammersley-and-computer.html>[source]</a></small></p>
           </section>
 
+          <section>
+            <h3>ASCII art <span class="fragment">?</span></h3>
+            <p class="fragment">not quite, more like <a href="https://www.wikiwand.com/en/EBCDIC">EBCDIC</a> art</p>
+          </section>
         <!-- </section> -->
 
         <!-- PLOTTER ART -->
@@ -215,6 +223,9 @@
             <p><small> A la Recherche de Paul Klee, 1970. <br/> Material: ink on paper, plotter drawing <a href="https://www.centrepompidou.fr/cpv/resource/cez6op/rzEeXa">[source]</a></small>
           </section>
           <section>
+            <iframe width="800" height="600" src="https://www.youtube.com/embed/iziP0cQhOFY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </section>
+          <section>
             <img src="img/vera-molnar/molnar-1.png" style="height:500px; width: auto"/>
             <p><small>Un, Deux, Trois, 1952, <br/> Material: Acrylic on canvas <a href="http://www.paris-art.com/comprendre-cest-transformer/">[source]</a></small>
           </section>
@@ -222,8 +233,8 @@
             <img src="img/vera-molnar/molnar-trapeziums.jpg" style="height:500px; width: auto"/>
             <p><small>Trapeziums <a href="http://digitalartmuseum.org/gallery/image/8699.html">[source]</a></small>
           </section>
-          <section>
-            <iframe width="800" height="600" src="https://www.youtube.com/embed/iziP0cQhOFY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+          <section data-background-iframe="http://www.seniorandshopmaker.com/current-exhibition/">
           </section>
         </section>
       </section>
@@ -237,8 +248,10 @@
           <a href="https://p5js.org/">https://p5js.org/</a>
         </section>
         <section>
-          <img src="img/p5js/alpha-p5js.png"/>
-          <a href="http://alpha.editor.p5js.org/piratefsh/sketches/HkkDuZIAM">in-browserp5.js editor</a>
+          <a href="http://alpha.editor.p5js.org/piratefsh/sketches/HkkDuZIAM">
+            <img src="img/p5js/alpha-p5js.png"/>
+          </a>
+          <a href="http://alpha.editor.p5js.org/piratefsh/sketches/HkkDuZIAM">in-browser p5.js editor</a>
         </section>
       </section>
 
@@ -331,7 +344,7 @@
           * [bezier curves](https://p5js.org/reference/#/p5/bezier)
           * [custom shapes](https://p5js.org/reference/#/p5/beginShape)
           * [images](https://p5js.org/reference/#/p5/loadImage)
-          * [mouse position](https://p5js.org/reference/#/p5/mouseX)
+          * [user interactions](https://p5js.org/reference/#group-Events)
         </section>
 
 
@@ -341,6 +354,10 @@
       <section data-background="#222" class='white'>
         <section data-background="#ed225d">
           <h2>Techniques</h2>
+        </section>
+        <section>
+          <h3>random</h3>
+          <img src="img/vintage-random.jpg"/>
         </section>
         <section>
           <h3>random</h3>
@@ -360,19 +377,27 @@
 
         <section>
           <h3>grid</h3>
+          <iframe width="510" height="510" style="width:510px; height:510px" src="https://piratefsh.github.io/p5js-art/public/fuzzy/" frameborder="0" allowfullscreen=""></iframe>
+
+        </section>
+        <section>
+          <h3>grid</h3>
 
           <pre>
             <code class="javascript">
-  const gX = 20;
-  const gY = 20;
-  const cellSizeX = width/gX;
-  const cellSizeY = height/gY;
+  const numRows = 10;
+  const numCols = 10;
 
-  for(let i = 0; i < gX; i++){
-    for(let j = 0; j < gY; j++){
+  // calculate width and height of each cell
+  const cellSizeX = width/numRows;
+  const cellSizeY = height/numCols;
+
+  // for each cell in grid
+  for(let i = 0; i < numRows; i++){
+    for(let j = 0; j < numCols; j++){
+
+      // draw ellipse with random size
       const dotSize = random(0, 30);
-      const randRed = random(100, 255);
-      fill(randRed, 100, 100);
       ellipse(i*cellSizeX, j*cellSizeY, dotSize, dotSize);
     }
   }
@@ -390,17 +415,32 @@
         </section>
       </section>
 
-      <section data-background="#222" class='white'>
-        <section data-background="#820d43"><h2>Making your own art</h2></section>
-        <section><h3>exercise: how was it made??</h3></section>
+      <section data-background="#820d43" class='white'>
+        <section><h2>Making your own retro art</h2></section>
         <section>
-          <h3>recreate a retro piece</h3>
+          <h3>Inspirations</h3>
           <ul>
-            <li>printed handouts</li>
             <li><a href="http://recodeproject.com/">Recode project</a></li>
             <li><a href="http://writing-machines.tumblr.com/">Writing Machines</a> Tumblr</li>
           </ul>
         </section>
+        <section>
+          <h2>R. D. E. (Ootje) Oxenaar, 1970s</h2>
+        </section>
+        <section>
+          <img src="img/oxenaar/oxenaar_pk1.jpg"/>
+          <img src="img/oxenaar/oxenaar_pk2.jpg"/>
+          <p><small><a href="http://www.heikewerner.com/zomerzegel_en.html">[source]</a></small></p>
+        </section>
+
+         <section>
+          <img src="img/oxenaar/oxenaar_pk4.jpg"/>
+          <img src="img/oxenaar/oxenaar_pk5.jpg"/>
+          <p><small><a href="http://www.heikewerner.com/zomerzegel_en.html">[source]</a></small></p>
+        </section>
+      </section>
+
+      <section data-background="#222" class='white'>
       </section>
     </section>
 
