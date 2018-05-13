@@ -53,10 +53,11 @@
       <section data-background="#222" class='white'>
         <section data-background="#891dad">
           <h2>Sher Minn</h2>
+          <p>Fall 1, 2015</p>
         </section>
         <section class="text-shadow blur-bg" data-background="img/malaysia.jpg">
           <h3>Malaysian</h3>
-          <img class="logo" src="img/malaysia_flag.svg" alt="Malaysian"/>
+          <img class="logo" src="img/malaysia_flag.svg" width="200" alt="Malaysian"/>
         </section>
         <section class="text-shadow blur-bg" data-background="img/viewfromtpt.jpg">
           <h3>web platform engineer</h3>
@@ -64,37 +65,55 @@
         </section>
       </section>
 
+      <section data-background="#272387" class='white'>
+        <section>
+          <h2>about this workshop</h2>
+        </section>
+      </section>
+
       <!-- WHAT IS COMPUTER ART -->
-      <section data-background="#222" class='white'>
+      <section data-background="#272387" class='white'>
         <section data-background="#272387">
-          <h2>computer art</h2>
+          <h2>Computer art</h2>
         </section>
         <section>
-          <p>any art in which computers play a role in production or display of the artwork</p>
-        </section>
-        <section>
-          <h3>what counts as a computer?</h3>
-        </section>
-        <section>
-          <h3>related terms</h3>
+          <h3>other terms</h3>
           <ul>
-            <li>algorithmic art</li>
-            <li>generative art</li>
-            <li>digital art</li>
-            <li>computer graphics</li>
+            <li class="fragment">computer graphics</li>
+            <li class="fragment">generative art</li>
+            <li class="fragment">algorithmic art</li>
+            <li class="fragment">digital art</li>
           </ul>
+        </section>
+        <section>
+          <h3>any art <span class="fragment">in which computers</span> <span class="fragment"> play a role in production </span><span class="fragment">or display of the artwork</span></h3>
+        </section>
+
+        <section>
+          computer as a digital canvas
+        </section>
+
+        <section>
+          computers to generate graphics CGI
+        </section>
+
+        <section>
+          machine learning
         </section>
       </section>
 
       <!-- OSCILLOSCOPE ART -->
       <section data-background="#222" class='white'>
-        <section data-background="#272387"><h2>oscilloscope art</h2></section>
+        <section data-background="#272387">
+          <h2>Computer art <br/>in the 1950s - 1970s</h2>
+        </section>
+        <section data-background="#272387"><h2>Oscilloscope art</h2></section>
         <section><h2>Ben F. Laposky, 1950s</h2></section>
         <section data-background="img/ben-laposky/rec-math.jpg" data-background-size="contain">
         </section>
         <section data-background="img/ben-laposky/oscillons-2.png" data-background-size="60%"></section>
         <section data-background="img/ben-laposky/oscillons-3.jpg" data-background-size="auto"></section>
-        <section>
+       <!--  <section>
           <blockquote><p>Objections are sometimes made that this and other kinds of computer art are 'machine art'—cold, impersonal, even inhuman. 
           </p><p>
           In some cases this may appear to be so, but it is obvious that the machines or instruments that form them are the products of imagination and planning, and at some previous initial point, the work of human hands.</p></blockquote>
@@ -107,12 +126,12 @@
             </p></blockquote>
             - Ben Laposky, August 1975 [<a href="https://www.atariarchives.org/artist/sec6.php">source]</a>
           </section>
-        </section>
+        </section> -->
 
         <!-- TEXT BASED ART -->
         <section data-background="#222" class='white'>
           <section data-background="#272387">
-            <h2>text-based art</h2>
+            <h2>Text-based art</h2>
           </section>
           <section><h2>Frederic Hammersley, 1960s</h2></section>
           <section data-background="img/frederick-hammersley/equal-tea-talk.jpg" data-background-size="60%">
@@ -129,7 +148,11 @@
         <!-- PLOTTER ART -->
         <section data-background="#222" class='white'>
           <section data-background="#272387">
-            <h2>plotter art</h2>
+            <h2>Plotter art</h2>
+          </section>
+
+          <section>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iziP0cQhOFY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </section>
           <section>
             <h2>Vera Molnar, 1960-1980s</h2>
@@ -150,10 +173,12 @@
           <a href="https://p5js.org/">https://p5js.org/</a>
         </section>
       </section>
+
+
       <!-- Drawing lines, shapes -->
       <section data-background="#222" class='white'>
         <section data-background="#ed225d">
-          <h2>part 1: basics</h2>
+          <h2>Drawing basics</h2>
         </section>
         <section data-markdown>
           ### setup code
@@ -218,7 +243,8 @@
           <pre>
             <code class="javascript">
   // setting colors
-  stroke(255, 0, 255); //set stroke color with r, g, b
+  stroke(255, 0, 255); // r, g, b
+  stroke('#ff00ff'); // hex color
   fill(0, 0, 200, 100); //set fill color with r, g, b, and alpha
   rect(0, 0, 300, 200)
 
@@ -242,18 +268,66 @@
 
 
       </section>
+
+      <!-- TECHNIQUES -->
       <section data-background="#222" class='white'>
-        <section data-background="#ed225d"><h2>part 2: techniques</h2></section>
-        <section><h3>random</h3></section>
-        <section><h3>grid</h3></section>
-        <section><h3>animation</h3></section>
+        <section data-background="#ed225d">
+          <h2>Techniques</h2>
+        </section>
+        <section>
+          <h3>random</h3>
+          <pre>
+            <code class="javascript">
+  function draw(){
+    background(200);
+    // random returns a value between the two params
+    const randX = random(0, width);
+    ellipse(randX, height/2, 10, 10);
+  }
+            </code>
+          </pre>
+        </section>
+        <section>
+          <h3>grid</h3>
+
+          <pre>
+            <code class="javascript">
+  const gX = 20;
+  const gY = 20;
+  const cellSizeX = width/gX;
+  const cellSizeY = height/gY;
+
+  for(let i = 0; i < gX; i++){
+    for(let j = 0; j < gY; j++){
+      const dotSize = random(0, 30);
+      const randRed = random(100, 255);
+      fill(randRed, 100, 100);
+      ellipse(i*cellSizeX, j*cellSizeY, dotSize, dotSize);
+    }
+  }
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h3>animation</h3>
+        </section>
+        <section>
+          <h3>transforms</h3>
+        </section>
       </section>
 
       <section data-background="#222" class='white'>
-        <section data-background="#ed225d"><h2>part 2: techniques</h2></section>
-        <section><h3>random</h3></section>
-        <section><h3>grid</h3></section>
-        <section><h3>animation</h3></section>
+        <section data-background="#820d43"><h2>Making your own art</h2></section>
+        <section><h3>exercise: how was it made??</h3></section>
+        <section>
+          <h3>recreate a retro piece</h3>
+          <ul>
+            <li>printed handouts</li>
+            <li><a href="http://recodeproject.com/">Recode project</a></li>
+            <li><a href="http://writing-machines.tumblr.com/">Writing Machines</a> Tumblr</li>
+          </ul>
+        </section>
       </section>
     </section>
 
