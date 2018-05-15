@@ -192,6 +192,8 @@
           <section data-background="#272387">
             <h2>Frederic Hammersley, 1960s</h2>
           </section>
+
+          <section data-background="img/frederick-hammersley/hammersley-abstract.png"></section>
           <section>
             <img src="img/frederick-hammersley/ibms360.jpg" />
             <p><small>IBM System 360 <a href="https://www.wikiwand.com/en/IBM_System/360">[source]</a></small></p>
@@ -224,6 +226,8 @@
           <section>
             <h3>ASCII art <span class="fragment">?</span></h3>
             <p class="fragment">not quite, more like <a href="https://www.wikiwand.com/en/EBCDIC">EBCDIC</a> art</p>
+
+            <p class="fragment"><small>(Extended Binary Coded Decimal Interchange Code)</small></p>
           </section>
 
           <section>
@@ -516,6 +520,22 @@ function draw() {
 
         <section>
           <h3>transforms</h3>
+          <pre>
+            <code class="javascript">
+  function draw() {
+  background(220, 250, 255);
+
+  translate(width/2, height/2);   // set 0,0 to center of canvas
+  rotate(PI/4); // rotate canvas by PI/2 (45 deg)
+
+  fill('green')
+  rect(0, 0, 80, 80);
+}
+            </code>
+          </pre>
+        </section>
+
+        <section data-background-iframe="http://alpha.editor.p5js.org/piratefsh/sketches/H1DFyqOCf">
         </section>
 
       </section>
