@@ -4,9 +4,9 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>algorithmic art with simple rules | by Sher Minn Chong</title>
+	<title>make art with code (and simple rules) | by Sher Minn Chong</title>
 
-	<meta name="description" content="algorithmic art with simple rules | by Sher Minn Chong">
+	<meta name="description" content="make art with code (and simple rules) | by Sher Minn Chong">
 	<meta name="author" content="Sher Minn Chong">
 
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -74,7 +74,7 @@
 		background: none;
 	}
 	.reveal section img.logo{
-		max-width: 200px;
+		max-width: 400px;
 	}
 
 	.overview section.has-dark-background h2,
@@ -222,7 +222,7 @@
 	}
 
 	.slide-background.present:after{
-		content: '@piratefsh | art with code | slides: https://git.io/v5bjf';
+		content: '@piratefsh | art with code | slides: https://git.io/vhrYw';
 		font-weight: 400;
 		position: fixed;
 		bottom: 0px;
@@ -316,30 +316,6 @@
 					<p>e.g. art with algorithms</p>
 				</section>
 
-			</section>
-
-			<!-- SIMPLE RULES CREATE COMPLEX PATTERNS -->
-			<section data-background="#222" class='white'>
-				<section><h2>koch snowflake</h2></section>
-					<section data-background="img/koch-snowflake-4.png" data-background-size="60%"></section>
-					<section data-background="img/koch-1.png" data-background-size="80%"></section>
-					<section data-background="img/koch-2.png" data-background-size="80%"></section>
-					<section data-background="img/koch-3.png" data-background-size="80%"></section>
-					<section data-background="img/koch-4.png" data-background-size="80%"></section>
-					<section data-background="img/koch-snowflake-4.png" data-background-size="60%"></section>
-
-					<section>
-						<p>one level deeper</p>
-					</section>
-					<section data-background-color="rgb(20, 10, 20)" data-background="img/koch-l3-t2-w2.png" data-background-size="80%"></section>
-					<section data-background-color="rgb(20, 10, 20)"  data-background="img/koch-l2-t5-w1.png" data-background-size="80%"></section>
-			</section>
-
-			<!-- ALGORITHM EXERCISE -->
-			<section data-background="#222" class='white'>
-				<section>
-					<p>simple instructions repeated -> interesting visuals</p>
-				</section>
 				<!-- maze-like -->
 				<section data-markdown>
 					### maze
@@ -355,99 +331,114 @@
 				<section data-background-iframe="https://codepen.io/smcviki/pen/LzGGwx?editors=0010">
 				</section>
 
+				<section>
+					<p><span class="fragment">simple instructions repeated</span> <span class="fragment">-> interesting visuals</span></p>
+				</section>
+			</section>
+		</section>
 
-				<section data-markdown>
-					### recursive hexagon
-					```ruby
-					create a grid of hexagon tilings
+			<!-- SIMPLE RULES CREATE COMPLEX PATTERNS -->
+				<section data-background="#222" class='white'>
+					<section><h2>recursion</h2></section>
+					<section><h2>koch snowflake</h2></section>
+						<section data-background="img/koch-snowflake-4.png" data-background-size="60%"></section>
+						<section data-background="img/koch-1.png" data-background-size="80%"></section>
+						<section data-background="img/koch-2.png" data-background-size="80%"></section>
+						<section data-background="img/koch-3.png" data-background-size="80%"></section>
+						<section data-background="img/koch-4.png" data-background-size="80%"></section>
+						<section data-background="img/koch-snowflake-4.png" data-background-size="60%"></section>
 
-					4.times do
-						for each hexagon do
-						 	replace with a smaller hexagon
-						 		in the middle
-						 	border each vertex of the hexagon
-						 		with 4 small triangles
+						<section>
+							<p>one level deeper</p>
+						</section>
+						<section data-background-color="rgb(20, 10, 20)" data-background="img/koch-l3-t2-w2.png" data-background-size="80%"></section>
+						<section data-background-color="rgb(20, 10, 20)"  data-background="img/koch-l2-t5-w1.png" data-background-size="80%"></section>
+
+
+					<section data-markdown>
+						### recursive hexagon
+						```ruby
+						create a grid of hexagon tilings
+
+						4.times do
+							for each hexagon do
+							 	replace with a smaller hexagon
+							 		in the middle
+							 	border each vertex of the hexagon
+							 		with 4 small triangles
+							end
 						end
-					end
 
-					fill each hexagon with a random teal shades
-					fill each triangle with a random translucent pink shade
-					```
+						fill each hexagon with a random teal shades
+						fill each triangle with a random translucent pink shade
+						```
+					</section>
+
+					<section data-background-iframe="http://piratefsh.github.io/p5js-art/public/frosted-hex/"></section>
+
 				</section>
 
-				<section data-background-iframe="http://piratefsh.github.io/p5js-art/public/frosted-hex/"></section>
-
-				<!-- shells -->
-				<section >
-					<h3> bezier curves</h3>
-					<img src="img/bezier.jpg" alt="bezier curve illustration"/>
-
-
-					<p><small>source: <a href="http://www.e-cartouche.ch/content_reg/cartouche/graphics/en/html/Curves_learningObject2.htm">http://www.e-cartouche.ch</a></small></p>
-				</section>
-
-				<section data-markdown>
-					### gauze
-					```txt
-					set stroke color to a translucent grey
-
-					pick random points p0, p1, p2, p3
-
-					while true
-						draw a bezier curve with points
-							p0, p1, p2, p3
-						move each point p0, p1, p2, p3
-							ever so slightly in a random direction
-
-					```
-				</section>
-
-				<section data-background-iframe="http://piratefsh.github.io/generative-art/public/shells">
-				</section>
-
-				<!-- constellations -->
-				<section data-background-iframe='http://piratefsh.github.io/generative-art/public/constellations/'>
-				</section>
+				<section data-background="#222" class='white'>
+					<!-- shells -->
+					<section>
+						<h2>movement and geometry</h2>
+					</section>
+					<section>
+						<h3>bezier curve</h3>
+						<img src="img/bezier.jpg" alt="bezier curve illustration"/>
 
 
-				<section data-markdown>
-					### constellations
-					```ruby
-					# create 20 random circles
-					20.times do
-					  x = random()
-					  y = random()
+						<p><small>source: <a href="http://www.e-cartouche.ch/content_reg/cartouche/graphics/en/html/Curves_learningObject2.htm">http://www.e-cartouche.ch</a></small></p>
+					</section>
 
-					  circles.push({
-					    center: Point.new(x, y),
-					    radius: random()
-					  })
-					end
+					<section data-markdown>
+						### gauze
+						```txt
+						set stroke color to a translucent grey
 
-					# for all intersecting circles
-					# draw line between their centers
-					for c1 in circles do
-					  for c2 in circles do
-					    if c1 and c2 intersect
-					      line(c1.center, c2.center)
-					    end
-					  end
-					end
-					```
-				</section>
+						pick random points p0, p1, p2, p3
 
-				<!-- color typewriter -->
-<!-- 				<section data-markdown>
-					### synesthesia
-					```txt
-					assign a colored square to each alphabet.
+						while true
+							draw a bezier curve with points
+								p0, p1, p2, p3
+							move each point p0, p1, p2, p3
+								ever so slightly in a random direction
 
-					now, spell your name.
-					```
-				</section>
+						```
+					</section>
 
-				<section data-background-iframe="https://codepen.io/smcviki/live/boExpR">
-				</section> -->
+					<section data-background-iframe="http://piratefsh.github.io/generative-art/public/shells">
+					</section>
+
+					<!-- constellations -->
+					<section data-markdown>
+						### constellations
+						```ruby
+						# create 20 random circles
+						20.times do
+						  x = random()
+						  y = random()
+
+						  circles.push({
+						    center: Point.new(x, y),
+						    radius: random()
+						  })
+						end
+
+						# for all intersecting circles
+						# draw line between their centers
+						for c1 in circles do
+						  for c2 in circles do
+						    if c1 and c2 intersect
+						      line(c1.center, c2.center)
+						    end
+						  end
+						end
+						```
+					</section>
+
+					<section data-background-iframe='http://piratefsh.github.io/generative-art/public/constellations/'>
+					</section>
 			</section>
 
 			<!-- BONUS -->
@@ -468,26 +459,54 @@
 					<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/generative?src=hash">#generative</a> drawing to rules based on Morse code, encoding my goodbye to <a href="https://twitter.com/hashtag/Cassini?src=hash">#Cassini</a>, &amp; bye-for-now to Saturn &amp; moons <a href="https://twitter.com/hashtag/CassiniInspires?src=hash">#CassiniInspires</a> <a href="https://twitter.com/hashtag/sciart?src=hash">#sciart</a> <a href="https://t.co/5w6qVbP2Lr">pic.twitter.com/5w6qVbP2Lr</a></p>&mdash; Immy Smith🖌️🔬✏️🐞 (@DrImmySmith) <a href="https://twitter.com/DrImmySmith/status/908595731048656896">September 15, 2017</a></blockquote>
 					<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 				</section>
+
+				<section>
+					<h3>algorithmic art before computers</h3>
+				</section>
+				<section data-background="#222">
+            <h2>Vera Molnar, 1960-1980s</h2>
+          </section>
+          <section>
+            <img src="img/vera-molnar/MOLNAR-algo.jpg" style="height:500px; width: auto"/>
+            <p><small>Distribution Aleatoire De 4 Elements (Pour Prog. Ordinateur) / Random Distribution of 4 Elements (for the computer), 1970 <a href="https://hyperallergic.com/437834/vera-molnar-drawings-1949-1986-senior-and-shopmaker-gallery-2018/">[source]</a></small>
+          </section>
+
+          <section>
+            <img src="img/vera-molnar/molnar-haphazard.png" style="height:500px; width: auto"/>
+            <p><small>Quatre Éléments Distribués au Hasard, 1959.<br/> Material: Adhesive film strips stuck on cardboard <a href="https://www.centrepompidou.fr/cpv/resource/cez6op/rzEeXa">[source]</a></small>
+          </section>
+          <section>
+            <img src="img/vera-molnar/molnar-paul-klee-1.jpg"/>
+            <p><small> A la Recherche de Paul Klee, 1971. <br/> Material: felt tip pen on paper <a href="https://www.centrepompidou.fr/cpv/resource/cez6op/rzEeXa">[source]</a></small>
+          </section>
+
+          <section data-background="#222"><h2>Ben F. Laposky, 1950-1960</h2></section>
+
+        <section>
+          <img src="img/ben-laposky/rec-math-page.jpg" style="height: 600px; width: auto"/>
+          <p><small>Various Oscillons <a href=http://ruinsorbooks.com/2013/03/electronic-abstractions-mathematics-in-design-recreational-mathematics-ben-f-laposky/>[source]</a></small></p>
+        </section>
+
+        <section>
+          <img src="img/ben-laposky/oscillons-4.jpg"/>
+          <p><small>Oscillons #41 <a href="http://ruinsorbooks.com/2013/03/electronic-abstractions-mathematics-in-design-recreational-mathematics-ben-f-laposky"/>[source]</a></small></p>
+        </section>
+
+        <section>
+          <img src="img/ben-laposky/rec-math.jpg" style="height: 600px; width: auto"/>
+          <p><small>Cover of Recreational Mathematics magazine <a href="http://ruinsorbooks.com/2013/03/electronic-abstractions-mathematics-in-design-recreational-mathematics-ben-f-laposky"/>[source]</a></small></p>
+        </section>
 			</section>
 
 
 			<!-- REALLY COOL GENERATIVE ART -->
-			<section data-background="#222" class='white'>
+			<!-- <section data-background="#222" class='white'>
 				<section>
-					<h2>favorite generative artists</h2>
-				</section>
-				<section>
-					<h3>OGs</h3>
-				</section>
-				<section data-background-iframe="http://www.seniorandshopmaker.com/exhibitions/2018/vera-molnar-drawings-1949-1986"></section>
-				<section data-background-iframe="http://ruinsorbooks.com/2013/03/electronic-abstractions-mathematics-in-design-recreational-mathematics-ben-f-laposky"></section>
-				<section data-background-iframe="http://hammersleyfoundation.org/index.php/artwork/computer-drawings"></section>
-				<section>
-					<h3>contemporary</h3>
+					<h2>contemporary generative artists</h2>
 				</section>
 				<section data-background-iframe="http://img.inconvergent.net/generative/"></section>
 				<section data-background-iframe="http://sasj.tumblr.com/"></section>
-			</section>
+			</section> -->
 
 			<!-- CLOSING -->
 			<section data-background-iframe='https://piratefsh.github.io/p5js-art/public/chrysanthemums/index.html' class="white">
