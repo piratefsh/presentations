@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>algorithmic art with simple rules | by Sher Minn Chong</title>
+
+	<meta name="description" content="algorithmic art with simple rules | by Sher Minn Chong">
+	<meta name="author" content="Sher Minn Chong">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+
+	<style>
+	.reveal .logo{
+		border: none;
+		box-shadow: none;
+		max-width: 280px;
+		max-height: 280px;
+		display: inline-block;
+		margin: 0.5em 1em;
+		vertical-align: middle;
+	}
+	.reveal .footnote {
+		font-size: 0.5em;
+		position: fixed;
+		bottom: 0;
+		text-shadow: 0px 0px 5px black;
+	}
+
+	.reveal .white a{
+		color: #eee;
+	}
+
+	.reveal .footnote a {
+		color: white;
+		text-decoration: underline;
+	}
+
+	.reveal .has-dark-background  a{
+		color: #eee;
+		text-decoration: underline;
+	}
+
+	.reveal .pad-top {
+		margin-top: 1.25em;
+	}
+
+	.reveal pre code{
+		max-height: 500px;
+	}
+
+	.reveal section img{
+		border: 0px;
+		box-shadow: none;
+		background: none;
+	}
+	.reveal section img.logo{
+		max-width: 200px;
+	}
+
+	.overview section.has-dark-background h2,
+	.overview section.has-dark-background h3,
+	.overview section.has-dark-background a,
+	.overview section.has-dark-background p{
+		color: black !important;
+	}
+
+	.text-shadow,
+	.text-shadow h1,
+	.text-shadow h2,
+	.text-shadow h3{
+		text-shadow: 0px 0px 5px black;
+	}
+	.text-shadow-lite,
+	.text-shadow-lite h1,
+	.text-shadow-lite h2,
+	.text-shadow-lite h3{
+		text-shadow: 0px 0px 5px #EDF3E8;
+	}
+
+	.reveal iframe.bg-iframe{
+		background-color: black;
+		position: fixed;
+		height: 100vh;
+		width: 100vw;
+		max-width: 100%;
+		max-height: 100%;
+		margin-left: 0%;
+		margin-right: 0%;
+		margin-top: 24%;
+		z-index: -1;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+	}
+
+	.reveal img{
+		vertical-align: middle;
+	}
+
+	.reveal .margin-top{
+		margin-top: 48px;
+	}
+
+	.reveal .col-6{
+		width: 50%;
+		float: left;
+		display: inline-block;
+	}
+
+	.sample-frame{
+		border-collapse: collapse;
+	}
+	.sample-frame tr td{
+		width: 80px;
+		height: 80px;
+		background: white;
+		padding: 0px;
+		border: 1px #bbb solid;
+	}
+	.diff-frame tr td{
+		background: rgba(255, 255, 255, 0.0)
+	}
+	.sample-frame .dark{
+		background: rgba(100, 100, 100, 1);
+	}
+	.sample-frame .diff{
+		background: red;
+	}
+	.reveal table.sample-frame tr:last-child td{
+		border-bottom: 1px #bbb solid;
+	}
+
+	.reveal .plant a{
+		color: #587F48;
+	}
+
+	.reveal .white h1,
+	.reveal .white h2,
+	.reveal .white h3,
+	.reveal .white ul li,
+	.reveal .white ol li,
+	.reveal .white
+	{
+		color: white !important;
+	}
+	.reveal .plant.slide-background{
+		opacity: 0.8 !important;
+	}
+	.reveal .plant h1,
+	.reveal .plant h2,
+	.reveal .plant h3,
+	.reveal .plant h4,
+	.reveal .plant ul li,
+	.reveal .plant ol li,
+	.reveal .plant
+	{
+		color: #444 !important;
+		/*font-family: monospace;*/
+	}
+
+	.reveal .blur-bg .slide-background,
+	.reveal .blur-bg.slide-background{
+		-webkit-filter: blur(2px) grayscale(100%);
+		-moz-filter: blur(2px) grayscale(100%);
+		-o-filter: blur(2px) grayscale(100%);
+		-ms-filter: blur(2px) grayscale(100%);
+		filter: blur(2px) grayscale(100%);
+	}
+
+	.reveal .bw-bg .slide-background,
+	.reveal .bw-bg.slide-background{
+	  -webkit-filter: grayscale(100%);
+	  -moz-filter: grayscale(100%);
+	  -o-filter: grayscale(100%);
+	  -ms-filter: grayscale(100%);
+	  filter: grayscale(100%);
+	}
+
+	.reveal .blur-bg .slide-background:after{
+		-webkit-filter: none;
+		-moz-filter: none;
+		-o-filter: none;
+		-ms-filter: none;
+		filter: none;
+	}
+
+	.reveal em + h3{
+		margin-top: 20px;
+	}
+
+	.reveal tr,
+	.reveal table td {
+		border-bottom: 0px !important;
+		text-align: center;
+		/*color: rgba(255,255,255, 0.8);*/
+	}
+
+	.reveal table img {
+		display: inline-block;
+		margin: 0;
+	}
+
+	.slide-background.present:after{
+		content: '@piratefsh | art with code | slides: https://git.io/v5bjf';
+		font-weight: 400;
+		position: fixed;
+		bottom: 0px;
+		display: inline-block;
+		padding: 16px;
+		left: 0px;
+		font-size: 18px;
+		text-shadow: none !important;
+		box-shadow: none;
+		color: white;
+	}
+
+	twitterwidget{
+		margin: 0 auto !important;
+	}
+
+	.reveal blockquote{
+		font-style: normal;
+		position: relative;
+		padding: 1em 1.5em;
+		background: none;
+		box-shadow: none;
+	}
+
+	.reveal blockquote:before,
+	.reveal blockquote:after{
+		font-size: 3em;
+		opacity: 0.8;
+		line-height: 1em;
+	}
+
+	.reveal blockquote:before{
+		content: '“';
+		position: absolute;
+		top: 0;
+		left: 0.2em;
+	}
+
+	.reveal blockquote:after{
+		content: '”';
+		position: absolute;
+		right: 0.2em;
+		bottom: -0.5em;
+	}
+
+</style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<div class="slides">
+			<!-- TITLE SLIDE -->
+			<section data-background="#222" data-background-iframe="http://piratefsh.github.io/generative-art/public/constellations/" class='white'>
+				<h1>make art</h1>
+				<h2> with code (and simple rules)</h2>
+				<p class="pad-top">
+					<small>by <a href="http://piratefsh.github.io">Sher Minn Chong</a> / <a href="http://twitter.com/piratefsh">@piratefsh</a> / Tech Talks For Technical Women July 2018 </small>
+				</p>
+			</section>
+
+			<!-- INTRO -->
+			<section data-background="#222" class='white'>
+				<section>
+					<h2>Sher Minn</h2>
+				</section>
+				<section class="text-shadow bw-bg " data-background="img/malaysia-map.gif">
+          <h3>malaysian</h3>
+          <img class="logo" src="img/malaysia_flag.svg" width="200" alt="Malaysian"/>
+        </section>
+        <section class="text-shadow blur-bg" data-background="img/viewfromtpt.jpg">
+          <h3>web platform engineer</h3>
+          <img class="logo" src="img/tpt-logo.svg" height="80" alt="teacherspayteachers.com"/>
+        </section>
+			</section>
+
+			<!-- WHAT IS GENERATIVE ART -->
+			<section data-background="#222" class='white'>
+				<section>
+					<h2>generative art</h2>
+				</section>
+				<section>
+					<p>art created with the assistance of a non-human, autonomous system</p>
+				</section>
+				<section>
+					<p>e.g. art with algorithms</p>
+				</section>
+
+			</section>
+
+			<!-- SIMPLE RULES CREATE COMPLEX PATTERNS -->
+			<section data-background="#222" class='white'>
+				<section><h2>koch snowflake</h2></section>
+					<section data-background="img/koch-snowflake-4.png" data-background-size="60%"></section>
+					<section data-background="img/koch-1.png" data-background-size="80%"></section>
+					<section data-background="img/koch-2.png" data-background-size="80%"></section>
+					<section data-background="img/koch-3.png" data-background-size="80%"></section>
+					<section data-background="img/koch-4.png" data-background-size="80%"></section>
+					<section data-background="img/koch-snowflake-4.png" data-background-size="60%"></section>
+
+					<section>
+						<p>one level deeper</p>
+					</section>
+					<section data-background-color="rgb(20, 10, 20)" data-background="img/koch-l3-t2-w2.png" data-background-size="80%"></section>
+					<section data-background-color="rgb(20, 10, 20)"  data-background="img/koch-l2-t5-w1.png" data-background-size="80%"></section>
+			</section>
+
+			<!-- ALGORITHM EXERCISE -->
+			<section data-background="#222" class='white'>
+				<section>
+					<p>simple instructions repeated -> interesting visuals</p>
+				</section>
+				<!-- maze-like -->
+				<section data-markdown>
+					### maze
+					```python
+					for row in grid:
+						for cell in row:
+							if random() > 0.5:
+								draw line from bottom right to top left of cell
+							else
+								draw line from bottom left to top right of cell
+					```
+				</section>
+				<section data-background-iframe="https://codepen.io/smcviki/pen/LzGGwx?editors=0010">
+				</section>
+
+
+				<section data-markdown>
+					### recursive hexagon
+					```ruby
+					create a grid of hexagon tilings
+
+					4.times do
+						for each hexagon do
+						 	replace with a smaller hexagon
+						 		in the middle
+						 	border each vertex of the hexagon
+						 		with 4 small triangles
+						end
+					end
+
+					fill each hexagon with a random teal shades
+					fill each triangle with a random translucent pink shade
+					```
+				</section>
+
+				<section data-background-iframe="http://piratefsh.github.io/p5js-art/public/frosted-hex/"></section>
+
+				<!-- shells -->
+				<section >
+					<h3> bezier curves</h3>
+					<img src="img/bezier.jpg" alt="bezier curve illustration"/>
+
+
+					<p><small>source: <a href="http://www.e-cartouche.ch/content_reg/cartouche/graphics/en/html/Curves_learningObject2.htm">http://www.e-cartouche.ch</a></small></p>
+				</section>
+
+				<section data-markdown>
+					### gauze
+					```txt
+					set stroke color to a translucent grey
+
+					pick random points p0, p1, p2, p3
+
+					while true
+						draw a bezier curve with points
+							p0, p1, p2, p3
+						move each point p0, p1, p2, p3
+							ever so slightly in a random direction
+
+					```
+				</section>
+
+				<section data-background-iframe="http://piratefsh.github.io/generative-art/public/shells">
+				</section>
+
+				<!-- constellations -->
+				<section data-background-iframe='http://piratefsh.github.io/generative-art/public/constellations/'>
+				</section>
+
+
+				<section data-markdown>
+					### constellations
+					```ruby
+					# create 20 random circles
+					20.times do
+					  x = random()
+					  y = random()
+
+					  circles.push({
+					    center: Point.new(x, y),
+					    radius: random()
+					  })
+					end
+
+					# for all intersecting circles
+					# draw line between their centers
+					for c1 in circles do
+					  for c2 in circles do
+					    if c1 and c2 intersect
+					      line(c1.center, c2.center)
+					    end
+					  end
+					end
+					```
+				</section>
+
+				<!-- color typewriter -->
+<!-- 				<section data-markdown>
+					### synesthesia
+					```txt
+					assign a colored square to each alphabet.
+
+					now, spell your name.
+					```
+				</section>
+
+				<section data-background-iframe="https://codepen.io/smcviki/live/boExpR">
+				</section> -->
+			</section>
+
+			<!-- BONUS -->
+
+			<section data-background="#222">
+				<section><h2>tools</h2></section>
+				<section data-background-iframe="https://p5js.org/reference/"></section>
+			</section>
+
+			<section data-background="#222">
+				<section><h2>not just for computers</h2></section>
+				<section>
+					<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Sloppy penwork but i kinda like this. Triggering my trypophobia though. Eee.. <a href="https://t.co/xnt541TG2I">pic.twitter.com/xnt541TG2I</a></p>&mdash; Sher Minn C. (@piratefsh) <a href="https://twitter.com/piratefsh/status/907635077156237312">September 12, 2017</a></blockquote>
+					<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</section>
+
+				<section>
+					<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/generative?src=hash">#generative</a> drawing to rules based on Morse code, encoding my goodbye to <a href="https://twitter.com/hashtag/Cassini?src=hash">#Cassini</a>, &amp; bye-for-now to Saturn &amp; moons <a href="https://twitter.com/hashtag/CassiniInspires?src=hash">#CassiniInspires</a> <a href="https://twitter.com/hashtag/sciart?src=hash">#sciart</a> <a href="https://t.co/5w6qVbP2Lr">pic.twitter.com/5w6qVbP2Lr</a></p>&mdash; Immy Smith🖌️🔬✏️🐞 (@DrImmySmith) <a href="https://twitter.com/DrImmySmith/status/908595731048656896">September 15, 2017</a></blockquote>
+					<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</section>
+			</section>
+
+
+			<!-- REALLY COOL GENERATIVE ART -->
+			<section data-background="#222" class='white'>
+				<section>
+					<h2>favorite generative artists</h2>
+				</section>
+				<section>
+					<h3>OGs</h3>
+				</section>
+				<section data-background-iframe="http://www.seniorandshopmaker.com/exhibitions/2018/vera-molnar-drawings-1949-1986"></section>
+				<section data-background-iframe="http://ruinsorbooks.com/2013/03/electronic-abstractions-mathematics-in-design-recreational-mathematics-ben-f-laposky"></section>
+				<section data-background-iframe="http://hammersleyfoundation.org/index.php/artwork/computer-drawings"></section>
+				<section>
+					<h3>contemporary</h3>
+				</section>
+				<section data-background-iframe="http://img.inconvergent.net/generative/"></section>
+				<section data-background-iframe="http://sasj.tumblr.com/"></section>
+			</section>
+
+			<!-- CLOSING -->
+			<section data-background-iframe='https://piratefsh.github.io/p5js-art/public/chrysanthemums/index.html' class="white">
+				<section><h2>end</h2></section>
+				<section>
+					<h2><img src="img/twitter.png" width="50px"/> <span>tweet at me <br/>@piratefsh</span>  </h2>
+				</section>
+			</section>
+			<!-- END CLOSING -->
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+	<script src="js/jquery-2.2.3.min.js"></script>
+
+	<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'none', // none/fade/slide/convex/concave/zoom
+				backgroundTransition: 'none',
+
+				// Optional reveal.js plugins
+				dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+			Reveal.addEventListener('slidechanged', function(event) {
+				if($(event.currentSlide).attr('data-background-iframe')) {
+					$('.reveal > .backgrounds').css('z-index', 1);
+					$('iframe').css('width', '100%')
+					$('iframe').css('z-index', 2)
+					$('iframe').css('position', 'fixed')
+				} else {
+					$('.reveal > .backgrounds').css('z-index', 0);
+					$('iframe').css('z-index', 0)
+					$('iframe').css('position', 'static')
+				}
+			});
+
+		</script>
+
+	</body>
+	</html>
