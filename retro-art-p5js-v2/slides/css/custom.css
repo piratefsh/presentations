@@ -42,6 +42,12 @@
   background: none;
 }
 
+.reveal .flex-img  {
+  display: flex;
+}
+.reveal .flex-img img {
+  flex: 1;
+}
 .overview section.has-dark-background h2,
 .overview section.has-dark-background h3,
 .overview section.has-dark-background a,
