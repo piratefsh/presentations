@@ -241,3 +241,9 @@ twitterwidget{
   bottom: -0.5em;
 }
 
+.reveal p.caption {
+  height: 800px;
+  text-align: right;
+  vertical-align: bottom;
+  text-shadow: 2px 2px 5px black;
+}
