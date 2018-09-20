@@ -76,10 +76,11 @@
   ### CTG of Japan
     - not about the final output, but about the algorithm(Reichdart)
   ### Art ex Machina review
+  ### TODO: photos of exhibit
     - by Stuart Preston, 1965 April 18
     - https://timesmachine.nytimes.com/timesmachine/1965/04/18/101539366.pdf
     Howard Wise Gallery exhibit by Michael A Noll and Bela Julesz (IBM 7094, SC-4020)
-    "so far te means are of greater interest than the end, this revolutionary collaboration resulting in bleak, very comp,ex geometrical patterns excluding the smallest ingredient of manual sensibility."
+    "so far the means are of greater interest than the end, this revolutionary collaboration resulting in bleak, very comp,ex geometrical patterns excluding the smallest ingredient of manual sensibility."
 
     "no matter what the future holds -- and scientists predict a time when almost any kind of painting can be computer-generated -- the actual touch of the artist will no longer play any part in the making of a work of art.
 
