@@ -99,6 +99,18 @@
   display: inline-block;
 }
 
+.reveal .col-8{
+  width: 60%;
+  float: left;
+  display: inline-block;
+}
+
+.reveal .col-4{
+  width: 40%;
+  float: left;
+  display: inline-block;
+}
+
 .sample-frame{
   border-collapse: collapse;
 }
