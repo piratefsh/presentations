@@ -259,3 +259,7 @@ twitterwidget{
   vertical-align: bottom;
   text-shadow: 2px 2px 5px black;
 }
+
+.reveal .emoji-lg {
+  font-size: 2em;
+}
