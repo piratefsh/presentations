@@ -3,18 +3,22 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 415 413" style="enable-background:new 0 0 415 413;" xml:space="preserve">
 <style type="text/css">
-	.st0{opacity:0.6;fill:#FFFFFF;}
-	.st1{fill:none;stroke:#EDDB06;stroke-width:3;stroke-miterlimit:10;}
-	.st2{fill:none;stroke:#0019FC;stroke-width:3;stroke-miterlimit:10;}
-	.st3{fill:none;stroke:#21CE9D;stroke-width:3;stroke-miterlimit:10;}
-	.st4{fill:none;stroke:#F40884;stroke-width:3;stroke-miterlimit:10;}
+	.st0{opacity:0.8;fill:#FFFFFF;enable-background:new    ;}
+	.st1{fill:none;stroke:#0019FC;stroke-width:3;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#0FB5B1;stroke-width:5;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#F40884;stroke-width:5;stroke-miterlimit:10;}
 </style>
-<image style="overflow:visible;" width="830" height="826" xlink:href="../../art/stained-glass-window.png"  transform="matrix(0.5 0 0 0.5 0 0)">
-</image>
-<rect class="st0" width="415" height="413"/>
-<polyline class="st1" points="306.2,156.3 335.9,156.3 359,156.3 359,54.8 256.5,54.8 256.5,106.2 207.5,155.2 155.2,103.8 "/>
-<path class="st2" d="M322.7,168.8"/>
-<polyline class="st3" points="254.6,305.2 254.6,334.9 254.6,358 356,358 356,255.5 304.6,255.5 255.6,206.5 307,154.3 "/>
-<polyline class="st2" points="107.3,257.9 77.6,257.9 54.5,257.9 54.5,359.4 157,359.4 157,307.9 205.9,258.9 258.2,310.3 "/>
-<polyline class="st4" points="154.9,106.2 154.9,76.5 154.9,53.4 53.5,53.4 53.5,155.9 104.9,155.9 153.9,204.9 102.5,257.1 "/>
+<g id="Layer_1_1_">
+	
+		<image style="overflow:visible;enable-background:new    ;" width="830" height="826" xlink:href="../../art/stained-glass-window.png"  transform="matrix(0.5 0 0 0.5 0 0)">
+	</image>
+	<rect class="st0" width="415" height="413"/>
+	<path class="st1" d="M322.7,168.8"/>
+	<polyline class="st2" points="129.7,105.4 155.1,79.3 180,80.7 180,29.6 129.3,29.6 129.3,54 104.4,79.3 79,54 78.5,29.6 
+		27.4,29.6 27.4,80.3 54.6,80.3 78.5,105.2 52.7,131.5 27.4,131.5 27.4,181.2 78.5,181.2 78.5,155.4 104.4,131.5 	"/>
+	<polyline class="st3" points="129.7,105.4 155.6,131 180,131 180,155.4 205.7,181.2 	"/>
+	<polyline class="st3" points="103.7,128.7 130.2,155.4 130.2,181.2 155.9,181.2 180,204.5 	"/>
+</g>
+<g id="Layer_2">
+</g>
 </svg>

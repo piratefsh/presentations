@@ -205,7 +205,7 @@
 }
 
 .slide-background.present:after{
-  /*content: '@piratefsh | retro plotter art | slides: https://git.io/fAHEv';*/
+  content: '@piratefsh | retro plotter art | slides: https://git.io/fhnyI';
   font-weight: 400;
   position: fixed;
   bottom: 0px;
@@ -215,7 +215,6 @@
   font-size: 18px;
   text-shadow: none !important;
   box-shadow: none;
-  color: white;
 }
 
 twitterwidget{
