@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>reverse engineering vintage computer art | by Sher Minn Chong</title>
+
+  <meta name="description" content="reverse engineering vintage computer art | by Sher Minn Chong">
+  <meta name="author" content="Sher Minn Chong">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <div class="reveal">
+    <div class="slides">
+      <!-- TITLE SLIDE -->
+      <section data-background-iframe="https://piratefsh.github.io/p5js/simple-parametric-pink" data-background="#222" class="white">
+        <h1>reverse engineering vintage computer art</h1>
+        <p class="pad-top">
+          <small>by <a href="http://piratefsh.github.io">Sher Minn Chong</a> / <a href="http://twitter.com/piratefsh">@piratefsh</a> / Localhost Feb 27, 2019
+          </small>
+        </p>
+      </section>
+
+      <!-- INTRO -->
+      <section data-background="hsl(320, 0%, 10%)" class="white">
+        <section>
+          <img height="300" src="img/sher-minn.jpg"/>
+          <h2>Sher Minn</h2>
+        </section>
+
+        <section class="bw-bg" data-background="img/malaysia-map.gif">
+          <h3 style="color: black !important">Malaysian</h3>
+          <img class="logo" src="img/malaysia_flag.svg" width="200" alt="Malaysian"/>
+        </section>
+
+        <section class="text-shadow blur-bg white" data-background="img/manhattan.jpg">
+          <h3>Web Platform Engineer</h3>
+          <img  src="img/screenshots/tpt.png" alt="teacherspayteachers.com"/>
+        </section>
+
+         <section class="text-shadow blur-bg white" data-background="img/manhattan.jpg">
+          <h3>Recurse Center alumni</h3>
+          <img class="logo" src="img/rc_logo.svg" width="200" alt="Recurse center"/>
+          <p>Fall 1 2015, Mini 1 2019</p>
+        </section>
+
+         <section data-background="hsl(330, 0%, 10%)" class="white">
+          <section>
+            <img src='img/my-art/sherminn-blog.png' width="800"/>
+            <p>I started a series of articles about computer art history: <a href="https://piratefsh.github.io/2019/01/07/computer-art-history-part-1.html">https://piratefsh.github.io</a></p>
+          </section>
+        </section>
+      </section>
+
+      <section data-background="hsl(330, 60%, 50%)" class="white">
+        <section>
+          <h2>Early computer art</h2>
+          <p>1960s - 1970s</p>
+          <!-- <span class="emoji-lg">🤖➡️✏️</span> -->
+        </section>
+
+      </section>
+
+      <!-- HISTORY -->
+      <section data-background="hsl(200, 60%, 10%)" class="white">
+        <section>
+          <h2>Computers back then</h2>
+          <h1>📼📺🗃</h1>
+        </section>
+
+        <section>
+          <h3>IBM 7090 <br/> Data Processing System</h3>
+          <img height="400" src="img/ibm/IBM-7090.jpg" />
+          <p><span  class="fragment">introduced in 1959</span> <span class="fragment">at the price of USD 3 million</span></p>
+        </section>
+
+        <section>
+          <video controls src="img/ibm/ibm-card-punch.mp4" autoplay="autoplay" loop="loop"></video>
+        </section>
+
+        <section>
+          <h3>Cathode ray tube (CRT) displays</h3>
+          <video controls src="img/screenshots/whitney-crt.mp4" autoplay="autoplay" loop="loop" muted="muted"></video>
+          <p><small><a href="https://archive.org/details/experimentsinmotiongraphics">[source: Experiments in motion graphics by John Whitney, 1968]</a></small></p>
+        </section>
+
+        <section>
+          <h3>Drum printers</h3>
+          <div class="col-6">
+            <img src="img/ibm/IBM-1403-printer.jpg">
+          </div>
+          <div class="col-6">
+            <img src="img/ibm/IBM-1403-drum.jpg">
+            <p>
+              <small>Left: IBM 1403 line printer. <br/>[source: The Computer in Art by Jasia Reichdart, 1971]</small>
+            </p>
+            <p>
+              <small>Right: Character drum from unknown printer. <br/><a href="http://q7.neurotica.com/Oldtech/Printers/">[source: neurotica.com]</a></small>
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Electronic/microfilm plotters</h2>
+          <img src="img/bell-labs/sc4020.jpg" width="700" />
+          <p>
+          Stromberg-Carlson 4020 microfilm recorder</p>
+
+          <p><small><a href="http://www.chilton-computing.org.uk/acl/technology/sc4020/overview.htm">[source: chilton-computing.org.uk]</a></small></p>
+        </section>
+
+        <section>
+          <h2>Mechanical plotters</h2>
+          <img src="img/calcomp/calcomp-565.jpg" width="700"/>
+          <p>CalComp 565, early drum plotter introduced in 1959</p>
+        </section>
+
+        <section>
+          <video controls src="img/screenshots/calcomp-565-sine.mp4" autoplay="autoplay" loop="loop"></video>
+          <p>
+            <small>
+              <a href="https://www.youtube.com/watch?v=dSEvVxdJNIw&t=1s">[source: Calcomp 565 Plotter working
+              by Phillipp Hatchtmann]</a>
+            </small>
+          </p>
+        </section>
+      </section>
+
+
+      <!-- SHOW ME THE ART -->
+      <section data-background="hsl(330, 60%, 50%)" class="white">
+        <section>
+          <h2>1960s - 1970s computer art</h2>
+        </section>
+        <section>
+          <h3>context matters</h3>
+        </section>
+      </section>
+
+
+      <!-- MATH: FRACTALS -->
+      <section data-background="hsl(200, 0%, 10%)" class="white">
+        <section>
+          <h2>Fractals</h2>
+          <span class="emoji-lg">🌲❄️🐉</span>
+        </section>
+        <section>
+          <div class="col-6"><img src="img/fractals/romanesco-brocolli.jpg" /><img src="img/fractals/fern.jpg" /></div>
+          <div class="col-6"><img src="img/fractals/sierpinski-triangle.svg" /></div>
+          <p>
+            <small>
+              [source: Wikimedia Commons]
+            </small>
+          </p>
+        </section>
+        <section>
+          <p>Fractals are infinitely complex patterns that are self-similar across different scales</p>
+        </section>
+
+        <section>
+          <h3>Koch snowflake</h3>
+        </section>
+
+
+        <section><img src="img/fractals/koch-1.png" width="800"/></section>
+        <section><img src="img/fractals/koch-2.png" width="800"/></section>
+        <section><img src="img/fractals/koch-3.png" width="800"/></section>
+        <section><img src="img/fractals/koch-4.png" width="800"/></section>
+        <section><img src="img/fractals/koch-snowflake-4.png" width="800"/></section>
+
+         <section>
+          <div class="col-6">
+            <img src="img/art/milovic-floral-1969.png"/>
+            <p>
+              <small>
+                <a href="http://bitsavers.trailing-edge.com/pdf/computersAndAutomation/196908.pdf">[source: Computers and Automation, August 1969]</a></small>
+              </small>
+            </p>
+          </div>
+          <div class="col-6">
+            <img src="img/art/franke-dracula-curve-1971.png"/>
+            <p>
+              <small>
+                <a href="http://bitsavers.trailing-edge.com/pdf/computersAndAutomation/197108.pdf">[source: Computers and Automation, August 1971]</a></small>
+              </small>
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <img src="img/art/stained-glass-window.png" width="520"/>
+          <p>Stained Glass Window by unknown artist at US Army Ballistics Research Lab, 1963</p>
+          <!-- <p><small>"...generated on the principle of the 'snow flake curve' with a data plotter"</small></p> -->
+        </section>
+
+        <section>
+          <div class="col-6">
+            <img src="img/art/computers-and-automation-aug-1963.png"/>
+          </div>
+          <div class="col-6">
+            <img src="img/art/computers-and-automation-jul-1963-pg3.png"/>
+          </div>
+          <p>
+            <small>
+              <a href="http://bitsavers.trailing-edge.com/pdf/computersAndAutomation/196308.pdf">[source: Computers and Automation, August 1963]</a></small>
+            </small>
+          </p>
+        </section>
+
+        <section>
+          <h3>reverse-engineering process</h3>
+        </section>
+
+        <section><img src="img/fractals/stained-glass-attempt/step-1@2x-100.jpg" width="600"/></section>
+        <section><img src="img/fractals/stained-glass-attempt/step-2@2x-100.jpg" width="600"/></section>
+        <section><img src="img/fractals/stained-glass-attempt/step-3@2x-100.jpg" width="600"/></section>
+        <section><img src="img/fractals/stained-glass-attempt/step-4@2x-100.jpg" width="600"/></section>
+        <section><img src="img/fractals/stained-glass-attempt/step-5@2x-100.jpg" width="600"/></section>
+
+        <section data-background="#eee">
+          <div class="col-6">
+            <img src="img/fractals/stained-glass-attempt/attempt-1.svg" width="320"/>
+            <img src="img/fractals/stained-glass-attempt/attempt-0.svg" width="320"/>
+          </div>
+          <div class="col-6">
+            <img src="img/fractals/stained-glass-attempt/attempt-2.svg" width="320"/>
+            <img src="img/fractals/stained-glass-attempt/attempt-3.svg" width="320"/>
+          </div>
+        </section>
+
+        <section data-background="#224">
+            <img src="img/fractals/stained-glass-attempt/code.png"/>
+        </section>
+        <section data-background="#224">
+            <img src="img/fractals/stained-glass-attempt/stained-glass-white.svg" width="600"/>
+        </section>
+        </section>
+
+      </section>
+
+      <!-- MATH: FOUR FLIES -->
+      <section data-background="hsl(330, 0%, 10%)" class="white">
+        <section>
+          <h2>Emergent patterns</h2>
+          <span class="emoji-lg">🐣🔺➡️🌀</span>
+        </section>
+        <section>
+          <p>emergence is the condition of an entity having properties its parts do not have, <span class="fragment">due to interactions among the parts</span></p>
+        </section>
+
+        <section>
+          <div class="col-6">
+            <img src="img/four-flies/good-spades-1.jpg"/>
+          </div>
+          <div class="col-6">
+            <img src="img/four-flies/good-spades-2.jpg"/>
+          </div>
+
+           <small>[source: Cybernetics, Arts and Ideas by Jasia Reichardt, 1971]</a></small>
+            </small>
+        </section>
+        <section>
+          <div class="col-6">
+            <img src="img/fractals/stained-glass-attempt/breakdown-2.jpg"/>
+          </div>
+          <div class="col-6">
+            <img src="img/fractals/stained-glass-attempt/breakdown-1.jpg"/>
+          </div>
+        </section>
+
+        <section>
+          <div class="col-6">
+            <img src="img/four-flies/snelin-1.png"/>
+            <img src="img/four-flies/snelin-2.png" width="400"/>
+            <p><small>
+              <a href='https://github.s3.amazonaws.com/downloads/matthewepler/ReCode_Project/COMPUTER_GRAPHICS_AND_ART_May1978.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAISTNZFOVBIJMK3TQ%2F20190113%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20190113T191600Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=ae58a54794d4f71133724a8086825ad7db320e78b2d31ce51d1c7b46e8e85511'>[source: Computer Graphics and Art, May 1978]</a></small>
+            </small></p>
+          </div>
+          <div class="col-6">
+            <img src="img/art/cybernetic-poster.png"/>
+            <p><small>
+              <a href="http://bitsavers.trailing-edge.com/pdf/computersAndAutomation/196808.pdf">[source: Computers and Automation, Aug 1968]</a></small>
+            </small></p>
+          </div>
+
+        </section>
+
+        <section>
+          <h3>🐞🐞Four bugs problem 🐞🐞</h3>
+          <p>
+            Four bugs sit at the corners of a card table, facing inward.
+          </p>
+
+          <p>
+            They start simultaneously walking at the same rate, each directing its motion steadily toward the bug on its right.
+          </p>
+
+          <p>
+            Find the path of each.
+          </p>
+
+          <p><small><a href="https://blog.as.uky.edu/sta695/wp-content/uploads/2013/01/four-bugs.pdf">[source: David Allen, University of Kentucky]</a></small></p>
+        </section>
+        <section>
+          <video controls muted="muted" src="img/four-flies/ff-demo.mp4" autoplay="autoplay" loop="loop"></video>
+        </section>
+        <section data-background-color="white" data-background="img/four-flies/tri-tessel.svg">
+        </section>
+        <section data-background-color="white" data-background="img/four-flies/quad-tessel.svg">
+        </section>
+
+         <section>
+          <div class="col-6">
+            <img src="img/art/calcomp-krystallos.jpg"/>
+              <small>
+              <a href='https://web.archive.org/web/20060902234956/http://scienceservice.si.edu/8small.htm'>[source: Smithsonian Science Service Archive, 1968]</a></small>
+            </small>
+          </div>
+          <div class="col-6">
+            <img src="img/art/robbins-star-1967.png"/>
+            <small>
+              <a href="http://bitsavers.trailing-edge.com/pdf/computersAndAutomation/196708.pdf">[source: Computers and Automation, Aug 1967]</a></small>
+            </small>
+          </div>
+        </section>
+      </section>
+
+      <section data-background="hsl(330, 0%, 10%)" class="white">
+        <section>
+          <h2>Optical art</h2>
+          <span class="emoji-lg">😵👓🌀🏁</span>
+        </section>
+        <section>
+          <p>Op art, short for optical art, is a style of visual art that uses optical illusions. </p>
+
+          <p class="fragment">Typically, they give the viewer the impression of movement, hidden images, flashing and vibrating patterns, or of swelling or warping.</p>
+        </section>
+        <section>
+          <div class="col-6">
+            <img src="img/moma/responsive-eye-1.png" />
+          </div>
+          <div class="col-6">
+            <img src="img/moma/responsive-eye-2.png" />
+          </div>
+
+          <p>
+            The Responsive Eye, 1965
+          </p>
+          <p>
+            <small><a href="https://www.moma.org/documents/moma_catalogue_2914_300190234.pdf">[source: MoMA NYC]</a></small>
+          </p>
+        </section>
+        <section>
+          <div class="col-6">
+            <img src="img/art/huston-computra.png"/>
+          </div>
+          <div class="col-6">
+            <img src="img/art/milojedic-ellipses-and-circles.png"/>
+          </div>
+          <p><small><a href='http://bitsavers.trailing-edge.com/pdf/computersAndAutomation/197108.pdf'>[source: Computer and Animation, August 1971]</a></small></p>
+        </section>
+
+        <section>
+          <h3>Moiré patterns</h3>
+          <img src="img/art/radovic-mechano-drawing.jpg" width="500"/>
+          <p>Mechano Drawing by Zoran Radović, 1969</p>
+          <p><small>[source: Little-Known Story about a Movement, a Magazine, and the Computer’s Arrival in Art by Margit Rosen, 2011]</small></p>
+        </section>
+        <section>
+          <img src="img/art/good-vite-dioximoirekinesis.jpg" width="500"/>
+          <p>Dioximoirékinesis by J. I. Good and Martine Vite, 1968</p>
+          <p><small>[source: Cybernetics, Arts and Ideas by Jasia Reichardt, 1971]</small></p>
+        </section>
+
+        <section>
+          <div class="col-6">
+            <img src="img/art/mason-silk-1-1966.png"/>
+          </div>
+          <div class="col-6">
+            <img src="img/art/mason-silk-2-1966.png"/>
+          </div>
+          <p><small><a href='http://bitsavers.trailing-edge.com/pdf/computersAndAutomation/196608.pdf'>[source: Computer and Animation, August 1966]</a></small></p>
+
+        </section>
+
+         <section data-background-iframe="https://editor.p5js.org/piratefsh/sketches/r1vh8j5fE">
+        </section>
+      </section>
+
+      <!--  IMAGE TRANSFORMATIONS -->
+      <!--
+      <section data-background="hsl(330, 0%, 10%)" class="white">
+        <section>
+          <h2>Hot trends in computer art in the 1960s</h2>
+        </section>
+
+        <section>
+          <h2>Transformations</h2>
+        </section>
+
+        <section>
+          <img src="img/art/csuri-hummingbird.png" width="600"/>
+          <p>Chaos to Order by Csuri, C. and Shaffer, J., 1967</p><p> <small>[source: Computer and Automations, August 1967]</small></p>
+        </section>
+
+        <section>
+          <img src="img/art/komura-return-to-square.png" width="600"/>
+          <p>Return to Square by Komura, M. and Yamanaka K., 1968</p><p> <small>[source: Computer and Automations, August 1968]</small></p>
+        </section>
+
+        <section>
+          <div class="col-6">
+            <img src="img/art/merzei-babel-1.png" width="800"/>
+          </div>
+          <div class="col-6">
+            <img src="img/art/merzei-babel-2.png" width="800"/>
+          </div>
+          <p>Tower of Babel by Merzei, L. and Payne, D., 1968</p><p><small>[source: Computer and Automations, August 1968]</small></p>
+        </section>
+
+      </section> -->
+
+    <!-- CLOSING -->
+    <section data-background="hsl(330, 0%, 10%)" class="white">
+      <section>
+        <img src='img/my-art/sherminn-blog.png' width="800"/>
+        <p>I'm writing a series of articles about computer art history: <a href="https://piratefsh.github.io/2019/01/07/computer-art-history-part-1.html">https://piratefsh.github.io</a></p>
+      </section>
+    </section>
+
+      <section data-background="hsl(330, 60%, 50%)" class="white">
+        <h2><img src="img/twitter.png" width="50px"/> <span>keep in touch <br/>@piratefsh</span>  </h2>
+      </section>
+    </section>
+    <!-- END CLOSING -->
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/jquery-2.2.3.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+        backgroundTransition: 'none',
+
+        // Optional reveal.js plugins
+        dependencies: [
+        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/zoom-js/zoom.js', async: true },
+        { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+
+      Reveal.addEventListener('slidechanged', function(event) {
+        if($(event.currentSlide).attr('data-background-iframe')) {
+          $('.reveal > .backgrounds').css('z-index', 1);
+          $('iframe').css('width', '100%')
+          $('iframe').css('z-index', 2)
+          $('iframe').css('position', 'fixed')
+        } else {
+          $('.reveal > .backgrounds').css('z-index', 0);
+          $('iframe').css('z-index', 0)
+          $('iframe').css('position', 'static')
+        }
+      });
+
+    </script>
+
+  </body>
+  </html>

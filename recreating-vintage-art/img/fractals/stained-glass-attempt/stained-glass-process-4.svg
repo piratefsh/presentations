@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 415 413" style="enable-background:new 0 0 415 413;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.8;fill:#FFFFFF;enable-background:new    ;}
+	.st1{fill:none;stroke:#0019FC;stroke-width:3;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#0FB5B1;stroke-width:5;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#F40884;stroke-width:5;stroke-miterlimit:10;}
+</style>
+<g id="Layer_1_1_">
+	
+		<image style="overflow:visible;enable-background:new    ;" width="830" height="826" xlink:href="../../art/stained-glass-window.png"  transform="matrix(0.5 0 0 0.5 0 0)">
+	</image>
+	<rect class="st0" width="415" height="413"/>
+	<path class="st1" d="M322.7,168.8"/>
+	<polyline class="st2" points="129.7,105.4 155.1,79.3 180,80.7 180,29.6 129.3,29.6 129.3,54 104.4,79.3 79,54 78.5,29.6 
+		27.4,29.6 27.4,80.3 54.6,80.3 78.5,105.2 52.7,131.5 27.4,131.5 27.4,181.2 78.5,181.2 78.5,155.4 104.4,131.5 	"/>
+	<polyline class="st3" points="129.7,105.4 155.6,131 180,131 180,155.4 205.7,181.2 	"/>
+	<polyline class="st3" points="103.7,128.7 130.2,155.4 130.2,181.2 155.9,181.2 180,204.5 	"/>
+</g>
+<g id="Layer_2">
+</g>
+</svg>

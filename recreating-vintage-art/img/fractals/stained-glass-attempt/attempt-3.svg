@@ -1,0 +1,2799 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="SvgjsSvg1001"
+   width="700"
+   height="700"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="attempt-3.svg">
+  <metadata
+     id="metadata286">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="981"
+     inkscape:window-height="710"
+     id="namedview284"
+     showgrid="false"
+     inkscape:zoom="0.69535714"
+     inkscape:cx="99.768875"
+     inkscape:cy="350"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="SvgjsSvg1001" />
+  <defs
+     id="SvgjsDefs1002" />
+  <rect
+     id="SvgjsRect1008"
+     width="350"
+     height="350"
+     x="175"
+     y="175"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1009"
+     rx="5"
+     ry="5"
+     cx="350"
+     cy="350"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1010"
+     d="M 262.5 175 L 262.5 87.5 87.5 87.5 87.5 262.5 175 262.5 272.8279740156158 350 175 437.5"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1011"
+     width="175"
+     height="175"
+     x="87.5"
+     y="87.5"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1012"
+     rx="5"
+     ry="5"
+     cx="175"
+     cy="175"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1013"
+     d="M 87.50000000000001 218.75000000000003 L 43.75 218.75000000000003 43.75000000000003 306.25 131.25000000000003 306.25 131.25000000000003 262.5 175 213.5860129921921 218.75000000000003 262.5"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1014"
+     width="87.5"
+     height="87.5"
+     x="43.750000000000014"
+     y="218.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1015"
+     rx="5"
+     ry="5"
+     cx="87.50000000000001"
+     cy="262.5"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1016"
+     d="M 109.37500000000003 306.25 L 109.37500000000004 328.125 153.12500000000006 328.125 153.12500000000003 284.375 131.25000000000003 284.375 106.79300649609606 262.5 131.25 240.62499999999997"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1017"
+     width="43.75"
+     height="43.75"
+     x="109.37500000000003"
+     y="284.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1018"
+     rx="5"
+     ry="5"
+     cx="131.25000000000003"
+     cy="306.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1019"
+     d="M 153.12500000000003 295.3125 L 164.06250000000003 295.3125 164.0625 273.4375 142.1875 273.4375 142.1875 284.375 131.25000000000003 296.603496751952 120.31250000000001 284.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1020"
+     width="43.75"
+     height="43.75"
+     x="21.875000000000043"
+     y="284.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1021"
+     rx="5"
+     ry="5"
+     cx="43.75000000000004"
+     cy="306.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1022"
+     d="M 21.87500000000005 317.1875 L 10.93750000000005 317.1875 10.937500000000064 339.0625 32.81250000000007 339.0625 32.81250000000006 328.125 43.75000000000005 315.896503248048 54.68750000000006 328.125"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1023"
+     width="43.75"
+     height="43.75"
+     x="21.875000000000014"
+     y="196.875"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1024"
+     rx="5"
+     ry="5"
+     cx="43.750000000000014"
+     cy="218.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1025"
+     d="M 65.62499999999997 207.81249999999991 L 76.56249999999997 207.81249999999986 76.56249999999987 185.93749999999986 54.68749999999987 185.93749999999994 54.687499999999915 196.87499999999994 43.74999999999997 209.10349675195198 32.812499999999915 196.87500000000006"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1026"
+     width="43.75"
+     height="43.75"
+     x="109.375"
+     y="196.875"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1027"
+     rx="5"
+     ry="5"
+     cx="131.25"
+     cy="218.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1028"
+     d="M 109.37500000000001 229.68750000000003 L 98.43750000000001 229.68750000000003 98.43750000000003 240.62500000000003 87.50000000000003 251.56250000000006"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1029"
+     d="M 98.43750000000004 262.50000000000006 L 109.37500000000003 251.56250000000003 120.31250000000003 251.5625 120.31250000000003 240.625 131.25 228.39650324804802 142.18750000000003 240.625"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1030"
+     width="87.5"
+     height="87.5"
+     x="43.749999999999986"
+     y="43.750000000000014"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1031"
+     rx="5"
+     ry="5"
+     cx="87.49999999999999"
+     cy="87.50000000000001"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1032"
+     d="M 65.62499999999997 43.75000000000003 L 65.62499999999997 21.87500000000003 21.874999999999957 21.875000000000057 21.874999999999986 65.62500000000006 43.749999999999986 65.62500000000004 68.20699350390394 87.50000000000003 43.750000000000014 109.37500000000004"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1033"
+     width="43.75"
+     height="43.75"
+     x="21.875000000000007"
+     y="109.37500000000003"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1034"
+     rx="5"
+     ry="5"
+     cx="43.75000000000001"
+     cy="131.25000000000003"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1035"
+     d="M 54.68750000000006 153.125 L 54.687500000000085 164.0625 76.56250000000009 164.06249999999994 76.56250000000003 142.18749999999994 65.62500000000003 142.18749999999997 53.39650324804803 131.25 65.62499999999997 120.31249999999997"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1036"
+     width="43.75"
+     height="43.75"
+     x="21.874999999999964"
+     y="21.87500000000002"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1037"
+     rx="5"
+     ry="5"
+     cx="43.749999999999964"
+     cy="43.75000000000002"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1038"
+     d="M 32.8124999999999 21.87500000000005 L 32.81249999999987 10.93750000000005 10.937499999999872 10.937500000000107 10.937499999999929 32.81250000000011 21.87499999999993 32.81250000000008 34.10349675195193 43.75000000000004 21.874999999999986 54.68750000000008"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1039"
+     width="43.75"
+     height="43.75"
+     x="109.37499999999994"
+     y="21.87499999999998"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1040"
+     rx="5"
+     ry="5"
+     cx="131.24999999999994"
+     cy="43.74999999999998"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1041"
+     d="M 142.1875 65.62499999999994 L 142.18750000000003 76.56249999999994 164.06250000000003 76.56249999999989 164.06249999999997 54.687499999999886 153.12499999999997 54.68749999999992 140.89650324804796 43.74999999999995 153.12499999999991 32.81249999999992"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1042"
+     width="43.75"
+     height="43.75"
+     x="109.375"
+     y="109.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1043"
+     rx="5"
+     ry="5"
+     cx="131.25"
+     cy="131.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1044"
+     d="M 120.31250000000001 109.375 L 120.31250000000003 98.4375 109.37500000000003 98.43749999999999 98.43750000000003 87.49999999999997"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1045"
+     d="M 87.50000000000003 98.43749999999997 L 98.43750000000001 109.37499999999997 98.4375 120.31249999999997 109.375 120.31249999999999 121.60349675195198 131.25 109.375 142.18749999999997"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1046"
+     width="87.5"
+     height="87.5"
+     x="218.75"
+     y="43.749999999999986"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1047"
+     rx="5"
+     ry="5"
+     cx="262.5"
+     cy="87.49999999999999"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1048"
+     d="M 284.3750000000001 131.24999999999994 L 284.37500000000017 153.12499999999994 328.12500000000017 153.12499999999983 328.12500000000006 109.37499999999983 306.25000000000006 109.37499999999989 281.79300649609604 87.49999999999994 306.24999999999994 65.62499999999989"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1049"
+     width="43.75"
+     height="43.75"
+     x="196.87499999999997"
+     y="21.875000000000007"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1050"
+     rx="5"
+     ry="5"
+     cx="218.74999999999997"
+     cy="43.75000000000001"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1051"
+     d="M 196.87499999999997 54.687500000000014 L 185.93749999999997 54.68750000000003 185.9375 76.56250000000003 207.8125 76.5625 207.8125 65.625 218.74999999999997 53.39650324804803 229.6875 65.625"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1052"
+     width="43.75"
+     height="43.75"
+     x="284.375"
+     y="21.874999999999964"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1053"
+     rx="5"
+     ry="5"
+     cx="306.25"
+     cy="43.749999999999964"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1054"
+     d="M 328.125 32.812499999999936 L 339.0625 32.81249999999993 339.0625 10.937499999999929 317.1875 10.93749999999995 317.1875 21.874999999999947 306.25 34.10349675195193 295.3125 21.874999999999968"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1055"
+     width="43.75"
+     height="43.75"
+     x="284.375"
+     y="109.37499999999997"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1056"
+     rx="5"
+     ry="5"
+     cx="306.25"
+     cy="131.24999999999997"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1057"
+     d="M 284.375 142.1875 L 273.4375 142.1875 273.43750000000006 164.0625 295.31250000000006 164.0625 295.3125 153.12499999999997 306.25 140.896503248048 317.1875 153.12499999999997"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1058"
+     width="43.75"
+     height="43.75"
+     x="196.87500000000003"
+     y="109.37500000000003"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1059"
+     rx="5"
+     ry="5"
+     cx="218.75000000000003"
+     cy="131.25000000000003"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1060"
+     d="M 240.62500000000003 120.3125 L 251.5625 120.3125 251.5625 109.375 262.5 98.43749999999997"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1061"
+     d="M 251.56249999999997 87.5 L 240.625 98.4375 229.6875 98.43750000000001 229.6875 109.37500000000001 218.75000000000003 121.60349675195201 207.8125 109.37500000000004"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1062"
+     width="87.5"
+     height="87.5"
+     x="218.75"
+     y="218.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1063"
+     rx="5"
+     ry="5"
+     cx="262.5"
+     cy="262.5"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1064"
+     d="M 240.62500000000006 218.74999999999997 L 240.62500000000006 196.87499999999997 218.75000000000006 196.87499999999994 196.87500000000009 174.99999999999994"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1065"
+     d="M 175.00000000000006 196.87499999999991 L 196.87500000000006 218.74999999999994 196.87500000000003 240.62499999999994 218.75000000000003 240.62499999999994 243.20699350390396 262.5 218.74999999999997 284.37499999999994"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1066"
+     width="43.75"
+     height="43.75"
+     x="284.375"
+     y="196.87499999999997"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1067"
+     rx="5"
+     ry="5"
+     cx="306.25"
+     cy="218.74999999999997"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1068"
+     d="M 295.3125 196.87499999999997 L 295.31250000000006 185.93749999999994 273.43750000000006 185.93749999999994 273.4375 207.81249999999994 284.375 207.81249999999994 296.603496751952 218.74999999999997 284.375 229.68749999999994"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1069"
+     width="43.75"
+     height="43.75"
+     x="284.375"
+     y="284.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1070"
+     rx="5"
+     ry="5"
+     cx="306.25"
+     cy="306.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1071"
+     d="M 317.1875 328.125 L 317.1875 339.0625 328.125 339.0625 339.06249999999994 350"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1072"
+     d="M 350 339.06250000000006 L 339.0625 328.125 339.0625 317.1875 328.125 317.1875 315.896503248048 306.25 328.125 295.3125"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1073"
+     width="43.75"
+     height="43.75"
+     x="196.87500000000003"
+     y="284.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1074"
+     rx="5"
+     ry="5"
+     cx="218.75000000000003"
+     cy="306.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1075"
+     d="M 207.81250000000006 284.375 L 207.81250000000006 273.4375 185.93750000000006 273.4375 185.93750000000003 295.3125 196.87500000000003 295.3125 209.103496751952 306.25 196.87500000000003 317.1875"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1076"
+     width="43.75"
+     height="43.75"
+     x="196.87499999999997"
+     y="196.87500000000003"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1077"
+     rx="5"
+     ry="5"
+     cx="218.74999999999997"
+     cy="218.75000000000003"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1078"
+     d="M 229.68750000000003 240.625 L 229.68750000000006 251.5625 240.62500000000006 251.56249999999997 251.5625000000001 262.49999999999994"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1079"
+     d="M 262.50000000000006 251.5624999999999 L 251.56250000000003 240.62499999999994 251.5625 229.68749999999994 240.625 229.68749999999997 228.396503248048 218.75 240.62499999999994 207.81249999999997"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1080"
+     width="175"
+     height="175"
+     x="437.5"
+     y="87.5"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1081"
+     rx="5"
+     ry="5"
+     cx="525"
+     cy="175"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1082"
+     d="M 612.5 131.24999999999997 L 656.25 131.24999999999994 656.25 43.74999999999994 568.75 43.74999999999997 568.75 87.49999999999999 525 136.4139870078079 481.24999999999994 87.50000000000001"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1083"
+     width="87.5"
+     height="87.5"
+     x="393.75"
+     y="43.75000000000003"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1084"
+     rx="5"
+     ry="5"
+     cx="437.5"
+     cy="87.50000000000003"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1085"
+     d="M 393.75 109.37500000000006 L 371.875 109.37500000000006 371.875 153.12500000000006 415.62500000000006 153.12500000000006 415.625 131.25000000000006 437.5 106.79300649609608 459.375 131.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1086"
+     width="43.75"
+     height="43.75"
+     x="371.875"
+     y="109.37500000000006"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1087"
+     rx="5"
+     ry="5"
+     cx="393.75"
+     cy="131.25000000000006"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1088"
+     d="M 404.68750000000006 153.12500000000003 L 404.68750000000006 164.06250000000003 426.56250000000006 164.06249999999997 426.5625 142.18749999999997 415.625 142.1875 403.396503248048 131.25000000000003 415.625 120.3125"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1089"
+     width="43.75"
+     height="43.75"
+     x="371.875"
+     y="21.87500000000005"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1090"
+     rx="5"
+     ry="5"
+     cx="393.75"
+     cy="43.75000000000005"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1091"
+     d="M 382.81249999999994 21.875000000000078 L 382.8124999999999 10.937500000000078 360.9374999999999 10.937500000000135 360.93749999999994 32.812500000000135 371.87499999999994 32.81250000000011 384.103496751952 43.75000000000007 371.875 54.68750000000011"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1092"
+     width="43.75"
+     height="43.75"
+     x="459.375"
+     y="21.875000000000007"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1093"
+     rx="5"
+     ry="5"
+     cx="481.25"
+     cy="43.75000000000001"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1094"
+     d="M 492.18750000000006 65.62499999999997 L 492.18750000000006 76.56249999999997 514.0625000000001 76.56249999999991 514.0625 54.687499999999915 503.125 54.68749999999995 490.896503248048 43.74999999999998 503.12499999999994 32.81249999999995"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1095"
+     width="43.75"
+     height="43.75"
+     x="459.375"
+     y="109.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1096"
+     rx="5"
+     ry="5"
+     cx="481.25"
+     cy="131.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1097"
+     d="M 470.3125 109.375 L 470.3125 98.4375 459.375 98.43749999999999 448.43750000000006 87.49999999999997"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1098"
+     d="M 437.5 98.43749999999997 L 448.4375 109.37499999999997 448.4375 120.31249999999997 459.375 120.31249999999999 471.603496751952 131.25 459.375 142.18749999999997"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1099"
+     width="87.5"
+     height="87.5"
+     x="568.75"
+     y="43.74999999999997"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1100"
+     rx="5"
+     ry="5"
+     cx="612.5"
+     cy="87.49999999999997"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1101"
+     d="M 656.25 65.62499999999994 L 678.125 65.62499999999993 678.125 21.87499999999993 634.375 21.874999999999957 634.375 43.74999999999996 612.5 68.20699350390392 590.625 43.749999999999986"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1102"
+     width="43.75"
+     height="43.75"
+     x="546.875"
+     y="21.874999999999993"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1103"
+     rx="5"
+     ry="5"
+     cx="568.75"
+     cy="43.74999999999999"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1104"
+     d="M 546.875 54.687500000000014 L 535.9375 54.68750000000003 535.9375 76.56250000000003 557.8125 76.5625 557.8125 65.625 568.75 53.39650324804803 579.6875 65.625"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1105"
+     width="43.75"
+     height="43.75"
+     x="634.375"
+     y="21.87499999999995"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1106"
+     rx="5"
+     ry="5"
+     cx="656.25"
+     cy="43.74999999999995"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1107"
+     d="M 678.125 32.812499999999936 L 689.0625 32.81249999999993 689.0625 10.937499999999929 667.1875 10.93749999999995 667.1875 21.874999999999947 656.25 34.10349675195193 645.3125 21.874999999999968"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1108"
+     width="43.75"
+     height="43.75"
+     x="634.375"
+     y="109.37499999999994"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1109"
+     rx="5"
+     ry="5"
+     cx="656.25"
+     cy="131.24999999999994"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1110"
+     d="M 634.375 142.18749999999997 L 623.4375 142.18749999999997 623.4375 164.06249999999997 645.3125 164.06249999999994 645.3125 153.12499999999994 656.25 140.89650324804796 667.1875 153.12499999999994"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1111"
+     width="43.75"
+     height="43.75"
+     x="546.875"
+     y="109.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1112"
+     rx="5"
+     ry="5"
+     cx="568.75"
+     cy="131.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1113"
+     d="M 590.625 120.31249999999997 L 601.5625 120.31249999999997 601.5625 109.37499999999997 612.5 98.43749999999994"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1114"
+     d="M 601.5625 87.49999999999997 L 590.625 98.43749999999997 579.6875 98.43749999999999 579.6875 109.37499999999999 568.75 121.60349675195198 557.8125 109.37500000000001"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1115"
+     width="87.5"
+     height="87.5"
+     x="568.75"
+     y="218.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1116"
+     rx="5"
+     ry="5"
+     cx="612.5"
+     cy="262.5"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1117"
+     d="M 568.75 284.37500000000006 L 546.875 284.37500000000006 546.875 328.12500000000006 590.625 328.125 590.625 306.25 612.5 281.79300649609604 634.375 306.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1118"
+     width="43.75"
+     height="43.75"
+     x="634.375"
+     y="196.87499999999997"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1119"
+     rx="5"
+     ry="5"
+     cx="656.25"
+     cy="218.74999999999997"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1120"
+     d="M 645.3125 196.87499999999997 L 645.3125 185.93749999999994 623.4375 185.93749999999994 623.4375 207.81249999999994 634.375 207.81249999999994 646.603496751952 218.74999999999997 634.375 229.68749999999994"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1121"
+     width="43.75"
+     height="43.75"
+     x="634.375"
+     y="284.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1122"
+     rx="5"
+     ry="5"
+     cx="656.25"
+     cy="306.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1123"
+     d="M 667.1875 328.125 L 667.1875 339.0625 689.0625 339.0625 689.0625 317.1875 678.125 317.1875 665.896503248048 306.25 678.125 295.3125"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1124"
+     width="43.75"
+     height="43.75"
+     x="546.875"
+     y="284.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1125"
+     rx="5"
+     ry="5"
+     cx="568.75"
+     cy="306.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1126"
+     d="M 557.8125 284.375 L 557.8125 273.4375 535.9375 273.4375 535.9375 295.3125 546.875 295.3125 559.103496751952 306.25 546.875 317.1875"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1127"
+     width="43.75"
+     height="43.75"
+     x="546.875"
+     y="196.87500000000003"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1128"
+     rx="5"
+     ry="5"
+     cx="568.75"
+     cy="218.75000000000003"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1129"
+     d="M 579.6875000000001 240.625 L 579.6875000000001 251.5625 590.6250000000001 251.56249999999997 601.5625000000001 262.49999999999994"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1130"
+     d="M 612.5000000000001 251.5624999999999 L 601.5625000000001 240.62499999999994 601.5625 229.68749999999994 590.625 229.68749999999997 578.396503248048 218.75 590.625 207.81249999999997"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1131"
+     width="87.5"
+     height="87.5"
+     x="393.75"
+     y="218.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1132"
+     rx="5"
+     ry="5"
+     cx="437.5"
+     cy="262.5"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1133"
+     d="M 481.25 240.62499999999997 L 503.125 240.62499999999994 503.12499999999994 218.74999999999994 525 196.87499999999994"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1134"
+     d="M 503.12499999999994 174.99999999999994 L 481.24999999999994 196.87499999999994 459.37499999999994 196.875 459.37499999999994 218.74999999999997 437.5 243.20699350390396 415.62499999999994 218.75000000000003"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1135"
+     width="43.75"
+     height="43.75"
+     x="459.375"
+     y="284.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1136"
+     rx="5"
+     ry="5"
+     cx="481.25"
+     cy="306.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1137"
+     d="M 503.125 295.31250000000006 L 514.0625 295.3125000000001 514.0625000000001 273.4375000000001 492.1875000000001 273.4375 492.18750000000006 284.375 481.25 296.603496751952 470.31250000000006 284.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1138"
+     width="43.75"
+     height="43.75"
+     x="371.875"
+     y="284.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1139"
+     rx="5"
+     ry="5"
+     cx="393.75"
+     cy="306.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1140"
+     d="M 371.875 317.1875 L 360.9375 317.18750000000006 360.9375 328.12500000000006 350.00000000000006 339.06250000000006"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1141"
+     d="M 360.93750000000006 350.00000000000006 L 371.87500000000006 339.0625 382.81250000000006 339.0625 382.8125 328.125 393.75 315.896503248048 404.6875 328.125"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1142"
+     width="43.75"
+     height="43.75"
+     x="371.875"
+     y="196.87500000000003"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1143"
+     rx="5"
+     ry="5"
+     cx="393.75"
+     cy="218.75000000000003"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1144"
+     d="M 415.62499999999994 207.81249999999991 L 426.56249999999994 207.8124999999999 426.56249999999983 185.9374999999999 404.68749999999983 185.93749999999997 404.6874999999999 196.87499999999997 393.74999999999994 209.103496751952 382.8124999999999 196.87500000000009"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1145"
+     width="43.75"
+     height="43.75"
+     x="459.375"
+     y="196.87499999999997"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1146"
+     rx="5"
+     ry="5"
+     cx="481.25"
+     cy="218.74999999999997"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1147"
+     d="M 459.375 229.6875 L 448.4375 229.6875 448.4375 240.625 437.50000000000006 251.56250000000003"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1148"
+     d="M 448.43750000000006 262.50000000000006 L 459.37500000000006 251.5625 470.31250000000006 251.5625 470.3125 240.625 481.25 228.396503248048 492.1875 240.62499999999994"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1149"
+     width="175"
+     height="175"
+     x="437.5"
+     y="437.5"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1150"
+     rx="5"
+     ry="5"
+     cx="525"
+     cy="525"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1151"
+     d="M 437.5 568.75 L 393.75 568.7500000000001 393.75000000000006 656.25 481.25000000000006 656.25 481.25000000000006 612.5 525 563.5860129921921 568.75 612.5"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1152"
+     width="87.5"
+     height="87.5"
+     x="568.75"
+     y="393.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1153"
+     rx="5"
+     ry="5"
+     cx="612.5"
+     cy="437.5"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1154"
+     d="M 590.625 393.75 L 590.625 371.875 546.875 371.87500000000006 546.875 415.62500000000006 568.75 415.625 593.206993503904 437.5 568.75 459.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1155"
+     width="43.75"
+     height="43.75"
+     x="546.875"
+     y="371.875"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1156"
+     rx="5"
+     ry="5"
+     cx="568.75"
+     cy="393.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1157"
+     d="M 546.875 404.6875 L 535.9375 404.6875 535.9375 426.5625 557.8125 426.5625 557.8125 415.625 568.75 403.396503248048 579.6875 415.625"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1158"
+     width="43.75"
+     height="43.75"
+     x="634.375"
+     y="371.875"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1159"
+     rx="5"
+     ry="5"
+     cx="656.25"
+     cy="393.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1160"
+     d="M 678.125 382.8125 L 689.0625 382.8125 689.0625 360.9375 667.1875 360.9375 667.1875 371.875 656.25 384.103496751952 645.3125 371.875"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1161"
+     width="43.75"
+     height="43.75"
+     x="634.375"
+     y="459.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1162"
+     rx="5"
+     ry="5"
+     cx="656.25"
+     cy="481.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1163"
+     d="M 634.375 492.1875 L 623.4375 492.18750000000006 623.4375 514.0625 645.3125 514.0625 645.3125 503.125 656.25 490.896503248048 667.1875 503.125"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1164"
+     width="43.75"
+     height="43.75"
+     x="546.875"
+     y="459.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1165"
+     rx="5"
+     ry="5"
+     cx="568.75"
+     cy="481.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1166"
+     d="M 590.625 470.3125 L 601.5625 470.31249999999994 601.5625 459.37499999999994 612.5 448.43749999999994"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1167"
+     d="M 601.5625 437.49999999999994 L 590.625 448.4375 579.6875 448.4375 579.6875 459.375 568.75 471.603496751952 557.8125 459.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1168"
+     width="87.5"
+     height="87.5"
+     x="568.75"
+     y="568.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1169"
+     rx="5"
+     ry="5"
+     cx="612.5"
+     cy="612.5"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1170"
+     d="M 634.3750000000001 656.25 L 634.3750000000001 678.125 678.1250000000001 678.1249999999999 678.125 634.3749999999999 656.25 634.3749999999999 631.793006496096 612.5 656.25 590.6249999999999"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1171"
+     width="43.75"
+     height="43.75"
+     x="634.375"
+     y="546.875"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1172"
+     rx="5"
+     ry="5"
+     cx="656.25"
+     cy="568.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1173"
+     d="M 645.3125 546.875 L 645.3125 535.9375 623.4375 535.9375 623.4375 557.8125 634.375 557.8125 646.603496751952 568.75 634.375 579.6875"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1174"
+     width="43.75"
+     height="43.75"
+     x="634.375"
+     y="634.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1175"
+     rx="5"
+     ry="5"
+     cx="656.25"
+     cy="656.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1176"
+     d="M 667.1875 678.125 L 667.1875 689.0625 689.0625 689.0625 689.0625 667.1875 678.125 667.1875 665.896503248048 656.25 678.125 645.3125"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1177"
+     width="43.75"
+     height="43.75"
+     x="546.875"
+     y="634.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1178"
+     rx="5"
+     ry="5"
+     cx="568.75"
+     cy="656.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1179"
+     d="M 557.8125 634.375 L 557.8125 623.4375 535.9375 623.4375 535.9375 645.3125 546.875 645.3125 559.103496751952 656.25 546.875 667.1875"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1180"
+     width="43.75"
+     height="43.75"
+     x="546.875"
+     y="546.875"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1181"
+     rx="5"
+     ry="5"
+     cx="568.75"
+     cy="568.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1182"
+     d="M 579.6875000000001 590.625 L 579.6875000000001 601.5625 590.6250000000001 601.5624999999999 601.5625000000001 612.4999999999999"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1183"
+     d="M 612.5000000000001 601.5624999999999 L 601.5625000000001 590.6249999999999 601.5625 579.6874999999999 590.625 579.6874999999999 578.396503248048 568.75 590.625 557.8124999999999"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1184"
+     width="87.5"
+     height="87.5"
+     x="393.75"
+     y="568.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1185"
+     rx="5"
+     ry="5"
+     cx="437.5"
+     cy="612.5"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1186"
+     d="M 415.62500000000006 568.75 L 415.62500000000006 546.875 371.87500000000006 546.8749999999999 371.875 590.6249999999999 393.75 590.625 418.20699350390396 612.5 393.75 634.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1187"
+     width="43.75"
+     height="43.75"
+     x="459.375"
+     y="634.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1188"
+     rx="5"
+     ry="5"
+     cx="481.25"
+     cy="656.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1189"
+     d="M 503.125 645.3125000000001 L 514.0625 645.3125000000001 514.0625000000001 623.4375000000001 492.1875000000001 623.4375 492.18750000000006 634.375 481.25 646.603496751952 470.31250000000006 634.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1190"
+     width="43.75"
+     height="43.75"
+     x="371.875"
+     y="634.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1191"
+     rx="5"
+     ry="5"
+     cx="393.75"
+     cy="656.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1192"
+     d="M 371.875 667.1875 L 360.9375 667.1875 360.93750000000006 689.0625 382.81250000000006 689.0625 382.8125 678.125 393.75 665.896503248048 404.6875 678.125"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1193"
+     width="43.75"
+     height="43.75"
+     x="371.875"
+     y="546.875"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1194"
+     rx="5"
+     ry="5"
+     cx="393.75"
+     cy="568.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1195"
+     d="M 415.62499999999994 557.8124999999999 L 426.56249999999994 557.8124999999999 426.56249999999983 535.9374999999999 404.68749999999983 535.9375 404.6874999999999 546.875 393.74999999999994 559.103496751952 382.8124999999999 546.875"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1196"
+     width="43.75"
+     height="43.75"
+     x="459.375"
+     y="546.875"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1197"
+     rx="5"
+     ry="5"
+     cx="481.25"
+     cy="568.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1198"
+     d="M 459.375 579.6875 L 448.4375 579.6875 448.4375 590.625 437.50000000000006 601.5625"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1199"
+     d="M 448.43750000000006 612.5 L 459.37500000000006 601.5625 470.31250000000006 601.5625 470.3125 590.625 481.25 578.396503248048 492.1875 590.625"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1200"
+     width="87.5"
+     height="87.5"
+     x="393.75"
+     y="393.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1201"
+     rx="5"
+     ry="5"
+     cx="437.5"
+     cy="437.5"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1202"
+     d="M 459.3750000000001 481.24999999999994 L 459.37500000000017 503.12499999999994 481.25000000000017 503.1249999999999 503.1250000000002 524.9999999999998"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1203"
+     d="M 525.0000000000002 503.1249999999998 L 503.1250000000001 481.24999999999983 503.12500000000006 459.37499999999983 481.25000000000006 459.3749999999999 456.79300649609604 437.49999999999994 481.24999999999994 415.6249999999999"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1204"
+     width="43.75"
+     height="43.75"
+     x="371.8750000000001"
+     y="459.3750000000001"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1205"
+     rx="5"
+     ry="5"
+     cx="393.7500000000001"
+     cy="481.2500000000001"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1206"
+     d="M 404.68750000000017 503.1250000000001 L 404.6875000000002 514.0625000000001 426.5625000000002 514.0625 426.5625000000001 492.1875 415.6250000000001 492.18750000000006 403.39650324804813 481.2500000000001 415.6250000000001 470.31250000000006"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1207"
+     width="43.75"
+     height="43.75"
+     x="371.8749999999999"
+     y="371.8750000000001"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1208"
+     rx="5"
+     ry="5"
+     cx="393.7499999999999"
+     cy="393.7500000000001"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1209"
+     d="M 382.81249999999983 371.87500000000017 L 382.8124999999998 360.9375000000001 371.8749999999998 360.93750000000017 360.9374999999998 350.0000000000002"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1210"
+     d="M 349.9999999999998 360.9375000000002 L 360.93749999999983 371.8750000000002 360.9374999999999 382.8125000000002 371.87499999999983 382.81250000000017 384.10349675195187 393.7500000000001 371.87499999999994 404.68750000000017"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1211"
+     width="43.75"
+     height="43.75"
+     x="459.3749999999999"
+     y="371.8749999999999"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1212"
+     rx="5"
+     ry="5"
+     cx="481.2499999999999"
+     cy="393.7499999999999"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1213"
+     d="M 492.18749999999994 415.62499999999983 L 492.1875 426.56249999999983 514.0625 426.5624999999998 514.0624999999999 404.6874999999998 503.12499999999994 404.68749999999983 490.8965032480479 393.7499999999999 503.12499999999983 382.81249999999983"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1214"
+     width="43.75"
+     height="43.75"
+     x="459.3750000000001"
+     y="459.3749999999999"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1215"
+     rx="5"
+     ry="5"
+     cx="481.2500000000001"
+     cy="481.2499999999999"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1216"
+     d="M 470.3125000000001 459.3749999999999 L 470.3125000000001 448.4374999999999 459.3750000000001 448.4374999999999 448.4375000000001 437.4999999999999"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1217"
+     d="M 437.5000000000001 448.4374999999999 L 448.4375000000001 459.3749999999999 448.4375000000001 470.3124999999999 459.3750000000001 470.3124999999999 471.6034967519521 481.2499999999999 459.3750000000001 492.1874999999999"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1218"
+     width="175"
+     height="175"
+     x="87.5"
+     y="437.5"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1219"
+     rx="5"
+     ry="5"
+     cx="175"
+     cy="525"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1220"
+     d="M 262.5 481.24999999999994 L 306.25 481.24999999999994 306.24999999999994 437.4999999999999 349.9999999999999 393.7499999999999"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1221"
+     d="M 306.2499999999999 349.9999999999999 L 262.4999999999999 393.74999999999994 218.74999999999991 393.75 218.74999999999994 437.5 174.99999999999997 486.4139870078079 131.24999999999994 437.5"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1222"
+     width="87.5"
+     height="87.5"
+     x="218.75"
+     y="568.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1223"
+     rx="5"
+     ry="5"
+     cx="262.5"
+     cy="612.5"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1224"
+     d="M 306.25 590.625 L 328.125 590.625 328.12499999999994 546.875 284.37499999999994 546.875 284.375 568.75 262.5 593.206993503904 240.62499999999997 568.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1225"
+     width="43.75"
+     height="43.75"
+     x="284.375"
+     y="546.875"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1226"
+     rx="5"
+     ry="5"
+     cx="306.25"
+     cy="568.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1227"
+     d="M 295.3125 546.875 L 295.31250000000006 535.9375 273.43750000000006 535.9375 273.4375 557.8125 284.375 557.8125 296.603496751952 568.75 284.375 579.6875"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1228"
+     width="43.75"
+     height="43.75"
+     x="284.375"
+     y="634.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1229"
+     rx="5"
+     ry="5"
+     cx="306.25"
+     cy="656.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1230"
+     d="M 317.1875 678.125 L 317.1875 689.0625 339.0625 689.0625 339.0625 667.1875 328.125 667.1875 315.896503248048 656.25 328.125 645.3125"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1231"
+     width="43.75"
+     height="43.75"
+     x="196.87500000000003"
+     y="634.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1232"
+     rx="5"
+     ry="5"
+     cx="218.75000000000003"
+     cy="656.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1233"
+     d="M 207.81250000000006 634.375 L 207.81250000000006 623.4375 185.93750000000006 623.4375 185.93750000000003 645.3125 196.87500000000003 645.3125 209.103496751952 656.25 196.87500000000003 667.1875"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1234"
+     width="43.75"
+     height="43.75"
+     x="196.87499999999997"
+     y="546.875"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1235"
+     rx="5"
+     ry="5"
+     cx="218.74999999999997"
+     cy="568.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1236"
+     d="M 229.68750000000003 590.625 L 229.68750000000006 601.5625 240.62500000000006 601.5624999999999 251.5625000000001 612.4999999999999"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1237"
+     d="M 262.50000000000006 601.5624999999999 L 251.56250000000003 590.6249999999999 251.5625 579.6874999999999 240.625 579.6874999999999 228.396503248048 568.75 240.62499999999994 557.8124999999999"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1238"
+     width="87.5"
+     height="87.5"
+     x="43.75000000000003"
+     y="568.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1239"
+     rx="5"
+     ry="5"
+     cx="87.50000000000003"
+     cy="612.5"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1240"
+     d="M 43.75000000000004 634.375 L 21.875000000000043 634.375 21.87500000000007 678.125 65.62500000000009 678.125 65.62500000000006 656.25 87.50000000000004 631.793006496096 109.37500000000006 656.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1241"
+     width="43.75"
+     height="43.75"
+     x="109.37500000000006"
+     y="634.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1242"
+     rx="5"
+     ry="5"
+     cx="131.25000000000006"
+     cy="656.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1243"
+     d="M 153.12500000000009 645.3125000000001 L 164.06250000000009 645.3125000000001 164.06250000000014 623.4375000000001 142.18750000000014 623.4375 142.1875000000001 634.375 131.25000000000009 646.603496751952 120.31250000000011 634.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1244"
+     width="43.75"
+     height="43.75"
+     x="21.875000000000057"
+     y="634.375"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1245"
+     rx="5"
+     ry="5"
+     cx="43.75000000000006"
+     cy="656.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1246"
+     d="M 21.875000000000068 667.1875 L 10.937500000000071 667.1875 10.937500000000092 689.0625 32.812500000000085 689.0625 32.81250000000008 678.125 43.750000000000064 665.896503248048 54.68750000000008 678.125"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1247"
+     width="43.75"
+     height="43.75"
+     x="21.875"
+     y="546.875"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1248"
+     rx="5"
+     ry="5"
+     cx="43.75"
+     cy="568.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1249"
+     d="M 65.62499999999994 557.8124999999999 L 76.56249999999994 557.8124999999999 76.56249999999986 535.9374999999999 54.687499999999844 535.9375 54.6874999999999 546.875 43.74999999999996 559.103496751952 32.8124999999999 546.875"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1250"
+     width="43.75"
+     height="43.75"
+     x="109.375"
+     y="546.875"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1251"
+     rx="5"
+     ry="5"
+     cx="131.25"
+     cy="568.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1252"
+     d="M 109.37500000000001 579.6875 L 98.43750000000001 579.6875 98.43750000000003 590.625 87.50000000000004 601.5625"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1253"
+     d="M 98.43750000000006 612.5 L 109.37500000000004 601.5625 120.31250000000004 601.5625 120.31250000000003 590.625 131.25 578.396503248048 142.18750000000003 590.625"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1254"
+     width="87.5"
+     height="87.5"
+     x="43.74999999999997"
+     y="393.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1255"
+     rx="5"
+     ry="5"
+     cx="87.49999999999997"
+     cy="437.5"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1256"
+     d="M 131.2499999999999 415.62499999999983 L 153.1249999999999 415.6249999999997 153.1249999999997 371.8749999999997 109.37499999999969 371.8749999999999 109.37499999999977 393.7499999999999 87.49999999999989 418.20699350390396 65.62499999999977 393.7500000000001"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1257"
+     width="43.75"
+     height="43.75"
+     x="21.875000000000078"
+     y="459.3750000000001"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1258"
+     rx="5"
+     ry="5"
+     cx="43.75000000000008"
+     cy="481.2500000000001"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1259"
+     d="M 54.687500000000135 503.1250000000001 L 54.68750000000017 514.0625000000001 76.56250000000017 514.0625 76.56250000000011 492.1875 65.62500000000011 492.18750000000006 53.3965032480481 481.2500000000001 65.62500000000006 470.31250000000006"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1260"
+     width="43.75"
+     height="43.75"
+     x="21.874999999999865"
+     y="371.8750000000001"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1261"
+     rx="5"
+     ry="5"
+     cx="43.749999999999865"
+     cy="393.7500000000001"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1262"
+     d="M 32.8124999999998 371.87500000000017 L 32.81249999999977 360.9375000000001 10.937499999999773 360.9375000000002 10.937499999999837 382.8125000000002 21.874999999999833 382.81250000000017 34.103496751951845 393.7500000000001 21.874999999999897 404.68750000000017"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1263"
+     width="43.75"
+     height="43.75"
+     x="109.37499999999986"
+     y="371.8749999999999"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1264"
+     rx="5"
+     ry="5"
+     cx="131.24999999999986"
+     cy="393.7499999999999"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1265"
+     d="M 142.18749999999991 415.62499999999983 L 142.18749999999994 426.56249999999983 164.06249999999994 426.5624999999998 164.0624999999999 404.6874999999998 153.1249999999999 404.68749999999983 140.89650324804788 393.7499999999999 153.12499999999983 382.81249999999983"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1266"
+     width="43.75"
+     height="43.75"
+     x="109.37500000000009"
+     y="459.3749999999999"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1267"
+     rx="5"
+     ry="5"
+     cx="131.25000000000009"
+     cy="481.2499999999999"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1268"
+     d="M 120.3125000000001 459.3749999999999 L 120.3125000000001 448.4374999999999 109.3750000000001 448.4374999999999 98.43750000000011 437.4999999999999"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1269"
+     d="M 87.5000000000001 448.4374999999999 L 98.4375000000001 459.3749999999999 98.43750000000009 470.3124999999999 109.37500000000009 470.3124999999999 121.60349675195206 481.2499999999999 109.37500000000009 492.1874999999999"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1270"
+     width="87.5"
+     height="87.5"
+     x="218.75"
+     y="393.75"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1271"
+     rx="5"
+     ry="5"
+     cx="262.5"
+     cy="437.5"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1272"
+     d="M 218.75000000000003 459.37500000000006 L 196.87500000000003 459.37500000000006 196.87500000000006 481.25000000000006 175.00000000000006 503.1250000000001"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1273"
+     d="M 196.87500000000009 525.0000000000001 L 218.75000000000006 503.12500000000006 240.62500000000006 503.125 240.62500000000006 481.25 262.5 456.79300649609604 284.37500000000006 481.25"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1274"
+     width="43.75"
+     height="43.75"
+     x="196.87499999999997"
+     y="371.87500000000006"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1275"
+     rx="5"
+     ry="5"
+     cx="218.74999999999997"
+     cy="393.75000000000006"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1276"
+     d="M 196.87499999999997 404.68750000000006 L 185.9375 404.6875000000001 185.9375 426.5625000000001 207.8125 426.56250000000006 207.8125 415.62500000000006 218.74999999999997 403.3965032480481 229.6875 415.62500000000006"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1277"
+     width="43.75"
+     height="43.75"
+     x="284.37499999999994"
+     y="371.87499999999994"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1278"
+     rx="5"
+     ry="5"
+     cx="306.24999999999994"
+     cy="393.74999999999994"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1279"
+     d="M 328.12499999999994 382.81249999999994 L 339.06249999999994 382.8124999999999 339.06249999999994 371.8749999999999 349.9999999999999 360.9374999999999"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1280"
+     d="M 339.0624999999999 349.9999999999999 L 328.1249999999999 360.93749999999994 317.1874999999999 360.93749999999994 317.18749999999994 371.87499999999994 306.24999999999994 384.1034967519519 295.31249999999994 371.87499999999994"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1281"
+     width="43.75"
+     height="43.75"
+     x="284.37500000000006"
+     y="459.37499999999994"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1282"
+     rx="5"
+     ry="5"
+     cx="306.25000000000006"
+     cy="481.24999999999994"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1283"
+     d="M 284.37500000000006 492.18749999999994 L 273.43750000000006 492.1875 273.4375000000001 514.0625 295.3125000000001 514.0625 295.31250000000006 503.125 306.25000000000006 490.896503248048 317.18750000000006 503.125"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <rect
+     id="SvgjsRect1284"
+     width="43.75"
+     height="43.75"
+     x="196.87500000000003"
+     y="459.37500000000006"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <ellipse
+     id="SvgjsEllipse1285"
+     rx="5"
+     ry="5"
+     cx="218.75000000000003"
+     cy="481.25000000000006"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1286"
+     d="M 240.62499999999997 470.31249999999994 L 251.56249999999997 470.3124999999999 251.56249999999991 459.3749999999999 262.4999999999999 448.4374999999999"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+  <path
+     id="SvgjsPath1287"
+     d="M 251.56249999999983 437.49999999999994 L 240.62499999999986 448.4375 229.68749999999986 448.43750000000006 229.68749999999991 459.37500000000006 218.74999999999997 471.6034967519521 207.81249999999991 459.37500000000017"
+     stroke="hsl(50, 50%, 50%)"
+     stroke-opacity="1"
+     stroke-width="1"
+     fill="none"
+     style="stroke:#0000ff;stroke-opacity:1" />
+</svg>
