@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>recreating retro computer art | by Sher Minn Chong</title>
+
+  <meta name="description" content="recreating retro computer art | by Sher Minn Chong">
+  <meta name="author" content="Sher Minn Chong">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <div class="reveal">
+    <div class="slides">
+      <!-- TITLE SLIDE -->
+      <section data-background="#222" class='white'>
+        <h1>recreating retro computer art</h1>
+        <h2>with javascript!</h2>
+        <p class="pad-top">
+          <small>by <a href="http://piratefsh.github.io">Sher Minn Chong</a> / <a href="http://twitter.com/piratefsh">@piratefsh</a> / JSConf EU 2019 </small>
+        </p>
+      </section>
+
+      <!-- INTRO -->
+      <section data-background="#222" class='white'>
+        <section data-background="#222">
+          <img height="300" src="img/sher-minn.png"/>
+          <h2>Sher Minn</h2>
+        </section>
+
+        <section class="bw-bg" data-background="img/malaysia-map.gif">
+          <h3 style="color: black !important">Malaysian</h3>
+          <img class="logo" src="img/malaysia_flag.svg" width="200" alt="Malaysian"/>
+        </section>
+
+         <section class="text-shadow blur-bg" data-background="img/manhattan.jpg">
+          <h3>Recurse Center</h3>
+          <img class="logo" src="img/rc_logo.svg" width="200" alt="Recurse center"/>
+        </section>
+
+        <section class="text-shadow blur-bg" data-background="img/viewfromtpt.jpg">
+          <h3>Web Platform Engineer</h3>
+          <img class="logo" src="img/tpt-logo.svg" height="100" alt="teacherspayteachers.com"/>
+        </section>
+      </section>
+
+       <!-- ABOUT THIS TALK -->
+      <section data-background="#272387" class='text-shadow white'>
+        <section data-background="img/cg-mag/crt-microfilm.png">
+          <h2 style="background: rgba(20, 20, 20, 0.95)">Retro computer art</h2>
+        </section>
+
+        <section>
+          <h2>Recode Project</h2>
+          <img height="480" src="img/cg-mag/recode-project.png"/>
+          <p><small><a href="http://recodeproject.com">[link]</a></small></p>
+        </section>
+
+        <section>
+          <div class="col-6">
+            <img src="img/cg-mag/cover.png"/>
+            <small><a href='http://recodeproject.com'>[source]</a></small>
+          </div>
+          <div class="col-6">
+            <img src="img/cg-mag/toc.png"/>
+            <img src="img/cg-mag/article.png"/>
+          </div>
+        </section>
+
+        <section>
+          <h3>Grace C. Hertlein</h3>
+          <p>Editor of Computer Graphics and Art, 1976-1978</p>
+        </section>
+
+        <section>
+          <video controls src="img/cg-mag/scroll.mp4" autoplay="autoplay" loop="loop"></video>
+        </section>
+
+        <section>
+          <h2>no code published  <span class="fragment"><br/>-> can I reverse engineer it?</span></h2>
+
+          <h1><span class="fragment">🤔🤔🤔</span></h1>
+          </blockquote>
+        </section>
+      </section>
+
+      <!-- WHAT IS COMPUTER ART -->
+      <section data-background="#272387" class='white'>
+        <section data-background="#272387">
+          <h2>Computer art</h2>
+          <h1>💻🎨</h1>
+        </section>
+
+        <section>
+          <h3>any art <span class="fragment">in which computers</span> <span class="fragment"> play a role in production </span><span class="fragment">or display of the artwork</span></h3>
+        </section>
+
+        <section>
+          <h3>computer as a digital canvas</h3>
+          <img src="img/compart/mspaint.jpg"/>
+          <!-- <p>Microsoft Paint, introduced 1985</p> -->
+        </section>
+
+        <section>
+          <h3>computers to generate graphics</h3>
+          <img src="img/compart/cgi.jpg"/>
+          <!-- <p>3D graphics, introduced 1978</p> -->
+        </section>
+
+        <section>
+          <h3>machine learning art</h3>
+          <img src="img/compart/style-transfer.png"/>
+          <!-- <p>2017</p> -->
+        </section>
+
+        <section data-background="#272387">
+          <h2>Retro computer art</h2>
+          <p class="fragment">1950s to 1970s</p>
+          <p class="fragment">
+            <small>
+              (before personal computing,
+              <span class="fragment">color screens,</span>
+              <span class="fragment">laser printers,</span>
+              <span class="fragment">3D graphics)</span>
+            </small>
+          </p>
+        </section>
+      </section>
+
+      <!-- HISTORY -->
+      <section data-background="#041F3D" class='white'>
+        <section>
+          <h2>Computers back then</h2>
+          <h1>📼📺🗃</h1>
+        </section>
+
+        <section>
+          <h3>IBM 7090 <br/> Data Processing System</h3>
+          <img height="400" src="img/ibm/IBM-7090.jpg" />
+          <p><span  class="fragment">introduced in 1959</span> <span class="fragment">at the price of USD 3 million</span></p>
+        </section>
+
+        <section>
+          <h3>Featured in Hidden Figures, 2016</h3>
+          <img src="img/ibm/IBM-7090-Hidden-Figures.png" />
+          <p><small><a href="https://youtu.be/5wfrDhgUMGI">[source]</a></small></p>
+        </section>
+
+        <section>
+          <video controls src="img/ibm/ibm-card-punch.mp4" autoplay="autoplay" loop="loop"></video>
+        </section>
+
+        <section>
+          <p>"...I would go to the computer center and look at the information and then type it out, resulting in the punched cards.
+          </p>
+
+          <p class="fragment"> I'd give it to the little man behind the door, and five minutes later, I'd get this drawing back...</p>
+
+          <br/><small>- Frederick Hammersley interviewed by Lawrence Weschler</small></p>
+
+          <p><small><a href="http://www.milesmcenery.com/news/frederick-hammersley-the-computer-drawings-1969">[source]</a></small>
+        </section>
+
+
+        <section>
+          <h3>Mainly used for scientific & mathematical applications</h3>
+        </section>
+
+        <section>
+          <!-- <h2>Boeing Company</h2> -->
+          <img height="120" alt="boeing company" src="img/boeing/boeing-logo.svg"/>
+        </section>
+        
+        <section>
+          <div class="col-6">
+            <img height="600" src="img/boeing/boeing.jpg"/>
+          </div>
+          <div class="col-6">
+            <p style="text-align: left; margin-left: 24px;">
+              Animation of human limbs to determine possible movements in cockpit for easier instrumentation reach
+              <br/>
+              <br/>
+              <small>Source: The Computer in Art by Jasia Reichdart, 1971</small>
+            </p>
+          </div>
+        </section>
+        <section>
+          <img width="400"src="img/boeing/sea-tac-1.jpg"/>
+          <img width="400"src="img/boeing/sea-tac-2.jpg"/>
+          <p>
+            Seattle-Tacoma airport graphic used for animation of landing simulations
+            <br/>
+            <br/>
+            <small>Source: The Computer in Art by Jasia Reichdart, 1971</small>
+          </p>
+        </section>
+
+        <section>
+          <h3>Coined term 'computer graphics'</h3>
+          <h1>🖼</h1>
+        </section>
+
+        <section>
+          <!-- <h2>Bell Labs</h2> -->
+          <img height="120" alt="bell laboratories" src="img/bell-labs/bell-labs-logo.png"/>
+        </section>
+
+        <section>
+          <h3>
+            One of the First Computer-Generated Films
+          </h3>
+        </section>
+
+        <section>
+          <video controls src="img/bell-labs/zajac.mp4" autoplay="autoplay" loop="loop"></video>
+          <p>
+            Simulation of a Two-Gyro Gravity Gradient Attitude Control System by E. E. Zajac, 1963
+            <small>
+              <a href='https://www.youtube.com/watch?v=RocLdMyUG-4'>[source]</a>
+            </small>
+          </p>
+        </section>
+      </section>
+
+      <!-- HISTORY: OUTPUTS -->
+      <section  data-background="#272387" class='white'>
+        <h2>Show me the vintage art</h2>
+        <h1>🙌</h1>
+      </section>
+
+      <!-- OSCILLOSCOPE ART -->
+      <section data-background="#272387" class='white'>
+        <section>
+          <h2>Oscilloscope art</h2>
+          <h1>📸🌀📺</h1>
+        </section>
+
+        <section>
+          <h2>Cathode-ray oscilloscopes</h2>
+        </section>
+        <section>
+          <div class="col-6">
+            <img src="img/herbert-franke/herbert-franke-portrait.jpg" style="height: 600px; width: auto"/>
+            <p>Herbert W. Franke<small><a href=http://spalterdigital.com/artists/herbert-franke/>[source: http://spalterdigital.com]</a></small>
+            </p>
+          </div>
+          <div class="col-6">
+            <img src="img/ben-laposky/oscilloscope.jpg" style="height: 500px; width: auto"/>
+            <p>
+              Cathode-ray oscilloscope from the 1950s<small><a href="https://www.n6cc.com/ancient-oscilloscope">[source: https://www.n6cc.com/]</a></small></p>
+          </div>
+        </section>
+
+        <section>
+          <h2>earliest 'computer' art</h2>
+          <p>from 1950 - 1960</p>
+        </section>
+
+        <section data-background="#000" alt="Elektronische by Herbert Franke, 1970">
+          <img src="img/herbert-franke/elektronische-grafiken-5.jpg" height="500"/>
+          <p><small>Elektronische by Herbert Franke, 1961 <br/><a href="http://www.zi.biologie.uni-muenchen.de/~franke/Kunst1.htm">[source: http://www.zi.biologie.uni-muenchen.de]</a></small></p>
+        </section>
+        <section data-background="#2b2b2b">
+          <div class="col-6">
+            <img src="img/herbert-franke/lichtformen-2.gif"/>
+          </div>
+          <div class="col-6">
+            <img src="img/herbert-franke/lichtformen-3.gif"/>
+          </div>
+            <p><small>Lichtformen, 1953-55 <a href="http://www.zi.biologie.uni-muenchen.de/~franke/Kunst1.htm">[source: http://www.zi.biologie.uni-muenchen.de]</a></small><small>Technique: photography with CRT oscilloscope, circa 1950 <a href="http://www.gasathj.com/tiki-read_article.php?articleId=26">[source: http://www.gasathj.com]</a></small></p>
+         </section>
+
+        <section>
+          <img src="img/ben-laposky/rec-math-page.jpg" style="height: 600px; width: auto"/>
+          <p><small>Various Oscillons <a href=http://ruinsorbooks.com/2013/03/electronic-abstractions-mathematics-in-design-recreational-mathematics-ben-f-laposky/>[source]</a></small></p>
+        </section>
+
+        <section>
+          <img src="img/ben-laposky/oscillons-4.jpg"/>
+          <p><small>Oscillons #41 <a href="http://ruinsorbooks.com/2013/03/electronic-abstractions-mathematics-in-design-recreational-mathematics-ben-f-laposky"/>[source]</a></small></p>
+        </section>
+
+        <section>
+          <img src="img/ben-laposky/rec-math.jpg" style="height: 600px; width: auto"/>
+          <p><small>Cover of Recreational Mathematics magazine <a href="http://ruinsorbooks.com/2013/03/electronic-abstractions-mathematics-in-design-recreational-mathematics-ben-f-laposky"/>[source]</a></small></p>
+        </section>
+
+        <section>
+          <img src="img/ben-laposky/waves.png"/>
+          <p><small><a href="http://ruinsorbooks.com/2013/03/electronic-abstractions-mathematics-in-design-recreational-mathematics-ben-f-laposky">[source]</a></small></p>
+        </section>
+
+        <section>
+          <img src="img/ben-laposky/oscillons-2.png"/>
+        </section>
+
+        <section>
+          <!-- recreating oscillons-->
+          <h3>
+            None of the negatives remain, much less the algorithms for them
+          </h3>
+
+          <h1 class="fragment">😢</h1>
+        </section>
+
+        <section>
+          <h2>Demo: Oscillons</h2>
+        </section>
+
+        <!-- DEMO: INTRO P5 -->
+
+        <section data-background="#ed225d">
+          <img src='img/p5js/logo.png'/>
+        </section>
+
+        <section data-background="#ed225d">
+          <img src="img/Processing_3_logo.png" width="250"/>
+          <h3>based on Processing</h3>
+        </section>
+
+        <section data-background="#ed225d">
+          <h1>🙋🏻🙆🏽‍♂️💁👨🏿‍💻</h1>
+          <h3>designed to make drawing with code<br/> accessible for non-programmers</h3>
+        </section>
+
+        <section data-background="#ed225d">
+          <img src="img/p5js/p5-screenshot.png"/>
+          <a href="https://p5js.org/">https://p5js.org/</a>
+        </section>
+
+        <section data-background="#ed225d">
+          <a href="http://alpha.editor.p5js.org/piratefsh/sketches/HkkDuZIAM">
+            <img src="img/p5js/alpha-p5js.png"/>
+          </a>
+          <a href="http://alpha.editor.p5js.org/piratefsh/sketches/HkkDuZIAM">in-browser p5.js editor -- good place to start</a>
+        </section>
+
+        <section>
+          <h2>Demo: Oscillons</h2>
+        </section>
+
+        <section>
+          <div class="col-6" data-markdown>
+```js
+function draw() {
+  // use center of canvas 
+  // as origin 0, 0
+  translate(width / 2, height / 2);
+
+  // draw a tiny circle
+  ellipse(0, 0, 10, 10);
+}
+
+```
+          </div>
+          <div class="col-6">
+            <video controls muted="muted" src="img/oscillon/step-1.mp4" autoplay="autoplay" loop="loop"></video>
+          </div>
+        </section>
+
+        <section>
+          <div class="col-6" data-markdown>
+```js
+
+// add counter
+let t = 0;
+
+function draw() {
+  translate(width / 2, height / 2);
+
+  const x = t;
+  ellipse(x, 0, 10, 10);
+
+  // increment counter after
+  // every drame
+  t++
+}
+
+
+```
+          </div>
+          <div class="col-6">
+            <video controls muted="muted" src="img/oscillon/step-2.mp4" autoplay="autoplay" loop="loop"></video>
+          </div>
+        </section>
+
+        <section>
+          <div class="col-6" data-markdown>
+```js
+  
+  // size of figure
+  const radius = 200;
+
+  // formula for circle
+  // x = r * sin(theta)
+  // y = r * cos(theta)
+
+  const x = radius * sin(t);
+  const y = radius * cos(t);
+
+  ellipse(x, y, 10, 10);
+
+
+```
+          </div>
+          <div class="col-6">
+            <video controls muted="muted" src="img/oscillon/step-4.mp4" autoplay="autoplay" loop="loop"></video>
+          </div>
+        </section>
+
+        <section>
+          <div class="col-6" data-markdown>
+```js
+  
+  // mess around with theta
+  const x = radius * sin(t/4);
+  const y = radius * cos(t/3);
+
+
+```
+          </div>
+          <div class="col-6">
+            <video controls muted="muted" src="img/oscillon/step-5.mp4" autoplay="autoplay" loop="loop"></video>
+          </div>
+        </section>
+
+        <section>
+          <div class="col-6" data-markdown>
+```js
+  
+  // add another point
+  const x2 = radius * sin(t/3);
+  const y2 = radius * cos(t/3) * 0.5;
+  ellipse(x2, y2, 10, 10);
+
+
+
+```
+          </div>
+          <div class="col-6">
+            <video controls muted="muted" src="img/oscillon/step-6.mp4" autoplay="autoplay" loop="loop"></video>
+          </div>
+        </section>
+        <section>
+          <div class="col-6" data-markdown>
+```js
+  
+  // draw line from two points
+  line(x, y, x2, y2);
+
+
+```
+          </div>
+          <div class="col-6">
+            <video controls muted="muted" src="img/oscillon/step-7.mp4" autoplay="autoplay" loop="loop"></video>
+          </div>
+        </section>
+
+        <section>
+          <div class="col-6" data-markdown>
+```js
+  
+  // draw line from two points
+  line(x, y, x2, y2);
+
+
+```
+          </div>
+          <div class="col-6">
+            <video controls muted="muted" src="img/oscillon/step-7.mp4" autoplay="autoplay" loop="loop"></video>
+          </div>
+        </section>
+
+        <section data-background="#000">
+          <video controls muted="muted" src="img/oscillon/step-final.mp4" autoplay="autoplay" loop="loop"></video>
+        </section>
+
+        <section data-background-iframe="https://editor.p5js.org/piratefsh/sketches/SJH_yG-KQ">
+        </section>
+
+        <section data-background-iframe=http://piratefsh.github.io/p5js-art/public/aurora/>
+        </section>
+      </section>
+
+      <!-- PLOTTERS -->
+      <section data-background="#272387">
+        <section>
+          <h2>Plotter art</h2>
+          <h1>🤖➡️✏️</h1>
+        </section>
+
+        <section>
+          <h2>Mechanical plotter</h2>
+        </section>
+
+        <section>
+          <video controls  height="900" muted="muted" src="img/my-art/axidraw-plotter-2.mp4" autoplay="autoplay" loop="loop"></video>
+        </section>
+        <!-- FOUR FLIES -->
+        <section>
+          <div class="col-6">
+            <img src="img/four-flies/snelin-2.png"/>
+            <!-- <img src="img/four-flies/snelin-1.png"/> -->
+          </div>
+          <div class="col-6">
+            <img src="img/four-flies/cg-ff.jpg"/>
+          </div>
+        </section>
+
+        <!-- <section data-background="#F9FAED">
+          <img height="600" src='img/four-flies/tri-flies.png'/>
+        </section>
+ -->
+        <section>
+          <h3>Four flies problem</h3>
+          <p>
+            Four flies sit at the corners of a card table, facing inward.
+
+            They start simultaneously walking at the same rate, each directing its motion steadily toward the fly on its right.
+          Find the path of each.
+          </p>
+
+          <p><small><a href="https://blog.as.uky.edu/sta695/wp-content/uploads/2013/01/four-bugs.pdf">[source]</a></small></p>
+        </section>
+
+        <section>
+          <video controls muted="muted" src="img/four-flies/ff-demo.mp4" autoplay="autoplay" loop="loop"></video>
+        </section>
+
+        <!-- <section data-background-iframe="https://editor.p5js.org/piratefsh/sketches/rytUKFGKX">
+        </section>
+ -->
+        <!-- <section data-background="img/four-flies/four-flies-plot.jpg"> -->
+        <!-- </section> -->
+
+        <section data-background-color="white" data-background="img/four-flies/tri-tessel.svg">
+        </section>
+        <section data-background-color="white" data-background="img/four-flies/quad-tessel.svg">
+          <!-- <img src="img/four-flies/tri-tessel.svg"/> -->
+        </section>
+
+        <!-- VERA MOLNAR -->
+        <section>
+          <img height="300" src='img/vera-molnar/molnar-portrait.jpg'>
+          <h2>Vera Molnar</h2>
+          <p class="fragment">made algorithmic art before computers were a thing in the 1960s</p>
+
+          <p><small><a href="https://awarewomenartists.com/en/artiste/vera-molnar/">[image source]</a></small></p>
+        </section>
+
+        <section>
+          <img src="img/vera-molnar/MOLNAR-algo.jpg" style="height:500px; width: auto"/>
+          <p><small>Distribution Aleatoire De 4 Elements (Pour Prog. Ordinateur) / Random Distribution of 4 Elements (for the computer), 1970 <a href="https://hyperallergic.com/437834/vera-molnar-drawings-1949-1986-senior-and-shopmaker-gallery-2018/">[source]</a></small>
+        </section>
+
+        <section>
+          <img src="img/vera-molnar/molnar-paul-klee-1.jpg"/>
+          <p><small> A la Recherche de Paul Klee, 1971. <br/> Material: felt tip pen on paper <a href="https://www.centrepompidou.fr/cpv/resource/cez6op/rzEeXa">[source]</a></small>
+        </section>
+        <section>
+          <img src="img/vera-molnar/molnar-paul-klee-2.jpg"/>
+          <p><small> A la Recherche de Paul Klee, 1970. <br/> Material: ink on paper, plotter drawing <a href="https://www.centrepompidou.fr/cpv/resource/cez6op/rzEeXa">[source]</a></small>
+        </section>
+
+        <section>
+          <img src="img/vera-molnar/molnar-1986.jpg" />
+          <p><small>Structures de quadrilatères (Square Structures)
+         <a href="http://digitalartmuseum.org/gallery/image/8864.html">[source]</a></small>
+        </section>
+
+        <section>
+          <img src="img/vera-molnar/molnar-frieder.jpg" style="height:600px; width: auto"/>
+          <p><small>In preparation for Frieder
+          <a href="http://freeartbureau.tumblr.com/post/46167565718/in-preparation-for-frieder-various-works-by-v%C3%A9ra">[source]</a></small>
+        </section>
+
+        <section>
+          <h3>towards the 70s, computers became more accessible to artists</h3>
+        </section>
+
+        <section>
+          <img src="img/vera-molnar/molnar-trapeziums.jpg" style="height:500px; width: auto"/>
+          <p><small>144 Trapèzes (144 Trapeziums) <a href="http://digitalartmuseum.org/gallery/image/8699.html">[source]</a></small>
+        </section>
+
+        <section>
+          <img height="500" src="img/vera-molnar/trapeziums-mine.png"/>
+        </section>
+
+        <section data-background-iframe="https://editor.p5js.org/piratefsh/sketches/Sy52pbTpG">
+        </section>
+
+      </section>
+
+       <!-- LINE PRINTER -->
+      <section data-background="#272387">
+        <section>
+          <h2>Text-based art</h2>
+          <h1>🖨✨🔡</h1>
+        </section>
+        <section>
+          <img style="height: 500px;" src="img/ibm/IBM-1403-printer.jpg"/>
+          <p>
+            <small>IBM 1403 line printer. <br/>Source: The Computer in Art by Jasia Reichdart, 1971</small>
+          </p>
+        </section>
+
+         <section>
+          <img style="height: 500px;" src="img/ibm/IBM-1403-drum.jpg"/>
+        </section>
+
+        <section>
+          <video controls src="img/ibm/IBM-1403-2.mp4" autoplay="autoplay" loop="loop"></video>
+          <p> <small><a href="https://www.youtube.com/watch?v=FiEGoVzmyvs">[source]</a></small></p>
+        </section>
+
+        <section>
+          <h2>Frederick Hammersley</h2>
+          <p>artist who got into programming</p>
+        </section>
+
+        <section data-background="img/frederick-hammersley/hammersley-abstract.png"></section>
+
+        <section>
+          <img src="img/frederick-hammersley/equal-tea-talk.jpg"/>
+          <p><small>Equal Tea Talk, 1969 <a href="http://hammersleyfoundation.org/index.php/artwork/computer-drawings">[source]</a></small></p>
+        </section>
+
+        <section>
+          <img src="img/frederick-hammersley/undernourished.jpg"/>
+          <p><small>Undernourished, 1969 <a href="http://hammersleyfoundation.org/index.php/artwork/computer-drawings">[source]</a></small></p>
+        </section>
+
+        <section>
+          <img src="img/frederick-hammersley/jelly-center.jpg" style="height:500px; width: auto"/>
+          <p><small>Jelly Centers, 1969 <a href=http://lacmaonfire.blogspot.com/2017/08/frederick-hammersley-and-computer.html>[source]</a></small></p>
+        </section>
+
+        <section>
+          <img src="img/frederick-hammersley/detail.jpg"/>
+          <p><small>Jelly Centers Detail, 1969 <a href=http://lacmaonfire.blogspot.com/2017/08/frederick-hammersley-and-computer.html>[source]</a></small></p>
+        </section>
+        <section>
+          <div class="col-6">
+            <img src="img/frederick-hammersley/family-2-lithograph.jpg" style="height:600px; width: auto"/>
+            <p><small>Family #2, 1973, Lithograph <a href=http://lacmaonfire.blogspot.com/2017/08/frederick-hammersley-and-computer.html>[source]</a></small></p>
+          </div>
+          <div class="col-6">
+            <img src="img/frederick-hammersley/with-english-1975.jpg"/>
+            <p><small>With English, 1975, Lithograph <a href=http://lacmaonfire.blogspot.com/2017/08/frederick-hammersley-and-computer.html>[source]</a></small></p>
+          </div>
+        </section>
+
+        <section>
+          <h3>ASCII art <span class="fragment">?</span></h3>
+          <p class="fragment">not quite, more like <a href="https://www.wikiwand.com/en/EBCDIC">EBCDIC</a> art</p>
+
+          <p class="fragment"><small>(Extended Binary Coded Decimal Interchange Code)</small></p>
+        </section>
+
+        <section>
+          <img src="img/frederick-hammersley/ibmpunchcard.png"/>
+          <p><small>Punched card with the EBCDIC character set.<a href="https://www.wikiwand.com/en/EBCDIC">[source]</a></small></p>
+        </section>
+
+        <section data-background-iframe="https://editor.p5js.org/piratefsh/sketches/BJF5jMbFQ">
+        </section>
+
+      <!--   <section>
+          <video controls src="img/frederick-hammersley/art-1.mp4" autoplay="autoplay" loop="loop"></video>
+        </section>
+ -->
+        <section>
+            <h2>ART 1 Programming language</h2>
+
+            <p>by Katherine Nash and Richard H. Williams at University of New Mexico</p>
+
+        </section>
+        <section>
+            <p>"...to teach students to make simple computer graphics"</p>
+
+            <p class="fragment">"...notable for its simplicity and intended primarily as an introduction to the use of computers for those without any technological background"</p>
+
+            <p class="fragment">
+              <small>
+                source: The Computer in Art by Jasia Reichdart, 1971
+              </small>
+            </p>
+          </section>
+
+          <section data-background="#ed225d">
+            <img src='img/p5js/logo.png'/>
+          </section>
+
+          <section>
+            <div class="col-6">
+              <h3>ART I</h3>
+              <img height="500" src="img/cg-mag/art-1-ellipse.jpg"/>
+            </div>
+            <div class="col-6 fragment">
+              <h3>p5.js</h3>
+              <img src="img/p5js/p5js-ellipse.png"/>
+            </div>
+          </section>
+
+          <section data-background="#272387">
+            <h2>art made with limited technology</h2>
+          </section>
+      </section>
+
+    <!-- CLOSING -->
+    <section data-background-iframe='https://piratefsh.github.io/p5js-art/public/chrysanthemums/index.html' class="white">
+      <section><h2>end</h2></section>
+      <section>
+        <h2><img src="img/twitter.png" width="50px"/> <span>tweet at me <br/>@piratefsh</span>  </h2>
+      </section>
+    </section>
+    <!-- END CLOSING -->
+
+    <!-- BONUS -->
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/jquery-2.2.3.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+        backgroundTransition: 'none',
+
+        // Optional reveal.js plugins
+        dependencies: [
+        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/zoom-js/zoom.js', async: true },
+        { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+
+      Reveal.addEventListener('slidechanged', function(event) {
+        if($(event.currentSlide).attr('data-background-iframe')) {
+          $('.reveal > .backgrounds').css('z-index', 1);
+          $('iframe').css('width', '100%')
+          $('iframe').css('z-index', 2)
+          $('iframe').css('position', 'fixed')
+        } else {
+          $('.reveal > .backgrounds').css('z-index', 0);
+          $('iframe').css('z-index', 0)
+          $('iframe').css('position', 'static')
+        }
+      });
+
+    </script>
+
+  </body>
+  </html>

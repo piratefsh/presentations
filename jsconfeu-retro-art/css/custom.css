@@ -1,0 +1,261 @@
+.reveal .logo{
+  border: none;
+  box-shadow: none;
+  /*max-width: 280px;*/
+  max-height: 280px;
+  display: inline-block;
+  margin: 0.5em 1em;
+  vertical-align: middle;
+}
+.reveal .footnote {
+  font-size: 0.5em;
+  position: fixed;
+  bottom: 0;
+  text-shadow: 0px 0px 5px black;
+}
+
+.reveal .white a{
+  color: #eee;
+}
+
+.reveal .footnote a {
+  color: white;
+  text-decoration: underline;
+}
+
+.reveal .has-dark-background  a{
+  color: #eee;
+  text-decoration: underline;
+}
+
+.reveal .pad-top {
+  margin-top: 1.25em;
+}
+
+.reveal pre code{
+  max-height: 500px;
+}
+
+.reveal section img{
+  border: 0px;
+  box-shadow: none;
+  background: none;
+}
+
+.reveal .flex-img  {
+  display: flex;
+}
+.reveal .flex-img img {
+  flex: 1;
+}
+.overview section.has-dark-background h2,
+.overview section.has-dark-background h3,
+.overview section.has-dark-background a,
+.overview section.has-dark-background p{
+  color: black !important;
+}
+
+.text-shadow,
+.text-shadow h1,
+.text-shadow h2,
+.text-shadow h3{
+  text-shadow: 0px 0px 5px black;
+}
+.text-shadow-lite,
+.text-shadow-lite h1,
+.text-shadow-lite h2,
+.text-shadow-lite h3{
+  text-shadow: 0px 0px 5px #EDF3E8;
+}
+
+.reveal iframe.bg-iframe{
+  background-color: black;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 24%;
+  z-index: -1;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.reveal img{
+  vertical-align: middle;
+}
+
+.reveal .margin-top{
+  margin-top: 48px;
+}
+
+.reveal .col-6{
+  width: 50%;
+  float: left;
+  display: inline-block;
+}
+
+.reveal .col-8{
+  width: 60%;
+  float: left;
+  display: inline-block;
+}
+
+.reveal .col-4{
+  width: 40%;
+  float: left;
+  display: inline-block;
+}
+
+.sample-frame{
+  border-collapse: collapse;
+}
+.sample-frame tr td{
+  width: 80px;
+  height: 80px;
+  background: white;
+  padding: 0px;
+  border: 1px #bbb solid;
+}
+.diff-frame tr td{
+  background: rgba(255, 255, 255, 0.0)
+}
+.sample-frame .dark{
+  background: rgba(100, 100, 100, 1);
+}
+.sample-frame .diff{
+  background: red;
+}
+.reveal table.sample-frame tr:last-child td{
+  border-bottom: 1px #bbb solid;
+}
+
+.reveal .plant a{
+  color: #587F48;
+}
+
+.reveal .white h1,
+.reveal .white h2,
+.reveal .white h3,
+.reveal .white ul li,
+.reveal .white ol li,
+.reveal .white
+{
+  color: white !important;
+}
+.reveal .plant.slide-background{
+  opacity: 0.8 !important;
+}
+.reveal .plant h1,
+.reveal .plant h2,
+.reveal .plant h3,
+.reveal .plant h4,
+.reveal .plant ul li,
+.reveal .plant ol li,
+.reveal .plant
+{
+  color: #444 !important;
+  /*font-family: monospace;*/
+}
+
+.reveal .blur-bg .slide-background,
+.reveal .blur-bg.slide-background{
+  -webkit-filter: blur(2px) grayscale(100%);
+  -moz-filter: blur(2px) grayscale(100%);
+  -o-filter: blur(2px) grayscale(100%);
+  -ms-filter: blur(2px) grayscale(100%);
+  filter: blur(2px) grayscale(100%);
+}
+
+.reveal .bw-bg .slide-background,
+.reveal .bw-bg.slide-background{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.reveal .blur-bg .slide-background:after{
+  -webkit-filter: none;
+  -moz-filter: none;
+  -o-filter: none;
+  -ms-filter: none;
+  filter: none;
+}
+
+.reveal em + h3{
+  margin-top: 20px;
+}
+
+.reveal tr,
+.reveal table td {
+  border-bottom: 0px !important;
+  text-align: center;
+  /*color: rgba(255,255,255, 0.8);*/
+}
+
+.reveal table img {
+  display: inline-block;
+  margin: 0;
+}
+
+.slide-background.present:after{
+  content: '@piratefsh | retro computer art | slides: https://git.io/fAHEv';
+  font-weight: 400;
+  position: fixed;
+  bottom: 0px;
+  display: inline-block;
+  padding: 16px;
+  left: 0px;
+  font-size: 18px;
+  text-shadow: none !important;
+  box-shadow: none;
+  color: white;
+}
+
+twitterwidget{
+  margin: 0 auto !important;
+}
+
+.reveal blockquote{
+  font-style: normal;
+  position: relative;
+  padding: 1em 1.5em;
+  background: none;
+  box-shadow: none;
+  font-size: 1em;
+  width: 90%;
+}
+
+.reveal blockquote:before,
+.reveal blockquote:after{
+  font-size: 3em;
+  opacity: 0.8;
+  line-height: 1em;
+}
+
+.reveal blockquote:before{
+  content: '“';
+  position: absolute;
+  top: 0;
+  left: 0.2em;
+}
+
+.reveal blockquote:after{
+  content: '”';
+  position: absolute;
+  right: 0.2em;
+  bottom: -0.5em;
+}
+
+.reveal p.caption {
+  height: 800px;
+  text-align: right;
+  vertical-align: bottom;
+  text-shadow: 2px 2px 5px black;
+}
