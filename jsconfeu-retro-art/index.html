@@ -61,7 +61,8 @@
 
          <section class="text-shadow blur-bg" data-background="img/manhattan.jpg">
           <h3>Recurse Center</h3>
-          <img class="logo" src="img/rc_logo.svg" width="200" alt="Recurse center"/>
+          <p>New York City, USA</p>
+          <img class="logo" src="img/rc_logo.svg" width="100" alt="Recurse center"/>
         </section>
 
         <section data-background="img/my-art/my-art-wall-2.jpg">
@@ -94,8 +95,12 @@
         </section>
 
         <section>
+          <img src='img/grace-hertlein/hertlein-portrait.jpg' width="200"/>
+          <img src='img/grace-hertlein/the-fields.jpg'/>
           <h3>Grace C. Hertlein</h3>
           <p>Editor of Computer Graphics and Art, 1976-1978</p>
+
+          <p><small>[sources: <a href="https://www.legacy.com/obituaries/name/grace-hertlein-obituary?pid=175341711">legacy.com (left)</a>, A Little-Known Story about a Movement, a Magazine, and the Computer’s Arrival in Art (right)</small>
         </section>
 
         <section>
@@ -675,7 +680,76 @@ function draw() {
 
           <section><img height="600" src="img/my-art/art1-tiles-bw.png"/></section>
           <section><img height="600" src="img/my-art/art1-tiles.png"/></section>
+          <section data-markdown>
+```js
+  for (let i = 0; i < gy + 1; i += 1) {
+    for (let j = 0; j < gx + 1; j += 1) {
+      const circleOpts = {
+        r: cy * i,
+        c: cx * j,
+        nr: Math.ceil(cy / 2),
+        nc: Math.ceil(cx / 2)
+      };
+
+      const { nc, nr} = circleOpts;
+      c.arr1 = ellipse(c.arr1, {
+        ...circleOpts,
+        symbol: "\033[33;7;1mX"
+      });
+
+      c.arr1 = ellipse(c.arr1, {
+        ...circleOpts,
+        nr: nr - 2,
+        nc: nc - 2,
+        symbol: "\033[35m \u0363\033[0m"
+      });
+      c.arr1 = ellipse(c.arr1, {
+        r: cy * i,
+        c: cx * j,
+        nr: 2,
+        nc: 2,
+        symbol: "\033[45m\033[39m~\u0361\033[0m"
+      });
+    }
+```
+  </section>
           <section><img height="600" src="img/my-art/art1-tri.png"/></section>
+          <section data-markdown>
+```js
+  for (let i = 0; i < gy + 1; i += 1) {
+    for (let j = 0; j < gx + 1; j += 1) {
+      const opts = {
+        r: cy * i,
+        c: cx * j + (i % 2 == 0 ? 0 : cx/2),
+        nr: cy,
+      };
+      const { c, r, nc, nr} = opts;
+
+      canvas.arr2 = triangle(canvas.arr2, {
+        ...opts,
+        symbol: "^\u0302"
+      });
+
+      canvas.arr2 = triangle(canvas.arr2, {
+        ...opts,
+        c: c + (1 * Math.sin(t)),
+        r: r + cy - 3 - (1*Math.cos(t)),
+        nr: cy/2,
+        symbol: "\033[1mV\033[0m"
+      });
+
+      canvas.arr2 = triangle(canvas.arr2, {
+        ...opts,
+        c: c  + (1 * Math.sin(t)),
+        r: r + cy - 2 - (1 * Math.cos(t)),
+        nr: -cy/2 ,
+        symbol: "\033[1mV\033[0m"
+      });
+    }
+  }
+}
+```
+          </section>
           <section><img height="600" src="img/my-art/art1-batik.png"/></section>
           <section><img height="500" src="img/my-art/art1-batik-detail.png"/></section>
           <section>
