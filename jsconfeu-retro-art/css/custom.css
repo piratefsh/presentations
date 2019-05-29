@@ -259,3 +259,10 @@ twitterwidget{
   vertical-align: bottom;
   text-shadow: 2px 2px 5px black;
 }
+
+.reveal .highlight-dark{
+  display: inline-block;
+  /*background: hsla(330, 60%, 55%, 0.95);*/
+  padding: 0.2em;
+  background: rgba(0, 0, 0, 0.95);
+}
