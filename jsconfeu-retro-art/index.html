@@ -66,6 +66,7 @@
         </section>
 
         <section data-background="img/my-art/my-art-wall-2.jpg">
+          <h2 class="highlight-dark">I make art by programming</h2>
           <!-- <img src="img/my-art/my-art-wall.jpg" height="600"/> -->
           <!-- <img src="img/my-art/my-art-wall.jpg" height="600"/> -->
         </section>
@@ -86,21 +87,13 @@
         <section>
           <div class="col-6">
             <img src="img/cg-mag/cover.png"/>
+            <p>Edited by Grace C. Hertlein</p>
             <small><a href='http://recodeproject.com'>[source]</a></small>
           </div>
           <div class="col-6">
             <img src="img/cg-mag/toc.png"/>
             <img src="img/cg-mag/article.png"/>
           </div>
-        </section>
-
-        <section>
-          <img src='img/grace-hertlein/hertlein-portrait.jpg' width="200"/>
-          <img src='img/grace-hertlein/the-fields.jpg'/>
-          <h3>Grace C. Hertlein</h3>
-          <p>Editor of Computer Graphics and Art, 1976-1978</p>
-
-          <p><small>[sources: <a href="https://www.legacy.com/obituaries/name/grace-hertlein-obituary?pid=175341711">legacy.com (left)</a>, A Little-Known Story about a Movement, a Magazine, and the Computer’s Arrival in Art (right)</small>
         </section>
 
         <section>
@@ -129,6 +122,10 @@
         <section data-background="hsl(330, 60%, 50%)">
           <h2>Retro computer art</h2>
           <p class="fragment">1950s to 1970s</p>
+        </section>
+
+        <section data-background="hsl(330, 60%, 50%)">
+          <h2>context matters</h2>
         </section>
       </section>
 
@@ -211,8 +208,10 @@
 
       <!-- HISTORY: OUTPUTS -->
       <section data-background="hsl(330, 60%, 50%)" class='white'>
-        <h2>Show me the vintage art</h2>
-        <h1>🙌</h1>
+        <section>
+          <h2>Show me the vintage art</h2>
+          <h1>🙌</h1>
+        </section>
       </section>
 
       <!-- OSCILLOSCOPE ART -->
@@ -235,16 +234,6 @@
             <p><small><a href="https://www.n6cc.com/ancient-oscilloscope">[source: n6cc.com]</a></small></p>
           </div>
         </section>
-        <section>
-          <div class="col-6">
-            <img src="img/herbert-franke/herbert-franke-portrait.jpg" style="height: 500px; width: auto"/>
-            <p><small> Herbert W. Franke <a href=http://spalterdigital.com/artists/herbert-franke/>[source: spalterdigital.com]</a></small>
-            </p>
-          </div>
-          <div class="col-6">
-            <img src="img/herbert-franke/cgca-cover.jpg" style="height: 500px; width: auto"/>
-          </div>
-        </section>
 
         <section>
           <img src="img/ben-laposky/rec-math-page.jpg" style="height: 600px; width: auto"/>
@@ -254,6 +243,17 @@
         <section>
           <img src="img/ben-laposky/oscillons-4.jpg"/>
           <p><small>Oscillons #41 by Ben Laposky<a href="http://ruinsorbooks.com/2013/03/electronic-abstractions-mathematics-in-design-recreational-mathematics-ben-f-laposky"/>[source: Recreational Mathematics magazine, August 1961]</a></small></p>
+        </section>
+
+        <section>
+          <div class="col-6">
+            <img src="img/herbert-franke/herbert-franke-portrait.jpg" style="height: 500px; width: auto"/>
+            <p><small> Herbert W. Franke <a href=http://spalterdigital.com/artists/herbert-franke/>[source: spalterdigital.com]</a></small>
+            </p>
+          </div>
+          <div class="col-6">
+            <img src="img/herbert-franke/cgca-cover.jpg" style="height: 500px; width: auto"/>
+          </div>
         </section>
 
         <section data-background="#000" alt="Elektronische by Herbert Franke, 1970">
@@ -368,7 +368,7 @@ function draw() {
   ellipse(x, 0, 10, 10);
 
   // increment counter after
-  // every drame
+  // every frame
   t++
 }
 
@@ -540,6 +540,10 @@ function draw() {
         </section>
 
         <section>
+          <video controls muted="muted" src="img/four-flies/ff-demo-color-nolines.mp4" autoplay="off" loop="loop"></video>
+        </section>
+
+        <section>
           <video controls muted="muted" src="img/four-flies/ff-demo-color.mp4" autoplay="off" loop="loop"></video>
         </section>
 
@@ -643,11 +647,6 @@ function draw() {
           </section>
 
           <section>
-            <img src="img/frederick-hammersley/detail.jpg"/>
-            <p><small>Jelly Centers Detail, 1969 <a href=http://lacmaonfire.blogspot.com/2017/08/frederick-hammersley-and-computer.html>[source]</a></small></p>
-          </section>
-
-          <section>
             <h3>ASCII art <span class="fragment">?</span></h3>
             <p class="fragment">not quite, more like <a href="https://www.wikiwand.com/en/EBCDIC">EBCDIC</a> art</p>
 
@@ -659,22 +658,33 @@ function draw() {
           </section>
 
           <section>
+            <img src="img/frederick-hammersley/detail.jpg"/>
+            <p><small>Jelly Centers Detail, 1969 <a href=http://lacmaonfire.blogspot.com/2017/08/frederick-hammersley-and-computer.html>[source]</a></small></p>
+          </section>
+
+          <section>
             <h2>What was it like working with the language?</h2>
           </section>
 
           <section>
+            <img src="img/art1/art1-flowchart.jpg" />
+            <p>ART 1 had literally seven drawing subroutines</p>
+          </section>
+
+          <section>
             <h2>I present you with...</h2>
-            <h2 class="fragment">✨🌈 Unicode text art 🆒😲</h2>
           </section>
 
           <section>
             <h3>art1.js</h3>
-            <a href="github.com/piratefsh/art1.js"><img src="img/screenshots/art1-js.png"/></a>
+            <img src="img/screenshots/art1-js.png" height="500"/></a>
+            <p><small><a href="https://github.com/piratefsh/art1.js">[source code: github.com/piratefsh/art1.js]</a></small></p>
           </section>
+
 
           <section><img height="600" src="img/my-art/art1-tiles-bw.png"/></section>
           <section><img height="600" src="img/my-art/art1-tiles.png"/></section>
-          <section data-markdown>
+          <!-- <section data-markdown>
 ```js
   for (let i = 0; i < gy + 1; i += 1) {
     for (let j = 0; j < gx + 1; j += 1) {
@@ -706,9 +716,9 @@ function draw() {
       });
     }
 ```
-  </section>
+  </section> -->
           <section><img height="600" src="img/my-art/art1-tri.png"/></section>
-          <section data-markdown>
+          <!-- <section data-markdown>
 ```js
   for (let i = 0; i < gy + 1; i += 1) {
     for (let j = 0; j < gx + 1; j += 1) {
@@ -743,7 +753,7 @@ function draw() {
   }
 }
 ```
-          </section>
+          </section> -->
           <section><img height="600" src="img/my-art/art1-batik-2.png"/></section>
           <section><img height="500" src="img/my-art/art1-batik-detail.png"/></section>
           <section>
@@ -751,11 +761,57 @@ function draw() {
             <p>Unicode diacritcal marks to achieve detail<br/><small><a href="https://en.wikipedia.org/wiki/Combining_character">[source: Wikipedia]</a></small></p>
           </section>
 
+          <section>
+            <h2>✨🌈 Unicode text art 🆒😲</h2>
+          </section>
+
+          <section>
+            <h2>make the most of what you got</h2>
+          </section>
       </section>
 
     <section data-background="#222" class="white">
       <section data-background="hsl(330, 60%, 50%)" class="white">
         <h2>why?</h2>
+      </section>
+      <section>
+        <h2>there is so much more history</h2>
+      </section>
+      <section>
+        <div class="col-6">
+          <h3>Frieder Nake (Germany)</h3>
+          <img src="img/art/nake-matrix-multiplication.jpg" />
+          <p><small>Matrix multiplication, 1967 <br/>[source: Computer Graphics Computer Art]</small></p>
+        </div>
+
+        <div class="col-6">
+          <h3>Georg Nees (Germany)</h3>
+          <img src="img/art/nees-schotter.jpg" />
+          <p><small>Schotter by Georg Nees, 1968 <br/><a href="https://collections.vam.ac.uk/item/O221321/schotter-print-nees-georg/">[source: vam.ac.uk]</a></small></p>
+        </div>
+      </section>
+
+      <section>
+        <h3>Vera Molnar (Hungary)</h3>
+        <div class="col-6">
+          <img src="img/vera-molnar/molnar-frieder.jpg" />
+          <p><small>Un, deux, trois by Vera Molnar</small></p>
+        </div>
+
+        <div class="col-6">
+          <img src="img/vera-molnar/molnar-portrait.jpg" />
+          <!-- <img src="img/vera-molnar/molnar-1.png" /> -->
+        </div>
+      </section>
+      <section>
+        <div class="col-6">
+          <img src="img/art/rosen.jpg"/>
+        </div>
+        <div class="col-6">
+          <img src="img/art/rosen-2.jpg"/>
+        </div>
+        <p><small>A Little-Known Story about a Movement, a Magazine, and the Computer’s Arrival in Arts<br/>
+New Tendencies and Bit International, 1961-1973 <a href="https://www.copyrightbookshop.be/shop/a-little-known-story-about-a-movement-a-magazine-and-the-computers-arrival-in-arts/"><br/>[photo source: copyrightbookshop.be]</a></small></p>
       </section>
       <section>
         <p>For more vintage computer art history: <a href="https://piratefsh.github.io/2019/01/07/computer-art-history-part-1.html">https://piratefsh.github.io</a></p>
