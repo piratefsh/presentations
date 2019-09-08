@@ -78,12 +78,12 @@
 
     <!-- CLOSING -->
     <section data-background="rgba(0, 163, 133)" class="white">
-      <section><h2>end</h2></section>
+      <section><h2>End</h2></section>
       <section>
-        <h2><img src="img/twitter.png" width="50px"/> <span>keep in touch! <br/>@piratefsh</span>  </h2>
+        <h2><span>Keep in touch!</h2>
+        <p><img src="img/twitter.png" width="30px"/> @piratefsh | sherminn@piratefsh.net</p>
       </section>
     </section>
-    <!-- END CLOSING -->
 
     <!-- BONUS -->
     <script src="lib/js/head.min.js"></script>
@@ -105,13 +105,13 @@
 
         // Optional reveal.js plugins
         dependencies: [
+        { src: 'plugin/external/external.js', condition: function() { return !!document.querySelector( '[data-external]' ); } },
         { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
         { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
         { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
         { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
         { src: 'plugin/zoom-js/zoom.js', async: true },
         { src: 'plugin/notes/notes.js', async: true },
-        { src: 'plugin/external/external.js', condition: function() { return !!document.querySelector( '[data-external]' ); } },
         ]
       });
 

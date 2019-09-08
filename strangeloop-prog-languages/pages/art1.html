@@ -146,8 +146,7 @@
 
   <section>
     <h3>implementation</h3>
-    <div data-markdown>
-```js
+<pre><code>
 function line(arr, { symbol, r, c, nr, nc } = {}) {
   const x0 = c;
   const y0 = r;
@@ -172,7 +171,7 @@ function line(arr, { symbol, r, c, nr, nc } = {}) {
   // negative gradient
   return lineHigh(arr, x1, y1, x0, y0, symbol);
 }
-```
+  </code></pre>
     </div>
   </section>
 
@@ -191,8 +190,7 @@ function line(arr, { symbol, r, c, nr, nc } = {}) {
 
   <section>
     <h3>implementation</h3>
-    <div data-markdown>
-```js
+<pre><code>
 function ellipse(arr, { symbol, r, c, nr, nc }) {
   const rarr = copy(arr);
 
@@ -212,7 +210,7 @@ function ellipse(arr, { symbol, r, c, nr, nc }) {
   }
   return rarr;
 }
-```
+  </code></pre>
     </div>
   </section>
 
