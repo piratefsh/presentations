@@ -260,9 +260,22 @@ twitterwidget{
   text-shadow: 2px 2px 5px black;
 }
 
+.reveal .left{
+  text-align: left !important;
+}
+
 .reveal .highlight-dark{
   display: inline-block;
   /*background: hsla(330, 60%, 55%, 0.95);*/
   padding: 0.2em;
   background: rgba(0, 0, 0, 0.95);
+}
+
+.reveal .twitter-tweet{
+  margin-right: 16px !important;
+  width: auto !important;
+}
+
+.reveal table tr td {
+  text-align: left;
 }

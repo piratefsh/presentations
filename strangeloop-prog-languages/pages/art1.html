@@ -5,6 +5,16 @@
 </section>
 
 <section>
+  <img src="img/frederick-hammersley/equal-tea-talk.jpg"/>
+  <p><small>Equal Tea Talk by Frederick Hammersley, 1969 <a href="http://hammersleyfoundation.org/index.php/artwork/computer-drawings">[source]</a></small></p>
+</section>
+
+<section>
+  <img src="img/frederick-hammersley/undernourished.jpg"/>
+  <p><small>Undernourished by Frederick Hammersley, 1969 <a href="http://hammersleyfoundation.org/index.php/artwork/computer-drawings">[source]</a></small></p>
+</section>
+
+<section>
   <img style="height: 500px;" src="img/ibm/IBM-1403-printer.jpg"/>
   <p>
     <small>IBM 1403 line printer. <br/>Source: The Computer in Art by Jasia Reichdart, 1971</small>
@@ -21,20 +31,10 @@
 </section>
 
 <section>
-  <img src="img/frederick-hammersley/equal-tea-talk.jpg"/>
-  <p><small>Equal Tea Talk by Frederick Hammersley, 1969 <a href="http://hammersleyfoundation.org/index.php/artwork/computer-drawings">[source]</a></small></p>
-</section>
-
-<section>
-  <img src="img/frederick-hammersley/undernourished.jpg"/>
-  <p><small>Undernourished by Frederick Hammersley, 1969 <a href="http://hammersleyfoundation.org/index.php/artwork/computer-drawings">[source]</a></small></p>
-</section>
- <section>
     <h2>ART 1 Programming language</h2>
-
     <p>by Katherine Nash and Richard H. Williams at University of New Mexico</p>
-
 </section>
+
 <section>
     <p>"...to teach students to make simple computer graphics"</p>
 
@@ -45,21 +45,6 @@
         source: The Computer in Art by Jasia Reichdart, 1971
       </small>
     </p>
-  </section>
-
-  <section data-background="#ed225d">
-    <img src='img/p5js/logo.png'/>
-  </section>
-
-  <section>
-    <div class="col-6">
-      <h3>ART I</h3>
-      <img height="500" src="img/cg-mag/art-1-ellipse.jpg"/>
-    </div>
-    <div class="col-6 fragment">
-      <h3>p5.js</h3>
-      <img src="img/p5js/p5js-ellipse.png"/>
-    </div>
   </section>
 
   <section>
@@ -92,8 +77,21 @@
   </section>
 
   <section>
+    <img height="600" src="img/art1/art1-arrays.jpg" />
+  </section>
+
+  <section>
     <p>ART 1 had literally seven drawing subroutines</p>
     <img src="img/art1/art1-flowchart.jpg" />
+    <p>
+      <small>
+        source: The Computer in Art by Jasia Reichdart, 1971
+      </small>
+    </p>
+  </section>
+
+  <section>
+    <img height="600" src="img/art1/art1-line.jpg" />
   </section>
 
   <section>
@@ -102,14 +100,40 @@
     <p><small><a href="https://github.com/piratefsh/art1.js">[source code: github.com/piratefsh/art1.js]</a></small></p>
   </section>
 
+  <section>
+    <p>Implemented as a JavaScript library</p>
+    <h1>😌</h1>
+  </section>
+
+  <section>
+    <h2>Problem: I don't own a printer <br/>🖨☠️</h2>
+    <h2 class="fragment">Solution: use the next best thing -- the terminal</h2>
+  </section>
+
+  <section>
+    <h2>Problem: How do I achieve the overlapping text effect? 📚🆒</h2>
+    <h2 class="fragment">Solution: Get creative with the character set</h2>
+  </section>
+
+  <section>
+    <img src="img/screenshots/combining-chars-wiki.png"/>
+    <p>Unicode diacritical marks to achieve overlapping<br/><small><a href="https://en.wikipedia.org/wiki/Combining_character">[source: Wikipedia]</a></small></p>
+  </section>
+
+  <section>
+    <h2>demo</h2>
+  </section>
 
   <section><img height="600" src="img/my-art/art1-tri.png"/></section>
   <section><img height="600" src="img/my-art/art1-tiles.png"/></section>
   <section><img height="600" src="img/my-art/art1-batik-2.png"/></section>
-  <section><img height="500" src="img/my-art/art1-batik-detail.png"/></section>
   <section>
-    <img src="img/screenshots/combining-chars-wiki.png"/>
-    <p>Unicode diacritcal marks to achieve detail<br/><small><a href="https://en.wikipedia.org/wiki/Combining_character">[source: Wikipedia]</a></small></p>
+    <div class="col-6">
+      <img src="img/my-art/art1-batik-detail.png"/>
+    </div>
+    <div class="col-6">
+      <img src="img/my-art/batik-skirt.png"/>
+    </div>
   </section>
 
   <section>
@@ -120,6 +144,7 @@
     <h3>lines</h3>
     <p>... how do you even draw them?</p>
   </section>
+  
   <section><img src="img/bresenhem-line/step0.png"/></section>
 
   <section>
@@ -175,13 +200,15 @@ function line(arr, { symbol, r, c, nr, nc } = {}) {
     </div>
   </section>
 
+  <section><img src="img/bresenhem-line/step0.png"/></section>
+
   <section>
     <h3>circles</h3>
     <p>...are a lot easier to draw</p>
   </section>
 
-
   <section><img src="img/circle-drawing/step1.png"/></section>
+
   <section data-background="#efefef"><img src="img/circle-drawing/step2.png"/></section>
   <section data-background="#efefef"><img src="img/circle-drawing/step3.png"/></section>
   <section data-background="#efefef"><img src="img/circle-drawing/step4.png"/></section>
@@ -213,6 +240,9 @@ function ellipse(arr, { symbol, r, c, nr, nc }) {
   </code></pre>
     </div>
   </section>
+
+  <section><img src="img/circle-drawing/step1.png"/></section>
+
 
   <section>
     <h2>ART 2</h2>
