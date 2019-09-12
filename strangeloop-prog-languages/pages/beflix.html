@@ -2,7 +2,7 @@
   <h2>
     A language for moving pictures
   </h2>
-  <h1>🎥🍿🎞</h1>
+  <h1>🎥🍿📺</h1>
 </section>
 
 <section>
@@ -15,10 +15,10 @@
 </section>
 
 <section>
-  <div class="col-6">
+  <div class="col-4">
     <img src="img/beflix/beflix-cover.png"/>
   </div>
-  <div class="col-6">
+  <div class="col-8">
     <h2>BEFLIX</h2>
     <ul>
       <li>short for "Bell Flicks</li>
@@ -27,13 +27,14 @@
       <li class="fragment">in 1963</li>
     </ul>
   </div>
+  <p><small>[source: Computer-Generated Movies, Designs and Diagrams by Ken Knowlton, Design Quarterly, No. 66/67, Design and the Computer (1966), pp. 58-63</small></p>
 </section>
 
 <section>
-  <div class="col-6">
+  <div class="col-4">
     <img src="img/beflix/beflix-diagram.png"/>
   </div>
-  <div class="col-6">
+  <div class="col-8">
     <h2>BEFLIX</h2>
     <ul>
       <li>implemented in FORTRAN as FORTRAN Assembly Program macros</li>
@@ -41,6 +42,7 @@
       <li class="fragment">for output on the SC 4020 microfilm plotter</li>
     </ul>
   </div>
+  <p><small>[source: Computer-Generated Movies, Designs and Diagrams by Ken Knowlton, Design Quarterly, No. 66/67, Design and the Computer (1966), pp. 58-63</small></p>
 </section>
 
 <section>
@@ -63,6 +65,8 @@
 
 <section>
   <h2>Problem: BEFLIX had a high learning curve 😬</h2>
+
+  //todo demonstrate
 </section>
 
 <section>
@@ -73,10 +77,10 @@
 </section>
 
 <section>
-  <div class="col-6">
+  <div class="col-4">
     <img src="img/cap-mag/1970-Aug-cover.jpg"/>
   </div>
-  <div class="col-6">
+  <div class="col-8">
     <h2>EXPLOR</h2>
     <ul>
       <li>"EXplicitly defined Patterns, Local Operations, and Randomness"</li>
@@ -84,6 +88,9 @@
       <li class="fragment">probabilistic language</li>
     </ul>
   </div>
+    <p>
+      <small>[source: EXPLOR — A Generator of Images from EXplicit Patterns, Local Operations & Randomness, Proc. 9th Annual UAIDE Mtg, Ken Knowlton, 1970]</small>
+    </p>
 </section>
 <section>
   <h3>Syntax</h3>
@@ -91,33 +98,59 @@
   <code> name opcode  (n,p)list-of-arguments, goto </code>
   </p>
 </section>
+
 <section>
-  <h2>Probabilistic language</h2>
+  <h3>Probabilistic language</h3>
   <table class="left">
     <tr><td><code>(1,1)      </code></td><td>always do this operation when control gets here</td></tr>
-    <tr><td><code>(1,16)     </code></td><td>do this one with probability 1/16</td></tr>
-    <tr><td><code>(4,1)      </code></td><td>do this one every fourth time</td></tr>
-    <tr><td><code>(8,2)      </code></td><td>every eighth time through, flip a coin to decide</td></tr>
-    <tr><td><code>(X,50,l)   </code></td><td>except for the 50th, 100th, etc. times, do it</td></tr>
-    <tr><td><code>(X,2,X,50) </code></td><td>almost always (p = 1-1/50), do it on the beat</td></tr>
+    <tr class="fragment"><td><code>(1,16)     </code></td><td>do this one with probability 1/16</td></tr>
+    <tr class="fragment"><td><code>(4,1)      </code></td><td>do this one every fourth time</td></tr>
+    <tr class="fragment"><td><code>(8,2)      </code></td><td>every eighth time through, flip a coin to decide</td></tr>
+    <tr class="fragment"><td><code>(X,50,l)   </code></td><td>except for the 50th, 100th, etc. times, do it</td></tr>
+    <tr class="fragment"><td><code>(X,2,X,50) </code></td><td>almost always (p = 1-1/50), do it on the beat</td></tr>
   </table>
+</section>
+
+<section>
+  <h3>Transliteration instructions</h3>
+</section>
+
+<section>
+  <img src="img/explor/explor-nuclei-1.png"/>
+</section>
+<section>
+  <h4>Simulation of Expanding Fringe Visual Phosphenes</h4>
+  <div class="col-6">
+    <img src="img/explor/explor-nuclei-1.png"/>
+  </div>
+  <div class="col-6">
+    <img src="img/explor/explor-nuclei-src.png"/>
+  </div>
+</section>
+
+<section>
+  <img src="img/explor/explor-snowflake-1.png"/>
+</section>
+<section>
+  <h4>Regular and irregular snowflake crystallization</h4>
+  <div class="col-6">
+    <img src="img/explor/explor-snowflake-1.png"/>
+  </div>
+  <div class="col-6">
+    <img src="img/explor/explor-snowflake-src.png"/>
+  </div>
+</section>
+
+<!-- <section>
+  <img src="img/explor/explor-maze-1.png"/>
+  <img src="img/explor/explor-maze-src.png"/>
+</section> -->
+
+<section>
+  <p>I'm still working on an EXPLOR implementation, come talk to me if you're interested!</p>
 </section>
 
 <section>
   <iframe src="https://player.vimeo.com/video/56480534" width="640" height="427" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
   <small><a href="https://vimeo.com/56480534">source: Pixillation</a> from <a href="https://vimeo.com/lillianschwartz">Lillian Schwartz</a> on <a href="https://vimeo.com">Vimeo</a>.</small>
-</section>
-
-<section>
-  <h2>EXPLOR</h2>
-  <p>
-    <small>[source: EXPLOR — A Generator of Images from EXplicit Patterns, Local Operations & Randomness, Proc. 9th Annual UAIDE Mtg, Ken Knowlton, 1970]</small>
-  </p>
-</section>
-
-<section>
-  <h2>EXPLOR</h2>
-  <ul>
-
-  </ul>
 </section>
