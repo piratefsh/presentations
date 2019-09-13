@@ -21,7 +21,7 @@
   <div class="col-8">
     <h2>BEFLIX</h2>
     <ul>
-      <li>short for "Bell Flicks</li>
+      <li>short for "Bell Flicks"</li>
       <li class="fragment">created by Ken Knowlton</li>
       <li class="fragment">at Bell Labs, New Jersey</li>
       <li class="fragment">in 1963</li>
@@ -100,30 +100,138 @@
 </section>
 
 <section>
+  <h3>Grid 340x240</h3>
+  <img height="500" src="img/explor/explor-grid.png" />
+</section>
+
+<section>
   <h3>Probabilistic language</h3>
   <table class="left">
+    <tr><th><code>(n,p)      </code></th><th>probabilistic indictator</th></tr>
     <tr><td><code>(1,1)      </code></td><td>always do this operation when control gets here</td></tr>
     <tr class="fragment"><td><code>(1,16)     </code></td><td>do this one with probability 1/16</td></tr>
     <tr class="fragment"><td><code>(4,1)      </code></td><td>do this one every fourth time</td></tr>
     <tr class="fragment"><td><code>(8,2)      </code></td><td>every eighth time through, flip a coin to decide</td></tr>
     <tr class="fragment"><td><code>(X,50,l)   </code></td><td>except for the 50th, 100th, etc. times, do it</td></tr>
-    <tr class="fragment"><td><code>(X,2,X,50) </code></td><td>almost always (p = 1-1/50), do it on the beat</td></tr>
+    <!-- <tr class="fragment"><td><code>(X,2,X,50) </code></td><td>almost always (p = 1-1/50), do it on the beat</td></tr> -->
   </table>
 </section>
 
 <section>
-  <h3>Transliteration instructions</h3>
+  <h3>Transliteration</h3>
+  <p>
+    <code>XL (n,p)q(xlit)goto</code>
+  </p>
+  <div class="fragment">
+    <p>e.g.</p>
+    <p>
+      <code>XL <span style="color: skyblue">(2,1)</span><span style="color: LIGHTGOLDENRODYELLOW">3</span><span style="color: pink">(AB,CD)</span></code>
+    </p>
+  </div>
 </section>
 
 <section>
+  <h3>Transliteration</h3>
+  <p>
+    <table>
+      <tr>
+        <td><code>XL</code></td>
+        <td><code></code></td>
+        <td>for each pixel</td>
+      </tr>
+
+      <tr class="fragment">
+        <td><code>(n,p)</code></td>
+        <td><span style="color: skyblue"><code>(2,1)</code></span></td>
+        <td><span style="color: skyblue">every other time this line is reached</span></td>
+      </tr>
+
+      <tr class="fragment">
+        <td><code>q</code></td>
+        <td><span style="color: lightgoldenrodyellow"><code>3</code></span></td>
+        <td><span style="color: lightgoldenrodyellow">about one third</span></td>
+      </tr>
+      <tr class="fragment">
+        <td><code>xlit</code></td>
+        <td><span style="color: pink"><code>(AB,CD)</code></span></td>
+        <td>
+          <span style="color: pink">of all pixels with value<code>A</code>s update to <code>B</code>s and <code>C</code>s update to <code>D</code>s.</span>
+        </td>
+      </tr>
+    </table>
+  </p>
+</section>
+
+<section>
+  <h3>Adjacency-conditioned transliteration</h3>
+  <p>
+    <code>AXL (n,p)nums,dirs,chst,q(xlit)goto</code>
+  </p>
+  <p class="fragment">e.g.</p>
+  <p class="fragment">
+    <code>AXL <span style="color: pink">(1,4)</span><span style="color: lightgoldenrodyellow">234</span>,<span style="color: mediumaquamarine">NESW</span>,<span style="color: skyblue">ABCD</span>,<span style="color: plum">5(56,78)</span></code>
+  </p>
+</section>
+
+<section>
+  <h3>Adjacency-conditioned transliteration</h3>
+  <p>
+    <table>
+      <tr>
+        <td><code>AXL</code></td>
+        <td><code></code></td>
+        <td>for each pixel</td>
+      </tr>
+
+      <tr class="fragment">
+        <td><code>(n,p)</code></td>
+        <td><span style="color: pink"><code>(1,4)</code></span></td>
+        <td><span style="color: pink">if this line is run with probability of 1/4</span></td>
+      </tr>
+
+      <tr class="fragment">
+        <td><code>nums</code></td>
+        <td><span style="color: lightgoldenrodyellow"><code>234</code></span></td>
+        <td><span style="color: lightgoldenrodyellow">and if there are exactly 2, 3 or 4 neighbours of a pixel</span></td>
+      </tr>
+
+      <tr class="fragment">
+        <td><code>dirs</code></td>
+        <td><span style="color: mediumaquamarine"><code>NESW</code></span></td>
+        <td>
+          <span style="color: mediumaquamarine">in the <code>NORTH</code>, <code>EAST</code>, <code>SOUTH</code> or <code>WEST</code> positions</span>
+        </td>
+      </tr>
+
+      <tr class="fragment">
+        <td><code>chst</code></td>
+        <td><span style="color: skyblue"><code>ABCD</code></span></td>
+        <td>
+          <span style="color: skyblue">whose value is <code>A</code>, <code>B</code>, <code>C</code> or <code>D</code></span>
+        </td>
+      </tr>
+
+      <tr class="fragment">
+        <td><code>q(xlit)</code></td>
+        <td><span style="color: plum"><code>5(56,78)</code></span></td>
+        <td>
+          <span style="color: plum">with the probability of 1/5, update current pixel <code>5</code>s to <code>6</code>s or <code>7</code>s to <code>8</code>s</span>
+        </td>
+      </tr>
+    </table>
+  </p>
+</section>
+
+<section>
+
   <img src="img/explor/explor-nuclei-1.png"/>
 </section>
 <section>
   <h4>Simulation of Expanding Fringe Visual Phosphenes</h4>
-  <div class="col-6">
+  <div class="col-4">
     <img src="img/explor/explor-nuclei-1.png"/>
   </div>
-  <div class="col-6">
+  <div class="col-8">
     <img src="img/explor/explor-nuclei-src.png"/>
   </div>
 </section>
@@ -133,10 +241,10 @@
 </section>
 <section>
   <h4>Regular and irregular snowflake crystallization</h4>
-  <div class="col-6">
+  <div class="col-4">
     <img src="img/explor/explor-snowflake-1.png"/>
   </div>
-  <div class="col-6">
+  <div class="col-8">
     <img src="img/explor/explor-snowflake-src.png"/>
   </div>
 </section>
@@ -147,10 +255,19 @@
 </section> -->
 
 <section>
+  <h3>Cellular automata</h3>
+</section>
+
+<section>
   <p>I'm still working on an EXPLOR implementation, come talk to me if you're interested!</p>
 </section>
 
 <section>
-  <iframe src="https://player.vimeo.com/video/56480534" width="640" height="427" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-  <small><a href="https://vimeo.com/56480534">source: Pixillation</a> from <a href="https://vimeo.com/lillianschwartz">Lillian Schwartz</a> on <a href="https://vimeo.com">Vimeo</a>.</small>
+  <video controls src="img/beflix/pixillation-intro.mp4" autoplay="off" loop="loop"></video>
+  <small><a href="https://vimeo.com/56480534">[source: Pixillation</a> from <a href="https://vimeo.com/lillianschwartz">Lillian Schwartz</a> on <a href="https://vimeo.com">Vimeo</a>]</small>
+</section>
+
+<section>
+  <video controls src="img/beflix/pixillation-1.mp4" autoplay="off" loop="loop"></video>
+  <small><a href="https://vimeo.com/56480534">[source: Pixillation</a> from <a href="https://vimeo.com/lillianschwartz">Lillian Schwartz</a> on <a href="https://vimeo.com">Vimeo</a>]</small>
 </section>

@@ -276,6 +276,11 @@ twitterwidget{
   width: auto !important;
 }
 
-.reveal table tr td {
+.reveal table tr th:first-child{
+  text-align: center;
+}
+
+.reveal table tr th:not(:first-child),
+.reveal table tr td:not(:first-child) {
   text-align: left;
 }
