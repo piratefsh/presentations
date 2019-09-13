@@ -158,6 +158,7 @@
     <small><a href="https://xlinux.nist.gov/dads/HTML/bresenham.html">[source: https://xlinux.nist.gov]</a></small>
   </section>
 
+  <section data-background="#efefef"><img src="img/bresenhem-line/step9.png"/></section>
   <section data-background="#efefef"><img src="img/bresenhem-line/step1.png"/></section>
   <section data-background="#efefef"><img src="img/bresenhem-line/step2.png"/></section>
   <section data-background="#efefef"><img src="img/bresenhem-line/step3.png"/></section>
@@ -206,55 +207,3 @@ function line(arr, { symbol, r, c, nr, nc } = {}) {
   </section>
 
   <section><img src="img/bresenhem-line/step0.png"/></section>
-
-  <section>
-    <h3>circles</h3>
-    <p>...are a lot easier to draw</p>
-  </section>
-
-  <section><img src="img/circle-drawing/step1.png"/></section>
-
-  <section data-background="#efefef"><img src="img/circle-drawing/step2.png"/></section>
-  <section data-background="#efefef"><img src="img/circle-drawing/step3.png"/></section>
-  <section data-background="#efefef"><img src="img/circle-drawing/step4.png"/></section>
-  <section data-background="#efefef"><img src="img/circle-drawing/step5.png"/></section>
-  <section data-background="#efefef"><img src="img/circle-drawing/step6.png"/></section>
-
-  <section>
-    <h3>implementation</h3>
-<pre><code>
-function ellipse(arr, { symbol, r, c, nr, nc }) {
-  const rarr = copy(arr);
-
-  for (let y = r - nr; y <= r + nr; y += 1) {
-    for (let x = c - nc; x <= c + nc; x += 1) {
-      // if point is in ellipse
-      const dx = (x - c) * (x - c);
-      const dy = (y - r) * (y - r);
-      const ry2 = nr * nr;
-      const rx2 = nc * nc;
-
-      // do integer math comparison
-      if (dx * rx2 + dy * ry2 <= ry2 * rx2) {
-        setx(rarr, x, y, symbol);
-      }
-    }
-  }
-  return rarr;
-}
-  </code></pre>
-    </div>
-  </section>
-
-  <section><img src="img/circle-drawing/step1.png"/></section>
-
-
-  <section>
-    <h2>ART 2</h2>
-    <blockquote>One challenge in the use of ART1 has been the technique of rendering shaded values.</blockquote>
-    <small>source: Statistical Shading Using Digital Computer Program ART2, Richard H. Williams 1971</small>
-  </section>
-  <section>
-    <img height="600" src="img/art1/art2-triangle.png" />
-    <small>source: Statistical Shading Using Digital Computer Program ART2, Richard H. Williams 1971</small>
-  </section>
