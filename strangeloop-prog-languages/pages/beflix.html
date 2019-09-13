@@ -85,7 +85,7 @@
 </section>
 
 <section>
-  <h3>Grid 340x240</h3>
+  <h3>Grid of 340x240 cells</h3>
   <img height="500" src="img/explor/explor-grid.png" />
 </section>
 
@@ -98,14 +98,13 @@
     <tr class="fragment"><td><code>(4,1)      </code></td><td>do this one every fourth time</td></tr>
     <tr class="fragment"><td><code>(8,2)      </code></td><td>every eighth time through, flip a coin to decide</td></tr>
     <tr class="fragment"><td><code>(X,50,l)   </code></td><td>except for the 50th, 100th, etc. times, do it</td></tr>
-    <!-- <tr class="fragment"><td><code>(X,2,X,50) </code></td><td>almost always (p = 1-1/50), do it on the beat</td></tr> -->
   </table>
 </section>
 
 <section>
   <h3>Transliteration</h3>
   <p>
-    <code>XL (n,p)q(xlit)goto</code>
+    <code>XL (n,p)q(xlit)</code>
   </p>
   <div class="fragment">
     <p>e.g.</p>
@@ -122,7 +121,7 @@
       <tr>
         <td><code>XL</code></td>
         <td><code></code></td>
-        <td>for each pixel</td>
+        <td>for each cell</td>
       </tr>
 
       <tr class="fragment">
@@ -140,7 +139,7 @@
         <td><code>xlit</code></td>
         <td><span style="color: pink"><code>(AB,CD)</code></span></td>
         <td>
-          <span style="color: pink">of all pixels with value<code>A</code>s update to <code>B</code>s and <code>C</code>s update to <code>D</code>s.</span>
+          <span style="color: pink">of all cell with value<code>A</code>s update to <code>B</code>s and <code>C</code>s update to <code>D</code>s.</span>
         </td>
       </tr>
     </table>
@@ -150,7 +149,7 @@
 <section>
   <h3>Adjacency-conditioned transliteration</h3>
   <p>
-    <code>AXL (n,p)nums,dirs,chst,q(xlit)goto</code>
+    <code>AXL (n,p)nums,dirs,chst,q(xlit)</code>
   </p>
   <p class="fragment">e.g.</p>
   <p class="fragment">
@@ -165,7 +164,7 @@
       <tr>
         <td><code>AXL</code></td>
         <td><code></code></td>
-        <td>for each pixel</td>
+        <td>for each cell</td>
       </tr>
 
       <tr class="fragment">
@@ -177,7 +176,7 @@
       <tr class="fragment">
         <td><code>nums</code></td>
         <td><span style="color: lightgoldenrodyellow"><code>234</code></span></td>
-        <td><span style="color: lightgoldenrodyellow">and if there are exactly 2, 3 or 4 neighbours of a pixel</span></td>
+        <td><span style="color: lightgoldenrodyellow">and if there are exactly 2, 3 or 4 neighbours of a cell</span></td>
       </tr>
 
       <tr class="fragment">
@@ -200,7 +199,7 @@
         <td><code>q(xlit)</code></td>
         <td><span style="color: plum"><code>5(56,78)</code></span></td>
         <td>
-          <span style="color: plum">with the probability of 1/5, update current pixel <code>5</code>s to <code>6</code>s or <code>7</code>s to <code>8</code>s</span>
+          <span style="color: plum">with the probability of 1/5, update current cell <code>5</code>s to <code>6</code>s or <code>7</code>s to <code>8</code>s</span>
         </td>
       </tr>
     </table>
@@ -208,11 +207,7 @@
 </section>
 
 <section>
-
-  <img src="img/explor/explor-nuclei-1.png"/>
-</section>
-<section>
-  <h4>Simulation of Expanding Fringe Visual Phosphenes</h4>
+  <h3>Simulation of Expanding Fringe Visual Phosphenes</h3>
   <div class="col-4">
     <img src="img/explor/explor-nuclei-1.png"/>
   </div>
@@ -222,10 +217,11 @@
 </section>
 
 <section>
-  <img src="img/explor/explor-snowflake-1.png"/>
+  <img src="img/explor/explor-nuclei-1.png"/>
 </section>
+
 <section>
-  <h4>Regular and irregular snowflake crystallization</h4>
+  <h3>Regular and irregular snowflake crystallization</h3>
   <div class="col-4">
     <img src="img/explor/explor-snowflake-1.png"/>
   </div>
@@ -234,10 +230,9 @@
   </div>
 </section>
 
-<!-- <section>
-  <img src="img/explor/explor-maze-1.png"/>
-  <img src="img/explor/explor-maze-src.png"/>
-</section> -->
+<section>
+  <img src="img/explor/explor-snowflake-1.png"/>
+</section>
 
 <section>
   <p>I'm still working on an EXPLOR implementation, come talk to me if you're interested!</p>
